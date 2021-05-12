@@ -17,7 +17,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         pre: echo ::save-state name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
-        name: clabroche/docker-registry/florynekeiff
+        name: clabroche/docker-registry/vanessalanquetin
         username: ${{ secrets.DOCKER_HUB_USER }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         registry: docker.pkg.github.com
