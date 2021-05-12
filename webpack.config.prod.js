@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "./src/index.html",
     }),
   ],
   entry: {
@@ -39,6 +39,10 @@ module.exports = {
           "css-loader",
         ],
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      }
     ],
   },
 };
