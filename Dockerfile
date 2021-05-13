@@ -4,8 +4,6 @@ WORKDIR /vanessalanquetin
 COPY . .
 RUN npm i
 RUN npm run build
-RUN rm -rf node_modules
-RUN npm i --production
 
 FROM alpine:3.12
 RUN apk --no-cache add nodejs
