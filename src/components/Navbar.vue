@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-container {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   .overlay {
     width: 0;
     height: 100vh;
@@ -55,16 +55,16 @@ export default {
   }
   #header{
     width: 100%;
-    height: 150px;
+    height: 130px;
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #f8edc9;
     background-color: rgba(242, 236, 216, 0.5);
     position: relative;
     img {
-      margin-top: 20px;
-      width: 200px;
-      height: 200px;
+      margin-top: 40px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       border: 2px solid #f8edc9;
     }

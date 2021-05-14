@@ -4,9 +4,7 @@
       <presentation class="presentation"/>
       <last-posts class="last-posts"/>
     </div>
-    <div v-for="i in nbDraws" :key="i">
-      <gallery-preview/>
-    </div>
+    <gallery-preview id="gallery-Draw"/>
   </div>
 </template>
 
@@ -21,9 +19,7 @@ export default {
     Presentation,
   },
   setup() {
-    const nbDraws = 5
-    return {
-      nbDraws
+    return {      
     }
   }
 }
@@ -32,12 +28,46 @@ export default {
 <style lang="scss" scoped>
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
 }
 .presentation {
-  width: 60%;
+  flex-grow: 2;
+  margin-right: 10px;
+  text-align: justify;
 }
 .last-posts {
-  width: 20%;
+  flex-grow: 1;
+  margin-left: 10px;
+  position: relative;
+  min-width: 450px;
+  flex-shrink: 0;
+  &::after {
+    content: "";
+    border-left: 2px solid #F2ECD8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-15px);
+  }
 }
+#gallery-Draw{
+  width:90%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    border-top: 2px solid #F2ECD8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    transform: translateX(-50%) translateY(-20px);
+    margin-left: 50%;
+  }
+}
+
 </style>

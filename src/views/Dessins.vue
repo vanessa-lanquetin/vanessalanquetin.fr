@@ -1,11 +1,12 @@
 <template>
-  <div>dessins</div>
+  <gallery-preview></gallery-preview>
 </template>
 
 <script>
+import GalleryPreview from '../components/GalleryPreview.vue'
 export default {
-}
-</script>
+  components: { GalleryPreview },
+}</script>
 
 <style scoped lang="scss">
 
