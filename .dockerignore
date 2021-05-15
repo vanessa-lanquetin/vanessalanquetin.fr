@@ -1,2 +1,10 @@
 node_modules
+server/node_modules
 dist
+server/files/*
+!server/files/draws/
+server/files/draws/*
+!server/files/draws/resize/
+server/files/draws/resize/*
+Dockerfile
+.dockerignore
