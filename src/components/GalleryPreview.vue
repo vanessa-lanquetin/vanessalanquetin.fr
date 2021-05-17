@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-Draw">
-    <grid-cell v-for="img in hrefImg" :key="img" :img="img" :greyscale="true"/>
+    <grid-cell v-for="img in imgArray" :key="img" :img="img.url" :greyscale="true"/>
   </div>
 </template>
 
@@ -10,13 +10,9 @@ export default  {
   components: { 
     gridCell
   },
-  setup () {
-    const hrefImg = []
-    return {
-      hrefImg,
-      gridCell,
-    }
-  }
+  props: {
+    imgArray: { default: () => ([])}
+  },
 }
 </script>
 

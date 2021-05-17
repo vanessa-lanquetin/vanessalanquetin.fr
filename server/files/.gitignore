@@ -1,0 +1,6 @@
+*
+!.gitignore
+!draws/
+!draws/.gitkeep
+!draws/resize/
+!draws/resize/.gitkeep

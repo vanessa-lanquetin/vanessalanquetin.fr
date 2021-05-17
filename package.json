@@ -1,22 +1,30 @@
 {
   "name": "vanessalanquetinfr",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "author": "vanessalanquetin",
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "stack-monitor ./stack.js",
+    "server": "cd server && npm run serve",
+    "client": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postinstall": "cd server && npm i"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
     "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
     "express": "^4.17.1",
+    "uuid": "^8.3.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
+    "@iryu54/stack-monitor": "^1.7.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
