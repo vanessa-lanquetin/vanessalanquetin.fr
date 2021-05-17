@@ -28,29 +28,32 @@ export default {
 <style lang="scss" scoped>
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
   margin: auto;
 }
 .presentation {
   flex-grow: 2;
-  margin-right: 10px;
+  margin-right: 40px;
   text-align: justify;
+  max-width: 1000px;
 }
 .last-posts {
   flex-grow: 1;
   margin-left: 10px;
   position: relative;
-  min-width: 450px;
+  min-width: 500px;
+  max-width: 600px;
   flex-shrink: 0;
   &::after {
     content: "";
-    border-left: 2px solid #F2ECD8;
+    border-left: 5px solid #F2ECD8;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    transform: translateX(-15px);
+    transform: translateX(-30px);
   }
 }
 #gallery-Draw{
@@ -60,7 +63,7 @@ export default {
   position: relative;
   &::after {
     content: "";
-    border-top: 2px solid #F2ECD8;
+    border-top: 5px solid #F2ECD8;
     position: absolute;
     top: 0;
     left: 0;

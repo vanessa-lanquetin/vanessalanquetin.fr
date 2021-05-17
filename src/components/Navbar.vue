@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-container {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   .overlay {
     width: 0;
     height: 100vh;
@@ -62,9 +62,8 @@ export default {
     background-color: rgba(242, 236, 216, 0.5);
     position: relative;
     img {
-      margin-top: 40px;
-      width: 180px;
-      height: 180px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
       border: 2px solid #f8edc9;
     }
@@ -75,15 +74,14 @@ export default {
     a {
       display: inline-block;
       padding: 10px 60px;
-      font-size: 1.5em;
-      text-decoration: none;
+      font-size: 1.7em;
       color: #A58DB0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     #header-left, #header-right {
       display: flex;
       justify-content: center;
-      width: 50%;
+      width: 100%;
     }
   }
   .trigger {

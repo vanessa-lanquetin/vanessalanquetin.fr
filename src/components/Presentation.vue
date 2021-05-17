@@ -28,14 +28,14 @@ export default {
   color: #A58DB0;
   text-decoration: underline;
   font-weight: normal;
-  padding-left: 10px;
+  padding-left: 24px;
 }
 
   #containt-presentation{
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 10px;
-    font-size: 18px;  
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 22px;  
     color: #78748B;
     line-height: 30px;
   }
