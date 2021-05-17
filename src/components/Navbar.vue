@@ -9,7 +9,7 @@
         <img id="logo" src="@/assets/img/logo.jpg" alt="logo" />
       </router-link>
     </div>  
-    <div class="links" >
+    <div class="links" @click="toggleSideBar()">
       <div id="header-left">
         <router-link to="/cv">CV</router-link>      
         <router-link to="/dessins">DESSINS</router-link>      

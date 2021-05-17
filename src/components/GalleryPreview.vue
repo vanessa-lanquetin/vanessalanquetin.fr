@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-Draw">
-    <grid-cell v-for="img in imgArray" :key="img" :img="img.url" :greyscale="true"/>
+    <grid-cell v-for="img in imgArray" :key="img" :img="img.url" :greyscale="greyscale"/>
   </div>
 </template>
 
@@ -11,7 +11,8 @@ export default  {
     gridCell
   },
   props: {
-    imgArray: { default: () => ([])}
+    imgArray: { default: () => ([])},
+    greyscale: { default: false},
   },
 }
 </script>

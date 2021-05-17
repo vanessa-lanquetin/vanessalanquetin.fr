@@ -1,12 +1,19 @@
 <template>
   <section>
     <h2>Toutes mes images</h2>
-    <gallery-preview :imgArray="hrefImg"></gallery-preview>
+    <gallery-preview :imgArray="allImg"></gallery-preview>
   </section>
   <section>
     <h2>Mes images par Categories</h2>
     <div  v-for="(group) in groupByCategory" :key="group.label">
       <h3>{{group.label === 'undefined' ? 'Non catégorisées': group.label}}</h3>
+      <gallery-preview :imgArray="group.imgs"></gallery-preview>
+    </div>
+  </section>
+  <section>
+    <h2>Mes images par Sous-Categories</h2>
+    <div  v-for="(group) in groupBySubCategory" :key="group.label">
+      <h3>{{group.label === 'undefined' ? 'Non sous-catégorisées': group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
     </div>
   </section>
@@ -38,29 +45,33 @@ import { ref } from '@vue/reactivity'
 import GalleryPreview from '../components/GalleryPreview.vue'
 import { onMounted } from '@vue/runtime-core'
 import Draw from '../models/Draw'
+import gridCell from '@/components/gridCell.vue'
 export default {
-  components: { GalleryPreview },
+  components: { GalleryPreview },gridCell,
   setup() {
 
-    const hrefImg = ref([])
+    const allImg = ref([])
     const groupByYear = ref({})
     const groupByMonth = ref({})
     const groupByDay = ref({})
     const groupByCategory = ref({})
+    const groupBySubCategory = ref({})
 
     onMounted(async () => {
-      hrefImg.value = await Draw.all(200)
-      groupByYear.value = await Draw.allByYear(200)
-      groupByMonth.value = await Draw.allByMonth(200)
-      groupByDay.value = await Draw.allByDay(200)
-      groupByCategory.value = await Draw.allByCategory(200)
+      allImg.value = await Draw.all(500)
+      groupByYear.value = await Draw.allByYear(500)
+      groupByMonth.value = await Draw.allByMonth(500)
+      groupByDay.value = await Draw.allByDay(500)
+      groupByCategory.value = await Draw.allByCategory(500)
+      groupBySubCategory.value = await Draw.allBySubCategory(500)
     })
     return {
-      hrefImg, 
+      allImg, 
       groupByYear, 
       groupByMonth, 
       groupByDay, 
       groupByCategory, 
+      groupBySubCategory,
     }
   }
 }

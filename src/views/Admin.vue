@@ -18,6 +18,10 @@
             <label>Catégorie</label>
             <input type="text" v-model="draw.category" @input="updateDraw(draw)">
           </div>
+          <div class="input-container">
+            <label>Sous-Catégorie</label>
+            <input type="text" v-model="draw.subcategory" @input="updateDraw(draw)">
+          </div>
         </div>
       </div>
     </div>

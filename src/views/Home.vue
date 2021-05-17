@@ -4,7 +4,7 @@
       <presentation class="presentation"/>
       <last-posts class="last-posts"/>
     </div>
-    <gallery-preview id="gallery-Draw"/>
+    <gallery-preview id="gallery-Draw" :imgArray="allImg" :greyscale="true"></gallery-preview>
   </div>
 </template>
 
@@ -12,6 +12,9 @@
 import GalleryPreview from "@/components/GalleryPreview.vue"
 import LastPosts from "@/components/LastPosts.vue"
 import Presentation from "@/components/Presentation.vue"
+import { onMounted, ref } from '@vue/runtime-core'
+import Draw from '../models/Draw'
+
 export default {
   components: {
     GalleryPreview,
@@ -19,7 +22,12 @@ export default {
     Presentation,
   },
   setup() {
+    const allImg = ref([])
+    onMounted(async() => {
+      allImg.value = await Draw.all(200)
+    })
     return {      
+      allImg
     }
   }
 }
