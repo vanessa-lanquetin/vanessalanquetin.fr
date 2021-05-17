@@ -40,7 +40,8 @@ app.get('/', async (req, res) => {
   const {width, height} = req.query
   const files = await db.asyncFind({})
   res.json(files.map(file => {
-    file.url = buildURL(file._id, width, height)
+    file.url = buildURL(file._id, width, height);
+    file.originalUrl = buildURL(file._id);
     delete file.storage
     delete file.filename
     return file
@@ -113,7 +114,8 @@ function buildURL(filename, width, height) {
 async function get(_id, width, height) {
   const infos = await db.asyncFindOne({ _id })
   if (!infos) return
-  infos.url = buildURL(infos._id, width, height)
+  infos.url = buildURL(infos._id, width, height);
+  infos.originalUrl = buildURL(infos._id);
   delete infos.storage
   delete infos.filename
   return infos

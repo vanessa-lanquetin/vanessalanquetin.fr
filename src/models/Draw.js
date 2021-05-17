@@ -15,13 +15,19 @@ class Draw {
     /** @type {string} */
     this.category = draw.category;
     /** @type {string} */
-    this.category = draw.subcategory;
+    this.subcategory = draw.subcategory;
     /** @type {string} */
     this.url =
       process.env.VUE_APP_SERVER_URL +
       ":" +
       process.env.VUE_APP_SERVER_PORT +
       draw.url;
+      /** @type {string} */
+    this.originalUrl =
+      process.env.VUE_APP_SERVER_URL +
+      ":" +
+      process.env.VUE_APP_SERVER_PORT +
+      draw.originalUrl;
   }
 
   /**

@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
-    <div class="overlay" @click="toggleSideBar()"></div>
-    <div class="trigger" @click="toggleSideBar()">
+    <div class="overlay" @click="closeSidebar()"></div>
+    <div class="trigger" @click="openSidebar()">
       <i class="fas fa-bars"></i>
     </div>
     <div id="header" >
@@ -9,7 +9,7 @@
         <img id="logo" src="@/assets/img/logo.jpg" alt="logo" />
       </router-link>
     </div>  
-    <div class="links" @click="toggleSideBar()">
+    <div class="links" @click="closeSidebar()">
       <div id="header-left">
         <router-link to="/cv">CV</router-link>      
         <router-link to="/dessins">DESSINS</router-link>      
@@ -25,16 +25,17 @@
 <script>
 export default {
   setup() {
-    const toggleSideBar = () => {
+    const closeSidebar = () => {
       const $header = document.querySelector(".header-container");
-      if($header.classList.contains('open')) {
-        $header.classList.remove("open");
-      } else {
-        $header.classList.add("open");
-      }
+      $header.classList.remove("open");
+    }
+    const openSidebar = () => {
+      const $header = document.querySelector(".header-container");
+      $header.classList.add("open");
     }
     return {
-      toggleSideBar,
+      closeSidebar,
+      openSidebar,
     }
   }
 }
@@ -71,9 +72,13 @@ export default {
   .links {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 75px;
+
     a {
       display: inline-block;
       padding: 10px 60px;
+      width: 120px;
+      text-align: center;
       font-size: 1.7em;
       color: #A58DB0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -92,8 +97,9 @@ export default {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .header-container {
+    margin-bottom: 146px;
     .links {
       position: fixed;
       top: 0;

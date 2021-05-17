@@ -45,14 +45,14 @@ export default {
   flex-grow: 2;
   margin-right: 40px;
   text-align: justify;
-  max-width: 1000px;
+  max-width: 800px;
 }
 .last-posts {
   flex-grow: 1;
   margin-left: 10px;
   position: relative;
-  min-width: 500px;
-  max-width: 600px;
+  min-width: 400px;
+  max-width: 400px;
   flex-shrink: 0;
   &::after {
     content: "";
@@ -67,7 +67,8 @@ export default {
 #gallery-Draw{
   width:90%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   position: relative;
   &::after {
     content: "";
@@ -76,9 +77,32 @@ export default {
     top: 0;
     left: 0;
     width: 90%;
-    transform: translateX(-50%) translateY(-20px);
+    transform: translateX(-50%) translateY(-30px);
     margin-left: 50%;
   }
 }
+@media screen and (max-width: 1400px) {
+  .row{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
+  .last-posts{
+    margin-top: 40px;
+    &::after {
+      position: fixed;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      height: 100vh;
+      border-right: 1px solid #f8edc9;
+      box-shadow: 0 0 10px 0 #e4e4e4;
+      background-color: #fff;
+      justify-content: flex-start;
+      width: 0;
+      transition: 300ms;
+      overflow: hidden;
+      }
+  }
+}
 </style>

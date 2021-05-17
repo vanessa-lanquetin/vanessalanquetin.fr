@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-Draw">
-    <grid-cell v-for="img in imgArray" :key="img" :img="img.url" :greyscale="greyscale"/>
+    <grid-cell v-for="img in imgArray" :key="img" :img="img.url" :greyscale="greyscale" @click="$emit('click-img', img)"/>
   </div>
 </template>
 
