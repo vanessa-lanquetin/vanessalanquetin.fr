@@ -1,17 +1,21 @@
 <template>
   <teleport to="body" v-if="imgs?.length">
-    <div class="popup">
+    <div class="popup" @click="close">
       <div class="popup-content">
-        <div class="close">
-          <i class="fas fa-times" @click="close()" aria-hidden="true"></i>
+        <div class="buttons" @click.stop>
+          <div class="close">
+            <i class="fas fa-times" @click="close()" aria-hidden="true"></i>
+          </div>
+          <div class="left">
+            <i class="fas fa-chevron-left" id="left-arrow" @click="previous()" aria-hidden="true"></i>
+          </div>
+          <div class="right">
+            <i class="fas fa-chevron-right" id="right-arrow" @click="next()" aria-hidden="true"></i>
+          </div>
         </div>
-        <div class="left">
-          <i class="fas fa-chevron-left" id="left-arrow" @click="previous()" aria-hidden="true"></i>
-        </div>
-        <div class="right">
-          <i class="fas fa-chevron-right" id="right-arrow" @click="next()" aria-hidden="true"></i>
-        </div>
-        <img :src="imgs[currentIndex]?.originalUrl + 'width=1920'" alt="">
+        <transition name="fade">
+          <img :src="imgs[currentIndex]?.originalUrl + 'width=1920'" alt="" @click.stop :key="imgs[currentIndex]?.originalUrl">
+        </transition>
       </div>
     </div>
   </teleport>
@@ -63,32 +67,55 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.8);
     position: relative;
-    .left, .right, .close, .img-number {
-      position: absolute;
-    }
-    .left {
-      left: 20px;
-    }
-    .right {
-      right: 20px;
-    }
-    .close {
-      top: 10px;
-      right: 10px;
-      color: white;
-      font-size: 20px;
+    .buttons {
+      cursor: pointer;
+      &>div {
+        transition: 300ms;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+      #left-arrow,#right-arrow{
+        color: white;
+        font-size: 30px;      
+      }
+      .left, .right, .close, .img-number {
+        position: absolute;
+      }
+      .left {
+        left: 20px;
+      }
+      .right {
+        right: 20px;
+      }
+      .close {
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 20px;
+      }
     }
   }    
-    #left-arrow,#right-arrow{
-      color: white;
-      font-size: 30px;      
-  }
+
   img{
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: 300ms;
+}
+
+.fade-leave-active {
+  position: absolute;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(100px) translateY(-200px) rotate(20deg)
 }
 </style>
