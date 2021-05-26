@@ -5,7 +5,7 @@
       Voici mon tout premier site où vous pourrez trouver, mes différents projets, mes dessins et également mon CV.
       Le dessin m'a toujours fasciné mais ce n'est que très récemment que je dessine régulièrement.Je dessine depuis environ 1 an.
       En ce qui concerne la programmation j'ai débuté mon apprentissage dans ce domaine depuis le mois de Février en 2021, 
-      en utilisant les resources fournis par la plateforme "openclassroom.com".
+      en utilisant les resources fournies par la plateforme "openclassroom.com".
     </div>
   </div>
   
@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 .presentation-root {
   border: 3px solid #F2ECD8;
-  box-shadow: 0 0 10px 0 #e4e4e4;
+  box-shadow: 0 0 20px 0 #e4e4e4;
   
 
   h1{

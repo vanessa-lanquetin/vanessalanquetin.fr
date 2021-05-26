@@ -24,7 +24,7 @@ export default {
   setup() {
     const allImg = ref([])
     onMounted(async() => {
-      allImg.value = await Draw.all(200)
+      allImg.value = await Draw.all(600)
     })
     return {      
       allImg
@@ -70,18 +70,22 @@ export default {
   margin-top: 70px;
   margin-bottom: 50px;
   position: relative;
+  
   &::after {
     content: "";
     border-top: 5px solid #F2ECD8;
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 98%;
     transform: translateX(-50%) translateY(-30px);
     margin-left: 50%;
   }
 }
 @media screen and (max-width: 1400px) {
+  body{
+    margin-right: 10px;
+  }
   .row{
     flex-direction: column;
     flex-wrap: wrap;
@@ -104,5 +108,19 @@ export default {
       overflow: hidden;
       }
   }
-}
+  #containt-presentation{
+    padding-bottom: 0;
+  }
+} 
+
+@media screen and (max-width: 1111px){
+  #gallery-Draw{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+
+      }
+} 
 </style>

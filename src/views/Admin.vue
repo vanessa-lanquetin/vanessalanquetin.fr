@@ -12,16 +12,30 @@
           </div>
           <div class="input-container">
             <label>Date</label>
-            <input type="date" v-model="draw.date" @input="updateDraw(draw)">
+            <input type="date" :value="draw.date" @blur="updateDate(draw, $event.target.value)" @keypress.enter="updateDate(draw, $event.target.value)">
           </div>
           <div class="input-container">
-            <label>Catégorie</label>
-            <input type="text" v-model="draw.category" @input="updateDraw(draw)">
+            <label>Tags</label>
+            <div class="tags">
+              <div class="tag" v-for="(tag, i) of draw.tags" :key="'tag-' + i">
+                <input type="text" v-model="draw.tags[i].label" @input="updateDraw(draw)">
+                <i class="fas fa-times" aria-hidden="true" @click="deleteTag(draw, i)"></i>
+                <div class="sub-tags">
+                  <div class="sub-tag" v-for="(subTag, j) of tag.subTags" :key="'subtag-' + j">
+                    <input type="text" v-model="tag.subTags[j]" @input="updateDraw(draw)">
+                    <i class="fas fa-times" aria-hidden="true" @click="deleteSubTag(tag, j, draw)"></i>
+                  </div>
+                  <button class="add" @click="addSubTag(tag, draw)">
+                    <i class="fas fa-plus" aria-hidden="true"></i>Ajouter un sous tag
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="add" @click="addTag(draw)">
+              <i class="fas fa-plus" aria-hidden="true"></i>Ajouter un tag
+            </button>
           </div>
-          <div class="input-container">
-            <label>Sous-Catégorie</label>
-            <input type="text" v-model="draw.subcategory" @input="updateDraw(draw)">
-          </div>
+          
         </div>
       </div>
     </div>
@@ -61,6 +75,36 @@ export default {
       async deleteDraw(draw) {
         await draw.delete()
         allDraws.value = await Draw.all(null, 200)
+      },
+      updateDate(draw, date) {
+        draw.date = date
+        this.updateDraw(draw)
+      },
+      addTag(draw) {
+        const tag = {label: '', subTags: []}
+        if(draw.tags) {
+          draw.tags.push(tag)
+        } else {
+          draw.tags = [tag]
+        }
+        this.updateDraw(draw)
+      },
+      addSubTag(tag, draw) {
+        const subTag = ''
+        if(tag.subTags) {
+          tag.subTags.push(subTag)
+        } else {
+          tag.subTags = [subTag]
+        }
+        this.updateDraw(draw)
+      },
+      deleteTag(draw, i) {
+        draw.tags.splice(i, 1)
+        this.updateDraw(draw)
+      }, 
+      deleteSubTag(tag, i, draw) {
+        tag.subTags.splice(i, 1)
+        this.updateDraw(draw)
       }
     }
   }
@@ -71,8 +115,12 @@ export default {
 .draw-container {
   display: flex;
   align-items: center;
-  height: 100px;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top:20px ;
+  width: max-content;
+  margin: auto;
+  border-bottom: 1px solid black;
   img {
     height: 100%;
     width: 100px;
@@ -95,12 +143,26 @@ export default {
     }
   }
   .inputs-container {
-    margin-left: 20px;
+    margin-left: 60px;
+    margin-bottom:20px ;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     .input-container {
+      margin-top: 20px;
       margin-bottom: 5px;
       label  {
         display: inline-block;
         width: 100px;
+      }
+      .tags {
+        display: flex;
+        flex-direction: column;
+        .tag {
+          .sub-tags {
+            margin-left: 40px;
+          }
+        }
       }
     }
   }

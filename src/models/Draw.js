@@ -9,7 +9,7 @@ class Draw {
     /** @type {string} */
     this.name = draw.name;
     /** @type {string} */
-    this.date = draw.date || '9999-99-99';
+    this.date = draw.date || "9999-99-99";
     /** @type {string} */
     this.category = draw.category;
     /** @type {string} */
@@ -17,12 +17,14 @@ class Draw {
     /** @type {string} */
     this.subcategory = draw.subcategory;
     /** @type {string} */
+    this.collections = draw.collections;
+    /** @type {string} */
     this.url =
       process.env.VUE_APP_SERVER_URL +
       ":" +
       process.env.VUE_APP_SERVER_PORT +
       draw.url;
-      /** @type {string} */
+    /** @type {string} */
     this.originalUrl =
       process.env.VUE_APP_SERVER_URL +
       ":" +
@@ -51,7 +53,7 @@ class Draw {
    * @param {{name?: string}} filter
    * @returns
    */
-  static async all(width, height, filter = {}) {
+  static async all(width = null, height = null, filter = {}) {
     let { data: draws } = await API.get(`/draws`, {
       params: { width, height, filter },
     });
@@ -94,10 +96,13 @@ class Draw {
     );
   }
   static async allByCategory(width, height) {
-    return Draw.groupBy((draw) => draw.category, width, height);
+    return Draw.groupBy((draw) => draw.category || undefined, width, height);
   }
   static async allBySubCategory(width, height) {
-    return Draw.groupBy((draw) => draw.subcategory, width, height);
+    return Draw.groupBy((draw) => draw.subcategory || undefined, width, height);
+  }
+  static async allByCollections(width, height) {
+    return Draw.groupBy((draw) => draw.collections || undefined, width, height);
   }
   async save() {
     const { data: draw } = await API.post(`/draws/infos/${this._id}`, this);
@@ -106,6 +111,18 @@ class Draw {
   async delete() {
     const { data: draw } = await API.delete(`/draws/${this._id}`);
     return draw;
+  }
+  static async getAllTags() {
+    const tags = []
+    const allImgs = await this.all(0)
+    for (const draw of allImgs) {
+      if(!draw.tags) continue
+      for (const tag of draw.tags) {
+        if (tags.includes(tag.label)) continue
+        tags.push(tag.label);
+      }
+    }
+    return tags
   }
 }
 

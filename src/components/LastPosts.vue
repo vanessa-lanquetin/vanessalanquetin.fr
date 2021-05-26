@@ -19,7 +19,8 @@ export default {
 <style lang="scss" scoped>
 .last-posts-root {
   border: 3px solid #F2ECD8;
-  box-shadow: 0 0 10px 0 #e4e4e4;
+  box-shadow: 0 0 20px 0 #e4e4e4;
+  margin-right: 15px;
 
   h1{
   font-size: 30px;

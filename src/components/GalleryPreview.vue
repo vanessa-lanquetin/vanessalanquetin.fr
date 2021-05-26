@@ -24,6 +24,7 @@ export default  {
   gap: 5px;
   padding: 0 70px;
   box-sizing: border-box;
+  margin-bottom: 80px;
 }
 
 </style>

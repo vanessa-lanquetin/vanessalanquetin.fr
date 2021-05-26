@@ -1,53 +1,55 @@
 <template>
   <gallery :imgs="imgsForGallery" v-model:currentIndex="imgsForGalleryCurrentIndex" @close="close()"></gallery>
+  <section class="container-topics">
+    <div class="items-topics">
+      <div class="topic" @click="updateFilter('all')" :class="{active: filterTag === 'all'}">Tout</div>
+      <div class="topic" v-for="tag of tags" :key="tag" @click="updateFilter(tag)" :class="{active: filterTag === tag}">{{tag}}</div>
+    </div>
+    <div class="items-topics" v-if="subTags.length>1">
+      <div class="topic" @click="filterSubTag = 'all'" :class="{active: filterSubTag === 'all'}">Tout</div>
+      <div class="topic" v-for="subTag of subTags" :key="subTag" @click="filterSubTag = subTag" :class="{active: filterSubTag === subTag}">{{subTag}}</div>
+    </div>
+  </section>
   <section>
-    <section class="container-topics">
-        <div class="items-topics">
-          <div class="topic">Collections</div>
-          <div class="topic">Personnages</div>
-          <div class="topic">Animaux</div>
-          <div class="topic">Nourritures</div>
-        </div>
-    </section>
-    <section class="container-timeline">
-      <h2>Timeline</h2>
-      <div class="items-timeline">
-        <div class="timeline" v-for="group of groupByYear" :key="group.label">{{group.label}}</div>
-      </div>
-    </section>   
-      <!-- <div>Toutes mes dessins</div> -->
-      <gallery-preview :imgArray="allImg" @click-img="displayGallery(allImg, $event)"></gallery-preview>
-    </section>
-    <!--  <section>
-    <h2>Mes images par Categories</h2>
+    <gallery-preview :imgArray="imgsFiltered" @click-img="displayGallery(imgsFiltered, $event)"></gallery-preview>
+  </section>
+ <!--   <section class="container-timeline">
+    <h2>Timeline</h2>
+    <div class="items-timeline">
+      <div class="timeline" v-for="group of groupByYear" :key="group.label">{{group.label}}</div>
+    </div>
+  </section>   
+  <section>
     <div  v-for="(group) in groupByCategory" :key="group.label">
       <h3>{{group.label === 'undefined' ? 'Non catégorisées': group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
     </div>
   </section>
   <section>
-    <h2>Mes images par Sous-Categories</h2>
     <div  v-for="(group) in groupBySubCategory" :key="group.label">
       <h3>{{group.label === 'undefined' ? 'Non sous-catégorisées': group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
     </div>
   </section>
+    <section>
+    <div  v-for="(group) in groupBySubCollections" :key="group.label">
+      <h3>{{group.label === 'undefined' ? 'Non collections': group.label}}</h3>
+      <gallery-preview :imgArray="group.imgs"></gallery-preview>
+    </div>
+  </section>
   <section>
-    <h2>Mes images par Années</h2>
     <div  v-for="(group) in groupByYear" :key="group.label">
       <h3>{{group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
     </div>
   </section>
   <section>
-    <h2>Mes images par mois</h2>
     <div  v-for="(group) in groupByMonth" :key="group.label">
       <h3>{{group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
     </div>
   </section>
   <section>
-    <h2>Mes images par jours</h2>
     <div  v-for="(group) in groupByDay" :key="group.label">
       <h3>{{group.label}}</h3>
       <gallery-preview :imgArray="group.imgs"></gallery-preview>
@@ -56,42 +58,46 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
+import { computed, ref } from 'vue'
 import GalleryPreview from '../components/GalleryPreview.vue'
-import { onMounted } from '@vue/runtime-core'
 import Draw from '../models/Draw'
 import Gallery from '../components/Gallery.vue'
 export default {
   components: { GalleryPreview, Gallery},
   setup() {
-
-    const imgsForGallery = ref([])
+    const filterTag = ref('all')
+    const filterSubTag = ref('all')
+    const subTags = ref([])
+    const tags = ref([])
+    const allImgs = ref([])
+    const imgsForGallery = ref(null)
     const imgsForGalleryCurrentIndex = ref(0)
-    const allImg = ref([])
-    const groupByYear = ref({})
-    const groupByMonth = ref({})
-    const groupByDay = ref({})
-    const groupByCategory = ref({})
-    const groupBySubCategory = ref({})
-
-    onMounted(async () => {
-      allImg.value = await Draw.all(500)
-      groupByYear.value = await Draw.allByYear(500)
-      groupByMonth.value = await Draw.allByMonth(500)
-      groupByDay.value = await Draw.allByDay(500)
-      groupByCategory.value = await Draw.allByCategory(500)
-      groupBySubCategory.value = await Draw.allBySubCategory(500)
+    Draw.getAllTags().then((res) => {
+      tags.value = res
     })
-    return {
-      imgsForGallery,
-      imgsForGalleryCurrentIndex,
-      allImg, 
-      groupByYear, 
-      groupByMonth, 
-      groupByDay, 
-      groupByCategory, 
-      groupBySubCategory,
+    Draw.all(500).then((result) => {
+      allImgs.value = result
+    })
 
+    
+    return {
+      filterTag,
+      filterSubTag,
+      tags,
+      allImgs,
+      subTags,
+      imgsForGallery,
+      imgsFiltered: computed(() => {
+        if(filterTag.value === 'all') return allImgs.value
+        return allImgs.value.filter((img) => {
+          if(!img.tags)return false
+          return img.tags.find(tag => 
+            tag.label === filterTag.value &&
+            (tag.subTags.includes(filterSubTag.value) || filterSubTag.value === 'all')
+          )
+        })
+      }),
+      imgsForGalleryCurrentIndex,
       displayGallery(imgs, img) {
         imgsForGallery.value = imgs
         imgsForGalleryCurrentIndex.value = imgs.findIndex(_img => _img._id === img._id)
@@ -99,6 +105,21 @@ export default {
       close() {
         imgsForGallery.value = []
         imgsForGalleryCurrentIndex.value = 0
+      },
+      updateFilter(tag) {
+        filterTag.value = tag
+        filterSubTag.value = 'all'
+        subTags.value = []
+        allImgs.value.forEach(img => {
+          if(!img.tags) return
+          img.tags.forEach(_tag => {
+            if(!_tag.subTags || _tag.label !== tag) return
+            _tag.subTags.forEach(subTag => {
+              if(subTags.value.includes(subTag)) return
+              subTags.value.push(subTag)
+            })
+          });
+        })
       }
     }
   }
@@ -131,7 +152,18 @@ export default {
     padding: 10px 50px;
     border: 1px solid #C4C4C4;
     box-shadow: 0 8px 10px 0 #e4e4e4;
-
+    color: #BFB4B4;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .topic.active {
+    background-color: rgba(242, 236, 216, 0.5);
+  }
+  .topic:hover{
+    color:#887f7f ;
+  }
+  .timeline:hover{
+    color:#887f7f ;
   }
   .container-timeline {
     h2 {

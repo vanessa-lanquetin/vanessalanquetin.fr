@@ -20,7 +20,7 @@ Modifier les fichiers dans ```src/```
 
 Dans un terminal
 
-``` git add .```
+``` git add --all```
 
 ``` git commit -m "mon merveilleux message" ```
 

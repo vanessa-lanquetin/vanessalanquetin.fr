@@ -138,7 +138,7 @@ export default {
       justify-content: center;
       align-items: center;
       position: absolute;
-      left: 50px;
+      left: 10px;
       top: 50px;
       font-size: 40px;
       transition: 300ms;
