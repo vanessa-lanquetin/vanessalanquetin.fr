@@ -4,10 +4,9 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue"
 export default {
   components: {
-    Navbar
+  
   },
 }
 </script>
@@ -17,5 +16,9 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 body {
   margin: 0;
+}
+@font-face {
+  font-family:"PoiretOne-Regular" ;
+  src: url("assets/fonts/PoiretOne-Regular.ttf") format("truetype");
 }
 </style>
