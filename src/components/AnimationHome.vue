@@ -78,7 +78,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background-color: #6FD9BD;
     position: fixed;
     text-align: center;
     .description {
@@ -90,7 +90,7 @@ export default {
     .block {
       width: 100%;
       height: 100%;
-      background-color: red;
+      background-color: #fbf980;
       position: fixed;
       top: 0;
       transition: 800ms;
