@@ -1,13 +1,18 @@
 <template>
   <navbar/>
-  <router-view/>
+  <animation-home >
+    <router-view/>
+  </animation-home>
 </template>
 
 <script>
+import AnimationHome from './components/AnimationHome.vue'
 export default {
   components: {
-  
+    AnimationHome
   },
+  setup() {
+  }
 }
 </script>
 

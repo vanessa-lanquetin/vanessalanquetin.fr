@@ -1,37 +1,31 @@
 <template>
-  <animation-home direction="row">
-    <template #title> Vanessa Lanquetin </template>
-    <template #description> Bienvenue </template>
-  </animation-home>
-    <div id="presentation">
-    <img id="img-home" src="@/assets/img/home.png" alt="home">
-      Je m’apelle Vanessa Lanquetin, je suis née le 25 juillet 1997. <br> J’ai toujours
-      apprécié les moments que j’ai passé sur mon ordinateur.<br> C’est pourquoi,
-      aujourd’hui je me lance dans cette aventure !<br> Découvrir l’informatique, la
-      programmation...
-    </div>
-  <div class="chevrons-list">
-    <img  class="chevron" id="chevron-haut" src="@/assets/img/chevron-haut.png" alt="chevron-haut">
-    <img  class="chevron" id="chevron-bas" src="@/assets/img/chevron-bas.png" alt="chevron-bas">
-    <img  class="chevron" id="chevron-gauche" src="@/assets/img/chevron-gauche.png" alt="chevron-gauche">
-    <img  class="chevron" id="chevron-droit" src="@/assets/img/chevron-droit.png" alt="chevron-droit">
+  <div id="content" @click="next" @touchmove="next" @mousewheel="next">
+    <div class="title">Vanessa Lanquetin</div>
+    <div class="description">Bienvenue</div>
   </div>
-  
 </template>
 
 <script>
-import AnimationHome from "../components/AnimationHome.vue";
+import AnimationHomeTrigger from "../components/AnimationHomeTrigger";
+import router from "../router";
 export default {
-  components: {
-    AnimationHome,
+  components: {},
+  setup() {
+    return {
+      next() {
+        AnimationHomeTrigger.trigger(null, () => {
+          router.push({ name: "introduction" });
+        });
+      },
+    };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-#presentation{
-    font-size: 34px;
-    line-height: 64px;
+  #content{
+    width: 100%;
+    font-size: 6em;
     display: flex;
     flex-direction: column;
     font-family: "PoiretOne-Regular",serif;
@@ -39,35 +33,40 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #6FD9BD;
+    position: fixed;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #fb9aad;
+    .description {
+      font-size: 0.7em;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+#content {
+      font-size: 5em;
 }
-.chevron{
-  position: absolute;
-  top: 0;
-  width:90px;
-  filter: drop-shadow(0 0 0.75rem crimson);
 }
-#chevron-droit{
-  top: 48px;
-  left: 110px;
+
+@media screen and (max-width: 800px) {
+#content {
+      font-size: 4em;
 }
-#chevron-gauche{
-  top: 48px;
-  left: 12px;
 }
-#chevron-haut{
-  top: 10px;
-  left: 60px;
+
+@media screen and (max-width: 680px) {
+#content {
+      font-size: 3em;
+  }
 }
-#chevron-bas{
-  top: 90px;
-  left: 60px;
+
+@media screen and (max-width: 400px) {
+#content {
+      font-size: 2em;
+  }
 }
-#img-home{
-  width: 180px;
-  margin-bottom: 20px;
+@media screen and (max-width: 200px) {
+#content {
+      font-size: 1em;
+  }
 }
 </style>

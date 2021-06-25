@@ -1,16 +1,7 @@
 <template>
-  <div id="animation-home" @click="animate" @mousewheel="animate" ref="animationHome">
-    <div class="layer">
-      <div id="content" ref="content">
-        <div class="title">
-          <slot name="title"></slot>
-        </div>
-        <div class="description">
-          <slot name="description"></slot>
-        </div>
-      </div>
-    </div>
-    <div class="layer">
+  <div id="animation-home" ref="animationHome">
+    <div><slot/></div>
+    <div class="layer no-event">
       <div class="blocks open" ref="blocks">
         <div class="block block-left"></div>
         <div class="block block-right"> </div>
@@ -21,33 +12,34 @@
 
 <script>
 import {ref} from 'vue'
+import AnimationHomeTrigger from './AnimationHomeTrigger'
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 export default {
   setup() {
     const blocks = ref(null) // C'est comme document.querySelctor mais en vue. Il faut ensuite retourner la variable du setup et mettre ref="blocks" sur l'element html que l'on veut cibler.
-    const content = ref(null) // C'est comme document.querySelctor mais en vue. Il faut ensuite retourner la variable du setup et mettre ref="content" sur l'element html que l'on veut cibler.
     const animationHome = ref(null) // C'est comme document.querySelctor mais en vue. Il faut ensuite retourner la variable du setup et mettre ref="animationHome" sur l'element html que l'on veut cibler.
-    const close = async() => {
+    const close = async(color) => {
       const blocksClassList = blocks.value.classList
+      blocks.value.children.forEach((child) => child.style.backgroundColor = color ||'#fbf980')
       blocksClassList.remove('open')
       await wait(800)
     }
-    const open = async () => {
+    const open = async (color) => {
       const blocksClassList = blocks.value.classList
-      content.value.style.display = 'none'
+      blocks.value.children.forEach((child) => child.style.backgroundColor = color ||'#fbf980')
       blocksClassList.add('open')
       await wait(800)
-      animationHome.value.style.display = 'none'
     }
-    const animate = async() => {
-      await close()
-      await open()
+    const animate = async(color, callback) => {
+      await close(color)
+      callback()
+      await open(color)
     }
+    AnimationHomeTrigger.register(animate)
     return {
       blocks,
       animationHome,
-      content,
       animate
     }
   }
@@ -67,30 +59,15 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-  }
-  #content{
-    width: 100%;
-    font-size: 64px;
-    display: flex;
-    flex-direction: column;
-    font-family: "PoiretOne-Regular",serif;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #6FD9BD;
-    position: fixed;
-    text-align: center;
-    .description {
-      font-size: 0.7em;
-      margin-top: 30px;
+    &.no-event {
+      pointer-events: none;
     }
   }
+
   .blocks{
     .block {
       width: 100%;
       height: 100%;
-      background-color: #fbf980;
       position: fixed;
       top: 0;
       transition: 800ms;
