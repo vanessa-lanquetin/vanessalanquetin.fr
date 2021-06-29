@@ -1,5 +1,4 @@
 <template>
-  <navbar/>
   <animation-home >
     <router-view/>
   </animation-home>

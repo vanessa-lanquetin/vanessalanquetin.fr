@@ -1,19 +1,11 @@
 <template>
+<div>
+  <directions @left="left" @right="right" color="#6b0c97" />
+  <NavBar color="#9a14f3"></NavBar >  
+</div>
   <div @click="next" @touchmove="next" @mousewheel="next">
-    <div id="navigation">
-      <directions @left="left" @right="next" color="#eb3d60" />
-      <NavBar color="#eb6882" ></NavBar>
-    </div>
     <img id="img-home" src="@/assets/img/home.png" alt="home" />
-    <div id="presentation">
-      
-      <div id="text-present">
-        Je m’appelle Vanessa Lanquetin, j'ai 23 ans. <br />
-        J’ai toujours apprécié les moments que j’ai passé sur mon ordinateur.<br />
-        C’est pourquoi, aujourd’hui je me lance dans cette aventure !<br />
-        Découvrir l’informatique, la programmation...
-      </div>
-    </div>
+    <div id="presentation">Mon parcours</div>
   </div>
 </template>
 
@@ -23,17 +15,22 @@ import Directions from "../components/Directions.vue";
 import router from "../router";
 import NavBar from "../components/NavBar.vue"
 export default {
-  components: { Directions, NavBar},
+  components: { Directions,NavBar},
   setup() {
     return {
-      left() {
+            left() {
         AnimationHomeTrigger.trigger("#fbf980", () => {
-          router.push({ name: "home" });
+          router.push({ name: "formations" });
+        });
+      },
+            right() {
+        AnimationHomeTrigger.trigger("#fbf980", () => {
+          router.push({ name: "experiences" });
         });
       },
       next() {
         AnimationHomeTrigger.trigger("#fbf980", () => {
-          router.push({ name: "parcours" });
+          router.push({ name: "savoir" });
         });
       },
     };
@@ -42,11 +39,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #nav-bar{
-  filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0.513));
-  }
 #presentation {
-  font-size: 34px;
+  font-size: 40px;
+  font-weight: bold;
   line-height: 64px;
   display: flex;
   flex-direction: column;
@@ -58,7 +53,7 @@ export default {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #fb9aad;
+  background-color: #d49afb;
 }
 #img-home {
   position: absolute;
@@ -67,19 +62,12 @@ export default {
   left: 30px;
   top: 0;
 }
-#text-present{
-  margin: 10px 10px 10px 10px;
-}
-#navigation{
-  display: flex;
-  justify-content: space-around;
-}
 
 @media screen and (max-width: 940px) {
   #presentation {
     font-size: 26px;
   }
-  #img-home{
+  #img-home {
     width: 135px;
   }
 }
@@ -87,7 +75,7 @@ export default {
   #presentation {
     font-size: 20px;
   }
-  #img-home{
+  #img-home {
     width: 120px;
   }
 }
@@ -96,7 +84,7 @@ export default {
     font-size: 18px;
     line-height: 34px;
   }
-  #img-home{
+  #img-home {
     width: 110px;
   }
 }
@@ -104,7 +92,7 @@ export default {
   #presentation {
     font-size: 16px;
   }
-  #img-home{
+  #img-home {
     width: 80px;
   }
 }
@@ -113,7 +101,7 @@ export default {
     font-size: 14px;
     line-height: 24px;
   }
-  #img-home{
+  #img-home {
     width: 80px;
   }
 }
@@ -122,7 +110,7 @@ export default {
     font-size: 14px;
     line-height: 24px;
   }
-  #img-home{
+  #img-home {
     width: 80px;
   }
 }
