@@ -94,7 +94,7 @@ export default {
     font-size: 20px;
   }
   #img-home{
-    width: 130px;
+    width: 120px;
   }
 }
 @media screen and (max-width: 533px) {
@@ -111,7 +111,7 @@ export default {
     font-size: 16px;
   }
   #img-home{
-    width: 100px;
+    width: 80px;
   }
 }
 @media screen and (max-width: 230px) {
