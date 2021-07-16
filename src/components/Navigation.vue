@@ -36,4 +36,9 @@ export default {
       right: 0;
       z-index: 99;
     }
+    @media screen and (max-width:1307px) {
+      #container{
+        display: none;
+      }
+    }
 </style>
