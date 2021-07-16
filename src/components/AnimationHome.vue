@@ -2,7 +2,7 @@
   <div id="animation-home" ref="animationHome">
     <div><slot/></div>
     <div class="layer no-event">
-      <div class="blocks open" ref="blocks">
+      <div class="blocks " ref="blocks">
         <div class="block block-left"></div>
         <div class="block block-right"> </div>
       </div>
@@ -59,6 +59,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
     &.no-event {
       pointer-events: none;
     }

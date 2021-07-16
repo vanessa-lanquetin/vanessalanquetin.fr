@@ -1,13 +1,9 @@
 <template>
   <div @click="next" @touchmove="next" @mousewheel="next">
-    <div id="navigation">
-      <directions @left="left" @right="next" color="#eb3d60" />
-      <NavBar color="#eb6882" ></NavBar>
-    </div>
+    <navigation></navigation>
     <img id="img-home" src="@/assets/img/home.png" alt="home" />
     <div id="presentation">
-      
-      <div id="text-present">
+      <div id="text">
         Je m’appelle Vanessa Lanquetin, j'ai 23 ans. <br />
         J’ai toujours apprécié les moments que j’ai passé sur mon ordinateur.<br />
         C’est pourquoi, aujourd’hui je me lance dans cette aventure !<br />
@@ -19,11 +15,10 @@
 
 <script>
 import AnimationHomeTrigger from "../components/AnimationHomeTrigger";
-import Directions from "../components/Directions.vue";
+import Navigation from '../components/Navigation.vue';
 import router from "../router";
-import NavBar from "../components/NavBar.vue"
 export default {
-  components: { Directions, NavBar},
+  components: {Navigation  },
   setup() {
     return {
       left() {
@@ -42,9 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #nav-bar{
+#nav-bar {
   filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0.513));
-  }
+}
 #presentation {
   font-size: 34px;
   line-height: 64px;
@@ -67,63 +62,12 @@ export default {
   left: 30px;
   top: 0;
 }
-#text-present{
-  margin: 10px 10px 10px 10px;
-}
-#navigation{
+#navigation {
   display: flex;
   justify-content: space-around;
 }
-
-@media screen and (max-width: 940px) {
-  #presentation {
-    font-size: 26px;
-  }
-  #img-home{
-    width: 135px;
-  }
-}
-@media screen and (max-width: 690px) {
-  #presentation {
-    font-size: 20px;
-  }
-  #img-home{
-    width: 120px;
-  }
-}
-@media screen and (max-width: 533px) {
-  #presentation {
-    font-size: 18px;
-    line-height: 34px;
-  }
-  #img-home{
-    width: 110px;
-  }
-}
-@media screen and (max-width: 400px) {
-  #presentation {
-    font-size: 16px;
-  }
-  #img-home{
-    width: 80px;
-  }
-}
-@media screen and (max-width: 230px) {
-  #presentation {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  #img-home{
-    width: 80px;
-  }
-}
-@media screen and (max-width: 230px) {
-  #presentation {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  #img-home{
-    width: 80px;
-  }
+#text{
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>

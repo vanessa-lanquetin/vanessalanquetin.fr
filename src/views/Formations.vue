@@ -1,6 +1,5 @@
 <template>
-  <directions color="#6b0c97" />
-  <NavBar color="#9a14f3"></NavBar  >
+  <navigation></navigation>
   <div @click="next" @touchmove="next" @mousewheel="next">
     <img id="img-home" src="@/assets/img/home.png" alt="home" />
     <div id="presentation">Mes formations</div>
@@ -9,11 +8,10 @@
 
 <script>
 import AnimationHomeTrigger from "../components/AnimationHomeTrigger";
-import Directions from "../components/Directions.vue";
 import router from "../router";
-import NavBar from "../components/NavBar.vue"
+import Navigation from '../components/Navigation.vue';
 export default {
-  components: { Directions, NavBar },
+  components: {Navigation },
   setup() {
     return {
       next() {
@@ -28,20 +26,19 @@ export default {
 
 <style lang="scss" scoped>
 #presentation {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 6vmin;
   line-height: 64px;
   display: flex;
   flex-direction: column;
   font-family: "PoiretOne-Regular", serif;
-  color: #d49afb;
+  color: white;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color:rgb(255, 255, 255);
+  background-color: #c06ef7;
 }
 #img-home {
   position: absolute;
