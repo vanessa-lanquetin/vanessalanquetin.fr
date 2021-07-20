@@ -1,6 +1,7 @@
 <template>
   <div @click="next" @touchmove="next" @mousewheel="next">
     <navigation></navigation>
+  <div id="container-intro">
     <img id="img-home" src="@/assets/img/home.png" alt="home" />
     <div id="presentation">
       <div id="text">
@@ -9,7 +10,9 @@
         C’est pourquoi, aujourd’hui je me lance dans cette aventure !<br />
         Découvrir l’informatique, la programmation...
       </div>
-    </div>
+    </div>    
+  </div>
+
   </div>
 </template>
 
@@ -70,4 +73,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width:911px){
+  #presentation{
+    font-size: 20px;
+    line-height: 35px;
+  }
+  #text{
+    margin: 10px;
+  }
+  #img-home{
+  width: 80px;  
+  }
+}
+
 </style>
