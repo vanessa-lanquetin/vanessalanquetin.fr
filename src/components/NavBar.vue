@@ -19,19 +19,19 @@ export default {
 <style lang="scss" scoped>
 #nav-bar {
   display: flex;
-  background-color: #ffffff;
-  height: 430px;
-  width: 15px;
+  background-color: #ffffffc0;
+  height: 15px;
+  width: 1205px;
   border-radius: 30px;
+  margin-top: 109px;
 }
-@media screen and (max-width: 380px) {
-    #nav-bar {
-    opacity: 0;
-  }
-}
+
+@media screen and (max-width: 16z0px) {
+  #nav-bar{
+    max-width: 90%;
+  } 
   #container-nav{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+        margin-right: 10%;
   }
+}
 </style>

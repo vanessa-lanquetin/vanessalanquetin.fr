@@ -2,7 +2,6 @@
   <div @click="next" @touchmove="next" @mousewheel="next">
     <navigation></navigation>
   <div id="container-intro">
-    <img id="img-home" src="@/assets/img/home.png" alt="home" />
     <div id="presentation">
       <div id="text">
         Je m’appelle Vanessa Lanquetin, j'ai 23 ans. <br />

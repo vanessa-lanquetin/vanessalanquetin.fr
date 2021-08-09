@@ -62,13 +62,13 @@ export default {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 #part-bottom{
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding-top: 20px; 
+  padding-top: 5px; 
   padding-bottom: 50px;
 }
 #part-middle{
@@ -78,6 +78,6 @@ export default {
   align-items: center;
 }
 .chevrons-list{
-  width: 100%;
+  width: 200px;
 }
 </style>

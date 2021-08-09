@@ -1,5 +1,4 @@
 <template>
-  <navigation></navigation>
   <div @click="next" @touchmove="next" @mousewheel="next">
     <img id="img-home" src="@/assets/img/home.png" alt="home" />
     <div id="presentation">Mes formations</div>
@@ -9,9 +8,8 @@
 <script>
 import AnimationHomeTrigger from "../components/AnimationHomeTrigger";
 import router from "../router";
-import Navigation from '../components/Navigation.vue';
 export default {
-  components: {Navigation },
+  components: {},
   setup() {
     return {
       next() {

@@ -1,12 +1,8 @@
 <template>
   <div>
     <navigation @left="left" @right="right"></navigation>
-    <bouton-home @click="home" color="#9a14f3"></bouton-home>
   </div>
   <div @click="next" @touchmove="next" @mousewheel="next">
-    <div id="container-img">
-      <img id="img-parcours" src="@/assets/img/parcoursV1.png" alt="parcours" />
-    </div>
     
     <div id="presentation">Mon parcours</div>
   </div>
@@ -15,11 +11,10 @@
 <script>
 import AnimationHomeTrigger from "../components/AnimationHomeTrigger";
 import router from "../router";
-import BoutonHome from "../components/Bouton-Home.vue";
 /* import Directions from '../components/Directions.vue'; */
 import Navigation from '../components/Navigation.vue';
 export default {
-  components: { /* Directions, */ BoutonHome, Navigation },
+  components: { Navigation },
   setup() {
     return {
       left() {
