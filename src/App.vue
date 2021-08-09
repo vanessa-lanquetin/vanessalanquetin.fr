@@ -1,28 +1,31 @@
 <template>
-  <animation-home >
-    <router-view/>
-  </animation-home>
+  <router-view/>
 </template>
 
-<script>
-import AnimationHome from './components/AnimationHome.vue'
-export default {
-  components: {
-    AnimationHome
-  },
-  setup() {
-  }
-}
-</script>
-
-
 <style lang="scss">
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-body {
+@import url(~@/assets/css/reset.css);
+body{
   margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family:"Handlee",serif;
+  text-align: justify;
+}
+html {
+  background: linear-gradient(135deg, rgba(246,210,66,1) 5%, rgba(252,128,174,1) 76%, rgba(216,128,252,1) 100%);
 }
 @font-face {
-  font-family:"PoiretOne-Regular" ;
-  src: url("assets/fonts/PoiretOne-Regular.ttf") format("truetype");
+  font-family:"MonteCarlo-Regular" ;
+  src: url(~@/assets/fonts/MonteCarlo/MonteCarlo-Regular.ttf) format("truetype");
+}
+@font-face{
+  font-family:"Handlee" ;
+  src: url(~@/assets/fonts/Handlee/Handlee-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family:"Monofett" ;
+  src: url(~@/assets/fonts/Monofett/Monofett-Regular.ttf) format("truetype");
 }
 </style>
