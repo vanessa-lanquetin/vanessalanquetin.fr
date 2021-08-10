@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 #nav-list{
-  margin-top: 20px;
+  margin-top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

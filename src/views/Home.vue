@@ -1,6 +1,5 @@
 <template>
 <div>
-  <nav-list/>
   <header-welcome/>
   <introduction/>
   <informations/>
@@ -17,7 +16,6 @@ import HeaderWelcome from '../components/HeaderWelcome.vue'
 import Hobbies from '../components/Hobbies.vue'
 import Informations from '../components/Informations.vue'
 import Introduction from '../components/Introduction.vue'
-import NavList from '../components/Nav-list.vue'
 export default {
   name: 'Home',
   components: {
@@ -27,7 +25,6 @@ export default {
     Formations,
     Hobbies,
     Contact,
-    NavList
   }
 }
 </script>

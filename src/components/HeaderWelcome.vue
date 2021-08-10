@@ -1,5 +1,6 @@
 <template>
-  <box-card :noStyle="true" class="box-card">
+  <nav-list/>
+  <box-card :noStyle="true" class="box-card">  
     <h1>
       Bienvenue sur mon site
     </h1>
@@ -8,8 +9,9 @@
 
 <script>
 import BoxCard from './BoxCard.vue'
+import NavList from './Nav-list.vue'
 export default {
-  components: { BoxCard },
+  components: { BoxCard, NavList },
 
 }
 </script>
