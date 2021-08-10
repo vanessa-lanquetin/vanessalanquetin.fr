@@ -8,10 +8,15 @@ body{
   margin: 0;
   padding: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   font-family:"Handlee",serif;
   text-align: justify;
+}
+@media screen and(max-width: 699px) {
+  body{
+    text-align: center;
+  }
 }
 html {
   background: linear-gradient(135deg, rgba(246,210,66,1) 5%, rgba(252,128,174,1) 76%, rgba(216,128,252,1) 100%);

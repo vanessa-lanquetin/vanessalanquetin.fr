@@ -2,7 +2,7 @@
   <box-card title="Contact">
     <div class="container">
       <div class="left">
-        <img id="paysage" src="@/assets/img/paysage.png" alt="paysage" />
+        <img id="paysage" src="@/assets/img/paysage.jpg" alt="paysage" />
       </div>
       <div class="right">
         <form action="mailto:lanquetin.vanessa@gmail.com" method="post">
@@ -39,16 +39,20 @@ export default {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   .left {
     img {
-      width: 300px;
+      width: 400px;
       height: 100%;
       object-fit: cover;
-      border-radius: 30px;
+      border-radius: 20px;
+      border: 1px solid #999;
+      box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
     }
   }
   .right {
-    padding: 0 20px;
+    padding: 10px 20px;
     flex-grow: 1;
     .items-contact {
       display: flex;
@@ -81,6 +85,34 @@ button {
   &:hover {
     transform: scale(1.1);  
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  }
+}
+@media screen and(max-width: 465px) {
+  .container{
+    .left{
+    img{
+      width: 230px;
+    }     
+    }
+  }
+}
+@media screen and(max-width: 321px) {
+  .container{
+    .left{
+    img{
+      width: 180px;
+    }     
+    }
+    .right{
+      padding: 10px 0px;
+      text-align: left;
+    }
+  } 
+  form{
+    margin-right: 20px;
+  }
+  input, textarea{
+    max-width: 80%;
   }
 }
 </style>

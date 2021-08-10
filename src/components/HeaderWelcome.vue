@@ -24,4 +24,9 @@ h1{
 .box-card {
   height: 100vh;
 }
+@media screen and(max-width: 465px) {
+  h1{
+    font-size: 3.3em;
+  }
+}
 </style>

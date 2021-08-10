@@ -84,4 +84,25 @@ export default {
     }
   }
 }
+@media screen and(max-width: 699px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-networks{
+    display: flex;
+    align-items: center;
+  }
+  
+}
+@media screen and(max-width: 321px)  {
+  .container{
+    .right{
+      img {
+        height:200px;
+      }
+    }
+  }
+}
 </style>

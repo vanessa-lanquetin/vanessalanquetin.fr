@@ -59,7 +59,19 @@ export default {
     }
   }
 }
-@media (max-width: 680px) {
-  
+@media screen and(max-width: 465px) {
+  .box-card{
+    .card{
+      padding: 30px;
+    }
+    .title{
+      font-size: 1.9em;
+    }
+    .content{
+      font-size: 1.1em;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 </style>
