@@ -26,9 +26,19 @@ h1{
 .box-card {
   height: 100vh;
 }
-@media screen and(max-width: 465px) {
+@media screen and(max-width: 810px) {
   h1{
-    font-size: 3.3em;
+    transform: scale(0.8) translate(0, -40%);  
+  }
+}
+@media screen and(max-width: 499px) {
+  h1{
+    transform: scale(0.8) translate(0, -140%);  
+  }
+}
+@media screen and(max-width: 290px) {
+  h1{
+    transform: scale(0.8) translate(0, -190%);  
   }
 }
 </style>

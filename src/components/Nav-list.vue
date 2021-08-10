@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 #nav-list{
-  margin-top: 0px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -45,12 +45,18 @@ export default {
 }
 @media screen and(max-width: 1068px) {
   #nav-list{
-    flex-direction: column;
-    display: block;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
   .item-nav{
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin: 10px;
+  }
+}
+@media screen and(max-width: 499px){
+  .item-nav{
+    font-size: 1.2em;
   }
 }
 </style>
