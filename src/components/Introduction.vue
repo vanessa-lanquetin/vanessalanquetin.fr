@@ -1,6 +1,6 @@
 <template>
-<box-card title="Présentation">
-  <div class="part-presentation" id="presentation">
+<box-card id="presentation" title="Présentation">
+  <div class="part-presentation" id="container-presentation">
     Bonjour, je m'appelle Vanessa LANQUETIN je vous souhaite la
     bienvenue sur mon site.
   </div>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#presentation{
+#container-presentation{
   margin-bottom: 10px;
 }
 </style>

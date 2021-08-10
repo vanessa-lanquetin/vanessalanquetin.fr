@@ -1,5 +1,5 @@
 <template>
-  <box-card title="Contact">
+  <box-card id="contact" title="Contact">
     <div class="container">
       <div class="left">
         <img id="paysage" src="@/assets/img/paysage.jpg" alt="paysage" />

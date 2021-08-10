@@ -1,5 +1,5 @@
 <template>
-<box-card title="Informations">
+<box-card id="informations" title="Informations">
   <div class="container">
     <div class="left">
       <ul class="list-infos">

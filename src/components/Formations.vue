@@ -1,8 +1,8 @@
 <template>
-<box-card title="Formations">
+<box-card id="formations" title="Formations">
   <div id="text2">
     <div class="title"></div>
-    <ul id="formations">
+    <ul id="formations-list">
       <li>
         <strong>Formation</strong> <em>Prep’Apprentissage</em> –
         <strong>Openclassrooms</strong> ,2021

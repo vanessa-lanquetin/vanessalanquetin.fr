@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 h1{
-  font-size: 4.6em;
+  font-size: 4em;
   text-align: center;
   color: white;
   font-family:"MonteCarlo-Regular",sans-serif;

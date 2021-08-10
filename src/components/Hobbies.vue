@@ -1,5 +1,5 @@
 <template>
-<box-card title="Centres d'intérêts">
+<box-card id="hobbies" title="Centres d'intérêts">
   <ul class="hobbies">
     <li>Cinéma</li>
     <li>Cuisine</li>
