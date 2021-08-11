@@ -44,7 +44,7 @@ export default {
     margin-bottom: 28px;
   }
   .content {
-    font-size: 26px;
+    font-size: 1.7em;
     line-height: 1.5;
   }
   &.noStyle {
