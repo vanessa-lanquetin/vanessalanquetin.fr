@@ -16,7 +16,7 @@
             </a>
           </li>
           <li class="logo">
-            <a href="https://github.com/vanessouille">
+            <a href="https://github.com/vanessa-lanquetin">
               <img src="@/assets/img/logo-github.png" alt="github">
               Github
             </a>
