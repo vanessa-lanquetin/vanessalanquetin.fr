@@ -1,7 +1,7 @@
 <template>
     <ul id="nav-list" >
       <li><a class="item-nav" href="#presentation">Présentation</a></li>
-      <li><a class="item-nav" href="#informations">informations</a></li>
+      <li><a class="item-nav" href="#informations">Informations</a></li>
       <li><a class="item-nav" href="#formations">Formations</a></li>
       <li><a class="item-nav" href="#hobbies">Centres d'intérêts</a></li>
       <li><a class="item-nav" href="#contact">Contact</a></li>
@@ -35,7 +35,7 @@ export default {
     color: white;
     font-size: 2em;
     text-decoration: none;
-    font-family:"Handlee",serif;
+    font-family:"Mali",serif;
     cursor: pointer;
     transition: 300ms;
     &:hover {

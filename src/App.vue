@@ -19,7 +19,8 @@ body{
   }
 }
 html {
-  background: linear-gradient(135deg, rgba(246,210,66,1) 5%, rgba(252,128,174,1) 76%, rgba(216,128,252,1) 100%);
+background: rgb(204,129,198);
+background: linear-gradient(180deg, rgba(204,129,198,1) 0%, rgba(187,242,255,1) 22%, rgba(253,234,254,1) 33%, rgba(253,234,254,1) 47%, rgba(253,234,254,1) 60%, rgba(187,242,255,1) 74%, rgba(204,129,198,1) 100%);
 }
 @font-face {
   font-family:"MonteCarlo-Regular" ;
@@ -32,5 +33,9 @@ html {
 @font-face {
   font-family:"Monofett" ;
   src: url(~@/assets/fonts/Monofett/Monofett-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family:"Mali" ;
+  src: url(~@/assets/fonts/Mali/Mali-ExtraLightItalic.ttf) format("truetype");
 }
 </style>
