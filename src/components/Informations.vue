@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="right">
-      <img src="@/assets/img/moi.jpg" alt="Lanquetin Vanessa">
+      <img src="@/assets/img/moi.jpg" alt="Vanessa Lanquetin">
     </div>
   </div>
 </box-card>
@@ -64,6 +64,7 @@ export default {
           text-decoration: none;
           color: black;
           transition: 300ms;
+          padding-right: 10px;
           &:hover {
             cursor: pointer;
             transform: scale(1.2);

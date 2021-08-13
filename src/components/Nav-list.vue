@@ -43,7 +43,7 @@ export default {
       box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.712);
   }
 }
-@media screen and(max-width: 1068px) {
+@media screen and(max-width: 1188px) {
   #nav-list{
     flex-wrap: wrap;
     justify-content: center;
