@@ -20,7 +20,7 @@ body{
 }
 html {
 background: rgb(204,129,198);
-background: linear-gradient(180deg, rgba(204,129,198,1) 0%, rgba(187,242,255,1) 22%, rgba(253,234,254,1) 33%, rgba(253,234,254,1) 47%, rgba(253,234,254,1) 60%, rgba(187,242,255,1) 74%, rgba(204,129,198,1) 100%);
+background: linear-gradient(180deg, rgba(204,129,198,1) 0%, rgba(187,242,255,1) 22%, rgb(237, 182, 248) 33%, rgb(214, 156, 241) 47%, rgb(240, 211, 241) 60%, rgba(187,242,255,1) 74%, rgba(204,129,198,1) 100%);
 }
 @font-face {
   font-family:"MonteCarlo-Regular" ;

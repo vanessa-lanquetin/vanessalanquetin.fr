@@ -22,22 +22,22 @@ h1{
   padding:10px;
   text-align: center;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 130px;
   font-family:"MonteCarlo-Regular",sans-serif;
   box-shadow: 0 0 0 0 rgb(255, 255, 255);
-  animation: pulse 2.3s infinite;
+  animation: scale 1.4s both;
 }
-@keyframes pulse {
+@keyframes scale {
     to {
-        box-shadow: 0 0 0 18px rgba(255, 253, 253, 0.01);
+        transform: scale(1.4);  
     }
 }
 
 .box-card {
   height: 100vh;
 }
-@media screen and(max-width: 810px) {
+@media screen and(max-width:1158px) {
   h1{
     transform: scale(0.8) translate(0, -40%);  
     animation:none;
