@@ -19,8 +19,7 @@ body{
   }
 }
 html {
-background: rgb(204,129,198);
-background: linear-gradient(180deg, rgba(204,129,198,1) 0%, rgba(187,242,255,1) 22%, rgb(237, 182, 248) 33%, rgb(214, 156, 241) 47%, rgb(240, 211, 241) 60%, rgba(187,242,255,1) 74%, rgba(204,129,198,1) 100%);
+background-image: linear-gradient(to top, #dbf5f4 80%, rgb(87, 190, 186) 100%);
 }
 @font-face {
   font-family:"MonteCarlo-Regular" ;

@@ -78,10 +78,11 @@ export default {
   }
   .right {
     img {
+      display: none;
       border-radius: 10px;
-      border: 1px solid #999;
+      border: 1px solid rgb(155, 155, 155);
       box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
-      height: 250px;
+      height: 260px;
     }
   }
 }
@@ -101,7 +102,7 @@ export default {
   .container{
     .right{
       img {
-        height:200px;
+        height:150px;
       }
     }
   }

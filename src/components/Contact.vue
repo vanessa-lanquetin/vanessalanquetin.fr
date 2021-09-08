@@ -43,6 +43,7 @@ export default {
   align-items: center;
   .left {
     img {
+      display: none;
       width: 400px;
       height: 100%;
       object-fit: cover;
@@ -72,7 +73,6 @@ input{
 input, textarea  {
   border-color: #aaa;
 }
-
 button {
   padding: 10px 20px;
   border-radius: 1em;
@@ -91,16 +91,17 @@ button {
   .container{
     .left{
     img{
+      display: block;
       width: 230px;
     }     
     }
   }
 }
-@media screen and(max-width: 321px) {
+@media screen and(max-width: 2511px) {
   .container{
     .left{
     img{
-      width: 180px;
+      display: none;
     }     
     }
     .right{
