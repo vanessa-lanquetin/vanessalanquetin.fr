@@ -2,7 +2,11 @@
   <box-card id="contact" title="Contact">
     <div class="container">
       <div class="left">
-        <img id="paysage" src="@/assets/img/paysage.jpg" alt="paysage" />
+        <img
+          id="moi"
+          src="@/assets/img/Animation.gif"
+          alt="Vanessa LANQUETIN"
+        />
       </div>
       <div class="right">
         <form action="mailto:lanquetin.vanessa@gmail.com" method="post">
@@ -16,7 +20,13 @@
           </div>
           <div class="items-contact">
             <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message" rows="6" unset required></textarea>
+            <textarea
+              id="msg"
+              name="user_message"
+              rows="6"
+              unset
+              required
+            ></textarea>
           </div>
           <div class="button">
             <button type="submit">Envoyer</button>
@@ -28,11 +38,10 @@
 </template>
 
 <script>
-import BoxCard from './BoxCard.vue'
+import BoxCard from "./BoxCard.vue";
 export default {
   components: { BoxCard },
-
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -43,13 +52,10 @@ export default {
   align-items: center;
   .left {
     img {
-      display: none;
-      width: 400px;
+      width: 230px;
       height: 100%;
       object-fit: cover;
-      border-radius: 20px;
-      border: 1px solid #999;
-      box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+      margin-right: 20px;
     }
   }
   .right {
@@ -62,7 +68,7 @@ export default {
   }
 }
 
-input{
+input {
   border: none;
   border-bottom: 1px solid black;
   padding: 5px 0;
@@ -70,7 +76,8 @@ input{
   margin-bottom: 20px;
   font-size: 1em;
 }
-input, textarea  {
+input,
+textarea {
   border-color: #aaa;
 }
 button {
@@ -81,38 +88,36 @@ button {
   cursor: pointer;
   transition: 300ms;
   margin-top: 10px;
-  box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   &:hover {
-    transform: scale(1.1);  
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 }
 @media screen and(max-width: 465px) {
-  .container{
-    .left{
-    img{
-      display: block;
-      width: 230px;
-    }     
+  .container {
+    .left {
+      img {
+        display: block;
+        width: 230px;
+      }
     }
   }
 }
 @media screen and(max-width: 2511px) {
-  .container{
-    .left{
-    img{
-      display: none;
-    }     
+  .container {
+    .left {
     }
-    .right{
+    .right {
       padding: 10px 0px;
       text-align: left;
     }
-  } 
-  form{
+  }
+  form {
     margin-right: 20px;
   }
-  input, textarea{
+  input,
+  textarea {
     max-width: 80%;
   }
 }
