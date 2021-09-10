@@ -67,7 +67,9 @@ export default {
     }
   }
 }
-
+.button {
+  padding-top: 10px;
+}
 input {
   border: none;
   border-bottom: 1px solid black;
@@ -78,9 +80,12 @@ input {
 }
 input,
 textarea {
+  border-radius: 20px;
   border-color: #aaa;
 }
 button {
+  font-family: "Handlee";
+  font-size: 0.8em;
   padding: 10px 20px;
   border-radius: 1em;
   background-color: #fff;
@@ -92,6 +97,7 @@ button {
   &:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(250, 149, 149);
   }
 }
 @media screen and(max-width: 465px) {

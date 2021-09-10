@@ -26,7 +26,19 @@ export default {
     transform: scale(1.1);
   }
 }
-@media screen and(max-width:1157px){
+@media screen and(max-width:1370px){
+  #container-arrow{
+    right: 100px;
+  }
+  
+}
+@media screen and(max-width:1234px){
+  #container-arrow{
+    right: 80px;
+  }
+  
+}
+@media screen and(max-width:1191px){
   #container-arrow{
     display: none;
   }

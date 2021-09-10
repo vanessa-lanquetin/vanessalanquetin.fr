@@ -113,9 +113,11 @@ window.addEventListener("DOMContentLoaded", function () {
 @media screen and(max-width: 465px) {
   .box-card {
     .card {
-      padding: 30px;
+      padding: 10px;
+      margin: 10px;
     }
     .title {
+      padding-top: 20px;
       font-size: 1.9em;
     }
     .content {
