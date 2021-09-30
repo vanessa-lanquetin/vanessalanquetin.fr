@@ -26,6 +26,7 @@
 import { ref } from "@vue/reactivity";
 import BoxCard from "./BoxCard.vue";
 import legendImg from "@/assets/img/legend.jpg"
+import spaghetti from "@/assets/img/spaghetti.jpg"
 export default {
   components: { BoxCard },
   setup() {
@@ -36,7 +37,7 @@ export default {
       },
       cook: {
         label: 'Mon repas préferé :',
-        img: legendImg
+        img: spaghetti
       },
     }
     return {
