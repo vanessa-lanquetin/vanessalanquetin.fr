@@ -36,7 +36,7 @@ export default {
         img: legendImg
       },
       cook: {
-        label: 'Mon repas préferé :',
+        label: 'Mon repas préferé : "Spaghetti Al Pollo"',
         img: spaghetti
       },
     }
