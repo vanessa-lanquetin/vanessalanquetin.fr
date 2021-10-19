@@ -1,40 +1,33 @@
 <template>
-  <div id="home">
-    <header-welcome />
-    <introduction />
-    <informations />
-    <formations />
-    <hobbies />
-    <contact />
-    <arrow-home />
-  </div>
+  <nav-bar/>
+  <section-1/>
+  <section-2/>
+  <section-3/>
+  <section-4/>
+  <section-5/>
 </template>
 
 <script>
-import ArrowHome from "../components/ArrowHome.vue";
-import Contact from "../components/Contact.vue";
-import Formations from "../components/Formations.vue";
-import HeaderWelcome from "../components/HeaderWelcome.vue";
-import Hobbies from "../components/Hobbies.vue";
-import Informations from "../components/Informations.vue";
-import Introduction from "../components/Introduction.vue";
+import NavBar from '../components/nav-bar.vue';
+import Section2 from '../components/section-2.vue';
+import Section1 from '../components/section-1.vue';
+import Section3 from '../components/section-3.vue';
+import Section4 from '../components/section-4.vue';
+import Section5 from '../components/section-5.vue';
+
+
+
 export default {
   name: "Home",
   components: {
-    HeaderWelcome,
-    Introduction,
-    Informations,
-    Formations,
-    Hobbies,
-    Contact,
-    ArrowHome,
+    NavBar,
+    Section1,
+    Section2,
+    Section3,
+    Section4,
+    Section5
   },
 };
 </script>
-
 <style lang="scss" scoped>
-#anim-welcome{
-    margin-top: 50px;
-    height: 290px;
-}
 </style>
