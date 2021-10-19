@@ -3,7 +3,10 @@ const pathfs = require('path')
 const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000
-
+app.use('/robots.txt', (req, res) => {
+  res.type("text/plain");
+  res.send("User-agent: *\nAllow: /");
+})
 app.use(require('cors')())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
