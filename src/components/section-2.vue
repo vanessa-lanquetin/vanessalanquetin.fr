@@ -1,11 +1,19 @@
 <template>
   <section class="sec-02">
-    <h3 id="competences" class="section-title" v-scroll-reveal="{preset: 'left'}">
+    <h3
+      id="competences"
+      class="section-title"
+      v-scroll-reveal="{ preset: 'left' }"
+    >
       Compétences
     </h3>
     <div class="container container-competences">
       <div class="content">
-        <div id="hard-skills" class="text-box" v-scroll-reveal="{preset: 'right', delay: 700}">
+        <div
+          id="hard-skills"
+          class="text-box"
+          v-scroll-reveal="{ preset: 'right', delay: 700 }"
+        >
           <h3>Hard Skills</h3>
           <div id="competences-hardskills" class="competences">
             <div class="competence langage container-item-competence">
@@ -41,7 +49,11 @@
             </div>
           </div>
         </div>
-        <div id="soft-skills" class="text-box" v-scroll-reveal="{preset: 'right', delay: 700}">
+        <div
+          id="soft-skills"
+          class="text-box"
+          v-scroll-reveal="{ preset: 'right', delay: 700 }"
+        >
           <h3>Soft Skills</h3>
           <div id="competences-softskills" class="competences">
             <div class="container-items-soft">
@@ -76,10 +88,15 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 220px;
+}
+.sec-02 .container {
+  margin: 0 150px;
 }
 .sec-02 .content {
   justify-content: center;
   gap: 80px;
+  margin: 0 150px;
 }
 .sec-02 .text-box {
   max-width: none;
@@ -91,10 +108,7 @@ export default {};
   justify-content: space-between;
   gap: 50px;
 }
-.container-langage {
-  display: flex;
-  gap: 60px;
-}
+
 .langage {
   display: flex;
   margin-bottom: 10px;
@@ -117,6 +131,7 @@ export default {};
 .container-langage {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .item-competences {
   display: flex;
@@ -133,12 +148,12 @@ export default {};
 .item-soft {
   margin: 0px 0px 30px 0px;
 }
-@media screen and (max-width: 1435px) {
+@media screen and (max-width: 1450px) {
   .sec-02 .content {
     gap: 15px;
     display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
+    justify-content: center;
+    margin: 0 150px;
   }
   .container-item-competence {
     gap: 0;
@@ -149,12 +164,29 @@ export default {};
   .titles-competences {
     margin-right: 10px;
   }
-}
-
-@media screen and (max-width: 1071px) {
-  .sec-02 .container {
-    margin: 0;
+  .sec-02 .text-box {
+    max-width: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    text-align: left;
   }
+}
+@media screen and (max-width: 1281px){
+  .container-items-soft{
+    gap: 20px;
+  }
+    .sec-02 .text-box {
+    margin: 0;
+    font-size: 1.1em;
+  }
+    .container-langage{
+    gap: 0;
+  }
+  .container-langage div {
+    margin-right: 20px;
+}
+}
+@media screen and (max-width: 1071px) {
   .sec-02 .content {
     display: flex;
     flex-direction: column;
@@ -178,10 +210,11 @@ export default {};
   .sec-02 .text-box {
     margin: 0;
   }
-  .sec-01 .content {
+  .sec-02 .content{
     margin: 30px;
-  }
+  } 
 }
+
 @media screen and (max-width: 602px) {
   #competences-softskills {
     display: flex;
@@ -199,9 +232,6 @@ export default {};
     display: flex;
     flex-wrap: wrap;
     gap: 0;
-  }
-  .lang {
-    margin-right: 10px;
   }
 }
 </style>

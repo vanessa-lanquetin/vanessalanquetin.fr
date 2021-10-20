@@ -149,9 +149,7 @@ button {
   margin-top: 10px;
   box-shadow: 0 0 5px 2px rgba(206, 206, 206, 0.1);
 }
-.button:hover {
-  transform: scale(1.1);
-}
+
 
 /* @media screen and (max-width:px){
   

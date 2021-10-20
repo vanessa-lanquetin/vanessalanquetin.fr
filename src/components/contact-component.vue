@@ -54,6 +54,8 @@ export default {
 }
 .sec-05 .button {
   padding-top: 10px;
+  display: flex;
+  justify-content: right;
 }
 input {
   border: none;

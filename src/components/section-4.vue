@@ -1,13 +1,19 @@
 <template>
-  <section class="sec-04" v-scroll-reveal="{preset: 'left', interval: 200}">
+  <section class="sec-04" v-scroll-reveal="{ preset: 'left', interval: 200 }">
     <div id="container-hobbies" class="container">
-      <h3 id="hobbies" class="section-title" v-scroll-reveal="{preset: 'left'}">Centres d'intérêts</h3>
+      <h3
+        id="hobbies"
+        class="section-title"
+        v-scroll-reveal="{ preset: 'left' }"
+      >
+        Centres d'intérêts
+      </h3>
       <div class="content">
         <div class="image">
           <img id="img3" src="../assets/Img/img3.webp" alt="" />
         </div>
-        <div class="text-box" v-scroll-reveal="{preset: 'right', delay: 700}">
-          <tabs :tabs="tabs" :showLabels="false">
+        <div class="text-box" v-scroll-reveal="{ preset: 'right', delay: 700 }">
+          <tabs id="tab" :tabs="tabs" :showLabels="false">
             <template #cinema>
               <p>
                 Mon film préféré est "Je suis une légende"
@@ -96,5 +102,52 @@ Tabs<style lang="scss" scoped>
   left: 0px;
   color: white;
 }
-
+@media screen and (max-width: 1556px) {
+  .sec-04 .container {
+    margin: 0 150px;
+  }
+  .sec-04 #img3 {
+    width: 100%;
+    height: 100%;
+  }
+  .sec-04 .content{
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1071px) {
+  .sec-04 .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 810px) {
+  .sec-04 .text-box {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+  .sec-04 .content{
+    margin: 30px;
+  }
+  .sec-04 .container{
+    margin: 0;
+  }
+  .tabs{
+    overflow:unset;
+  }
+  .buttons button{
+    width: auto;
+    padding: 0;
+  }
+  .tabs .content p{
+    margin-top: 10px;
+  }
+  #tab{
+    font-size: 0.8em;
+  }
+  .sec-04 button{
+    padding: 0 0;
+  }
+  }
 </style>

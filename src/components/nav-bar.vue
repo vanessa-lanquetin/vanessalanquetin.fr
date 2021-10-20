@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav id="nav">
     <a class="container-item" href="">
       <i class="fas fa-graduation-cap"></i>
       <div class="nav-title-item">CV</div>
@@ -12,10 +12,10 @@
       <i class="fas fa-desktop"></i>
       <div class="nav-title-item">Portfolio</div>
     </a>
-    <a class="container-item" href="">
+    <router-link class="container-item" :to="{name: 'contact'}">
       <i class="fas fa-address-book"></i>
       <div class="nav-title-item">Contact</div>
-    </a>
+    </router-link>
   </nav>
 </template>
 
@@ -23,15 +23,11 @@
 </script>
 
 <style lang="scss" scoped>
-  nav {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-  }
-nav,
-#nav-list-desktop,
-#nav-list-mobile {
+nav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
   width: 100%;
   backdrop-filter: blur(20px);
   display: flex;
@@ -48,7 +44,6 @@ nav,
   gap: 10px;
   font-size: 20px;
   padding: 10px;
-;
 }
 .item-nav {
   font-size: 1.2em;
@@ -60,7 +55,7 @@ nav,
     font-weight: bold;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 777px) {
   .container-item div {
     display: none;
   }
@@ -75,6 +70,10 @@ nav,
     bottom: 0;
     position: fixed;
     z-index: 20;
+  }
+  .container-item i {
+    font-size: 1.4em;
+    padding: 5px;
   }
 }
 </style>
