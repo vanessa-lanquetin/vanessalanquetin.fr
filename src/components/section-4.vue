@@ -104,13 +104,12 @@ Tabs<style lang="scss" scoped>
 }
 @media screen and (max-width: 1556px) {
   .sec-04 .container {
-    margin: 0 150px;
+    margin: 0 50px;
   }
   .sec-04 #img3 {
     width: 100%;
-    height: 100%;
   }
-  .sec-04 .content{
+  .sec-04 .content {
     gap: 10px;
   }
 }
@@ -120,34 +119,34 @@ Tabs<style lang="scss" scoped>
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 610px) {
   .sec-04 .text-box {
     margin: 0;
     max-width: 100%;
-    width: 100%;
+    width: 90%;
     padding: 10px;
   }
-  .sec-04 .content{
+  .sec-04 .content {
     margin: 30px;
   }
-  .sec-04 .container{
+  .sec-04 .container {
     margin: 0;
   }
-  .tabs{
-    overflow:unset;
+  .tabs {
+    overflow: unset;
   }
-  .buttons button{
-    width: auto;
+  .buttons button[data-v-bdda1ea4] {
+    width: 60px;
     padding: 0;
   }
-  .tabs .content p{
+  .tabs .content p {
     margin-top: 10px;
   }
-  #tab{
+  #tab {
     font-size: 0.8em;
   }
-  .sec-04 button{
+  .sec-04 button {
     padding: 0 0;
   }
-  }
+}
 </style>

@@ -17,27 +17,27 @@
             <ul id="formations-list">
               <li class="item-formations">
                 <strong>Formation</strong>
-                <em class="text-blue">Prep’Apprentissage</em> –
+                <em class="text-blue"> Prep’Apprentissage</em> –
                 <strong>Openclassrooms</strong> ,2021
               </li>
               <li class="item-formations">
                 <strong>Formation</strong>
-                <em class="text-blue">Objectif Alternance</em> –
+                <em class="text-blue"> Objectif Alternance</em> –
                 <strong>Afpa</strong> , 2020
               </li>
               <li class="item-formations">
                 <strong>BTS</strong>
-                <em class="text-blue">Niveau Assistant Manager</em> –
+                <em class="text-blue"> Niveau Assistant Manager</em> –
                 <strong>Lycée Louis Lapicque</strong> , 2017
               </li>
               <li class="item-formations">
                 <strong>BAC</strong>
-                <em class="text-blue">Gestion Administration</em> –
+                <em class="text-blue"> Gestion Administration</em> –
                 <strong>Lycée Isabelle Viviani</strong> , 2015
               </li>
               <li class="item-formations">
                 <strong>BEP</strong>
-                <em class="text-blue">Métiers Services Administratif</em> –
+                <em class="text-blue"> Métiers Services Administratif</em> –
                 <strong>Lycée Isabelle Viviani</strong> , 2014
               </li>
             </ul>

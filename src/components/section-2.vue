@@ -148,7 +148,7 @@ export default {};
 .item-soft {
   margin: 0px 0px 30px 0px;
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1591px) {
   .sec-02 .content {
     gap: 15px;
     display: flex;
@@ -170,21 +170,21 @@ export default {};
     font-size: 1.2em;
     text-align: left;
   }
-}
-@media screen and (max-width: 1281px){
-  .container-items-soft{
-    gap: 20px;
-  }
-    .sec-02 .text-box {
-    margin: 0;
-    font-size: 1.1em;
-  }
-    .container-langage{
-    gap: 0;
+  .container-langage {
+    gap: 0px;
   }
   .container-langage div {
     margin-right: 20px;
+  }
 }
+@media screen and (max-width: 1281px) {
+  .container-items-soft {
+    gap: 20px;
+  }
+  .sec-02 .text-box {
+    margin: 0;
+    font-size: 1.1em;
+  }
 }
 @media screen and (max-width: 1071px) {
   .sec-02 .content {
@@ -210,9 +210,9 @@ export default {};
   .sec-02 .text-box {
     margin: 0;
   }
-  .sec-02 .content{
+  .sec-02 .content {
     margin: 30px;
-  } 
+  }
 }
 
 @media screen and (max-width: 602px) {

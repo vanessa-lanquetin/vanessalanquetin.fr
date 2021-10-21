@@ -1,17 +1,17 @@
 <template>
   <nav id="nav">
-    <a class="container-item" href="">
+    <router-link class="container-item" :to="{name: 'Home'}">
       <i class="fas fa-graduation-cap"></i>
       <div class="nav-title-item">CV</div>
-    </a>
+    </router-link>
     <a class="container-item" href="">
       <i class="far fa-heart"></i>
       <div class="nav-title-item">Lettre de motivation</div>
     </a>
-    <a class="container-item" href="">
+    <router-link class="container-item" :to="{name: 'portfolio'}">
       <i class="fas fa-desktop"></i>
       <div class="nav-title-item">Portfolio</div>
-    </a>
+    </router-link>
     <router-link class="container-item" :to="{name: 'contact'}">
       <i class="fas fa-address-book"></i>
       <div class="nav-title-item">Contact</div>
@@ -45,6 +45,9 @@ nav {
   font-size: 20px;
   padding: 10px;
 }
+  .container-item:hover,.container-item:focus{
+    color: #10e2d7;
+  }
 .item-nav {
   font-size: 1.2em;
   border-bottom: 2px solid #10e2d7;

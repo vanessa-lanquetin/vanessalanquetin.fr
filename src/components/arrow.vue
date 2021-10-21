@@ -21,9 +21,13 @@ export default {
   z-index: 20;
   transition: 300ms;
 }
+  #arrow:hover,#arrow:focus{
+    color: #10e2d7;
+  }
 @media screen and (max-width: 777px){
   #arrow{
     display: none;
   }
+
 }
 </style>
