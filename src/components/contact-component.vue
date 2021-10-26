@@ -1,7 +1,7 @@
 <template>
     <section class="sec-05" v-scroll-reveal="{preset: 'bottom', interval: 200}">
       <div class="container">
-        <h3 id="contact" class="section-title" v-scroll-reveal="{preset: 'left'}">Contact</h3>
+        <h2 id="contact" class="section-title" v-scroll-reveal="{preset: 'left'}">Contact</h2>
         <div class="content">
           <div class="text-box" v-scroll-reveal="{preset: 'right', delay: 700}">
             <form action="mailto:lanquetin.vanessa@gmail.com" method="post">

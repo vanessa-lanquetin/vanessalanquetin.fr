@@ -1,6 +1,6 @@
 <template>
   <arrow/>
-  <h3 id="contact" class="section-title" v-scroll-reveal="{preset: 'left'}">Portfolio</h3>
+  <h2 id="contact" class="section-title" v-scroll-reveal="{preset: 'left'}">Portfolio</h2>
 </template>
 
 <script>

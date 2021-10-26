@@ -1,16 +1,16 @@
 <template>
   <section class="sec-01">
-    <h2 class="main-title" v-scroll-reveal="{ preset: 'left' }">
+    <h1 class="main-title" v-scroll-reveal="{ preset: 'left' }">
       Vanessa Lanquetin
-    </h2>
+    </h1>
     <div class="container">
       <div class="content">
         <div
           id="presentation"
           class="text-box"
-          v-scroll-reveal="{ preset: 'right', delay: 700 }"
+          v-scroll-reveal="{ preset: 'right', delay: 100 }"
         >
-          <h3>Présentation</h3>
+          <h2>Présentation</h2>
           Ayant pour ambition d'être développeuse web, j'ai intégré le cursus
           <a
             class="link"
@@ -44,14 +44,14 @@
           class="text-box"
           v-scroll-reveal="{ preset: 'right', delay: 700 }"
         >
-          <h3>Informations</h3>
+          <h2>Informations</h2>
           <div class="items-infos">Age:</div>
           <div class="text-blue">24 ans</div>
           <br />
           <div class="items-infos">Localisation:</div>
           <div class="text-blue">Meurthe et Moselle (54)</div>
           <div class="social-networks">
-            <h3>Réseaux Sociaux</h3>
+            <h2>Réseaux Sociaux</h2>
             <ul class="logos">
               <li class="logo">
                 <a
@@ -94,7 +94,7 @@
   flex-direction: column;
 }
 #main-img {
-  height: 457px;
+  height: auto;
   flex-grow: 1;
   margin: 0 20px;
 }
@@ -180,16 +180,17 @@
 @media screen and (max-width: 810px) {
   .sec-01 .text-box {
     margin: 0;
-    padding: 48px;
+    padding: 30px;
   }
   .main-title {
     font-size: 2.6em;
+    padding: 0 20px;
   }
   #main-img{
     margin: 0;
   }
   .sec-01 .content {
-    margin: 30px;
+    margin: 15px;
   }
 }
 

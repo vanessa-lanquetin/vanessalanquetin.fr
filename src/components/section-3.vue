@@ -1,13 +1,13 @@
 <template>
   <section class="sec-03">
     <div class="container">
-      <h3
+      <h2
         id="formations"
         class="section-title"
         v-scroll-reveal="{ preset: 'left' }"
       >
         Formations
-      </h3>
+      </h2>
       <div id="content-formations" class="content">
         <div class="image" v-scroll-reveal="{ preset: 'top', delay: 100 }">
           <img id="img2" src="../assets/Img/img2.webp" alt="" />
@@ -101,16 +101,23 @@ export default {};
   .sec-03 .info{
     margin-left: 0;
   }
+    .sec-03 .container {
+    margin: 150px;
+  }
+.sec-03 #img2 {
+  height: auto;
+  max-height: 400px;
+}
 }
 @media screen and (max-width: 810px) {
   .sec-03 .text-box {
     margin: 0;
   }
   .sec-03 .content{
-    margin: 30px;
+    margin: 15px;
   }
-  .sec-03 .container{
-    margin: 0;
+    .sec-03 .container {
+    margin: 20px;
   }
 }
 @media screen and (max-width: 602px) {

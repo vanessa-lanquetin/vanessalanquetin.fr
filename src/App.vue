@@ -55,6 +55,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   margin-bottom: 120px;
 }
@@ -85,7 +86,7 @@ section {
   color: #10e2d7;
   font-style: italic;
 }
-h3 {
+h2 {
   margin: 0 0 10px 0;
   color: #fa3bd9;
 }
@@ -95,9 +96,6 @@ h3 {
   padding-bottom: 30px;
   border-bottom: 1px white solid;
   width: 100%;
-}
-section {
-  text-align: center;
 }
 .section-title {
   font-size: 3em;
@@ -144,11 +142,14 @@ button {
   
 } */
 @media screen and (max-width:519px){
-  h3{
+  h2{
     font-size: 1.3em;
   }
   .section-title{
-    font-size: 2.2em;
+    font-size: 1.8em;
+  }
+  section{
+    margin-bottom: 30px;
   }
 } 
 @media screen and (max-width:300px){

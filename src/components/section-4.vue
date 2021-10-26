@@ -1,13 +1,13 @@
 <template>
-  <section class="sec-04" v-scroll-reveal="{ preset: 'left', interval: 200 }">
+  <section class="sec-04" v-scroll-reveal="{ preset: 'left', interval: 100 }">
     <div id="container-hobbies" class="container">
-      <h3
+      <h2
         id="hobbies"
         class="section-title"
         v-scroll-reveal="{ preset: 'left' }"
       >
         Centres d'intérêts
-      </h3>
+      </h2>
       <div class="content">
         <div class="image">
           <img id="img3" src="../assets/Img/img3.webp" alt="" />
@@ -36,6 +36,33 @@
               </p>
             </template>
           </tabs>
+          <div id="hobbies-mobile">
+            <div class="container-hobbies-mobile">
+              <h3>Cinéma:</h3>
+              <p class="text-blue">
+                Mon film préféré est "Je suis une légende"
+                <i class="fas fa-video"></i>
+              </p>
+            </div>
+            <div class="container-hobbies-mobile">
+              <h3>Cuisine:</h3>
+              <p class="text-blue">
+                Mon repas préféré est "Spaghettis Al Pollo"
+                <i class="fas fa-utensils"></i>
+              </p>
+            </div>
+            <div class="container-hobbies-mobile">
+              <h3>Dessin:</h3>
+              <p class="text-blue">Mon instagram : "ikaya54" <i class="fas fa-palette"></i></p>
+            </div>
+            <div class="container-hobbies-mobile">
+              <h3>Lecture:</h3>
+              <p class="text-blue">
+                Mon livre préféré est "Ne le dis à personne"
+                <i class="fas fa-book"></i>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -73,7 +100,9 @@ Tabs<style lang="scss" scoped>
   height: 400px;
   filter: contrast(120%);
 }
-
+.tabs p {
+  margin-top: 20px;
+}
 .sec-04 .text-box {
   height: 250px;
   max-width: 500px;
@@ -102,6 +131,24 @@ Tabs<style lang="scss" scoped>
   left: 0px;
   color: white;
 }
+#hobbies-mobile {
+  display: none;
+  @media (max-width: 492px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  .container-hobbies-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  h3 {
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 1556px) {
   .sec-04 .container {
     margin: 0 50px;
@@ -118,16 +165,20 @@ Tabs<style lang="scss" scoped>
     display: flex;
     flex-wrap: wrap;
   }
+  .sec-04 #img3 {
+  height: auto;
 }
-@media screen and (max-width: 610px) {
+}
+@media screen and (max-width:610px ) {
   .sec-04 .text-box {
     margin: 0;
     max-width: 100%;
-    width: 90%;
+    width: 100%;
     padding: 10px;
+    
   }
   .sec-04 .content {
-    margin: 30px;
+    margin: 15px;
   }
   .sec-04 .container {
     margin: 0;
@@ -135,18 +186,24 @@ Tabs<style lang="scss" scoped>
   .tabs {
     overflow: unset;
   }
-  .buttons button[data-v-bdda1ea4] {
-    width: 60px;
-    padding: 0;
-  }
   .tabs .content p {
     margin-top: 10px;
   }
   #tab {
     font-size: 0.8em;
+    align-items: center;
   }
   .sec-04 button {
     padding: 0 0;
   }
+}
+@media screen and (max-width:376px ) {
+.container-hobbies-mobile{
+  text-align: left;
+}
+#hobbies-mobile{
+  margin-top: 5px;
+  gap: 15px;
+}
 }
 </style>

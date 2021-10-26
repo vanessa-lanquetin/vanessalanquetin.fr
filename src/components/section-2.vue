@@ -1,20 +1,20 @@
 <template>
   <section class="sec-02">
-    <h3
+    <h2
       id="competences"
       class="section-title"
       v-scroll-reveal="{ preset: 'left' }"
     >
       Compétences
-    </h3>
+    </h2>
     <div class="container container-competences">
       <div class="content">
         <div
           id="hard-skills"
           class="text-box"
-          v-scroll-reveal="{ preset: 'right', delay: 700 }"
+          v-scroll-reveal="{ preset: 'right', delay: 100 }"
         >
-          <h3>Hard Skills</h3>
+          <h2>Hard Skills</h2>
           <div id="competences-hardskills" class="competences">
             <div class="competence langage container-item-competence">
               <div class="titles-competences">Langage :</div>
@@ -54,7 +54,7 @@
           class="text-box"
           v-scroll-reveal="{ preset: 'right', delay: 700 }"
         >
-          <h3>Soft Skills</h3>
+          <h2>Soft Skills</h2>
           <div id="competences-softskills" class="competences">
             <div class="container-items-soft">
               <div class="item-soft text-blue">Créativité</div>
@@ -211,7 +211,7 @@ export default {};
     margin: 0;
   }
   .sec-02 .content {
-    margin: 30px;
+    margin: 15px;
   }
 }
 
