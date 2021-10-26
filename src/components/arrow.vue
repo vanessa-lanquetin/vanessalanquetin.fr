@@ -17,7 +17,7 @@ export default {
   color: #fff;
   position: fixed;
   bottom: 30px;
-  right: 20px;
+  right: 30px;
   z-index: 20;
   transition: 300ms;
 }

@@ -70,9 +70,9 @@ nav {
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    bottom: 0;
-    position: fixed;
     z-index: 20;
+    position: fixed;
+    bottom: 0;
   }
   .container-item i {
     font-size: 1.4em;

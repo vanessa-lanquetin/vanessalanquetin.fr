@@ -83,6 +83,10 @@ $color: rgba(16,226,215,.8156862745098039);
     background: transparent;
     font-size: 1em;
     border: 1px solid $color;
+    @media (max-width: 500px) {
+      font-size: 0.9em;
+      padding: 0 10px;
+    }
     &:hover {
       box-shadow: none;
       transform: none;

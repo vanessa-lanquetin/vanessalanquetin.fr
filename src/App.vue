@@ -1,31 +1,20 @@
 <template>
-  <router-view/>
+<div id="app-root">
+  <nav-bar/>
+  <div id="app-content">
+    <router-view/>
+  </div>
+</div>
 </template>
 
 <script>
+import navBar from './components/nav-bar.vue'
 export default {
+  components: { navBar },
   setup() {
-/*     onMounted(() => {
-
-      ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
-        delay: 100,
-        origin: "top",
-      });
-      ScrollReveal().reveal(".sec-04 ", {
-        delay: 200,
-        origin: "left",
-        interval: 200,
-      });
-      ScrollReveal().reveal(".sec-05", {
-        delay: 200,
-        origin: "bottom",
-        interval: 200,
-      });
-      }, 100);
-    }) */
-    return {
-      
-    }
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    return {}
   },
 }
 </script>
@@ -167,4 +156,23 @@ body{
   font-size: 0.7em;
 }
 } 
+</style>
+
+
+<style lang="scss" scoped>
+#app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#app-content {
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: auto;
+  flex-grow: 1;
+}
+@media screen and (max-width: 777px) {
+  #app-root {
+    flex-direction: column-reverse;
+  }
+}
 </style>
