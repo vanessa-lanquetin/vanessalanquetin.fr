@@ -154,7 +154,7 @@ button {
 } 
 @media screen and (max-width:300px){
 body{
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 } 
 </style>
