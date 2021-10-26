@@ -1,4 +1,4 @@
-FROM alpine:3.12 as builder
+FROM alpine:3.14 as builder
 RUN apk --no-cache add gcc g++ make python3 nodejs npm
 WORKDIR /vanessalanquetin
 COPY . .
@@ -10,7 +10,7 @@ RUN npm i
 RUN npm run build
 RUN cd server && npm i 
 
-FROM alpine:3.12
+FROM alpine:3.14
 RUN apk --no-cache add nodejs
 WORKDIR /vanessalanquetin
 COPY --from=builder /vanessalanquetin/server .
