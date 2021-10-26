@@ -114,7 +114,7 @@ textarea {
     min-width: 500px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 777px) {
   .sec-05 .text-box {
     text-align: left;
   }
@@ -145,14 +145,14 @@ textarea {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 483px) {
 
   input,
   textarea {
-    min-width: 260px;
+    min-width: 300px;
   }
 }
-@media screen and (max-width: 323px) {
+@media screen and (max-width: 398px) {
 
   input,
   textarea {
