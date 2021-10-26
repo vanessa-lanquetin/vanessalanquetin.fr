@@ -145,7 +145,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 468px) {
 
   input,
   textarea {
