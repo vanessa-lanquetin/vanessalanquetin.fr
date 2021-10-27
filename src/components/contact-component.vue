@@ -13,13 +13,25 @@
           <form action="#" method="POST" enctype="text/plain" @submit="submit">
             <div class="items-contact">
               <label for="name">Nom :</label>
-              <input type="text" id="name" name="name" required v-model="data.name"/>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                v-model="data.name"
+              />
             </div>
             <div class="items-contact">
               <label for="mail">Mail :</label>
-              <input type="email" id="mail" name="email" required v-model="data.email"/>
+              <input
+                type="email"
+                id="mail"
+                name="email"
+                required
+                v-model="data.email"
+              />
             </div>
-            <div class="items-contact" >
+            <div class="items-contact">
               <label for="msg">Message :</label>
               <textarea
                 id="msg"
@@ -41,34 +53,32 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity';
-import API from '../services/API'
+import { ref } from "@vue/reactivity";
+import API from "../services/API";
 export default {
-
   setup() {
     const data = ref({
-      email:'',
-      name: '',
-      msg: ''
-    })
+      email: "",
+      name: "",
+      msg: "",
+    });
     return {
       data,
       async submit(ev) {
-        ev.preventDefault()
-        ev.stopPropagation()
-        const {data: result} = await API.post('/send', data.value)
-        console.log(result)
-        
-      }
-    }
-  }
+        ev.preventDefault();
+        ev.stopPropagation();
+        const { data: result } = await API.post("/send", data.value);
+        console.log(result);
+      },
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 $labelWidth: 100px;
 .sec-05 {
-  h2{
+  h2 {
     margin-top: 50px;
   }
   .content {
@@ -107,7 +117,8 @@ input {
 textarea {
   min-height: 290px;
 }
-input, textarea {
+input,
+textarea {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -115,17 +126,27 @@ input, textarea {
   flex-grow: 1;
   min-width: 200px;
 }
-@media screen and (max-width: 1071px){
-  .sec-05 .content .text-box[data-v-6599f3b0]{
+@media screen and (max-width: 1071px) {
+  .sec-05 .content .text-box[data-v-6599f3b0] {
     padding: 25px;
+    textarea[data-v-6599f3b0] {
+      min-height: 150px;
+    }
   }
 }
-@media screen and (max-width: 258px){
-  .sec-05 .content .text-box[data-v-6599f3b0]{
+@media screen and (max-width: 284px) {
+  .sec-05 .content .text-box[data-v-6599f3b0][data-v-6599f3b0] {
     padding: 10px;
   }
-  input[data-v-6599f3b0], textarea[data-v-6599f3b0]{
+  .sec-05 .content[data-v-6599f3b0] {
+    margin: 0 15px;
+  }
+  input[data-v-6599f3b0],
+  textarea[data-v-6599f3b0] {
     min-width: 90px;
+  }
+  textarea[data-v-6599f3b0] {
+    min-height: 100px;
   }
 }
 </style>
