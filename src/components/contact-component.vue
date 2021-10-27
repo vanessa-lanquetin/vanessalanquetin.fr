@@ -120,4 +120,12 @@ input, textarea {
     padding: 25px;
   }
 }
+@media screen and (max-width: 258px){
+  .sec-05 .content .text-box[data-v-6599f3b0]{
+    padding: 10px;
+  }
+  input[data-v-6599f3b0], textarea[data-v-6599f3b0]{
+    min-width: 90px;
+  }
+}
 </style>
