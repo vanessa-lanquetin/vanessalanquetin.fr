@@ -203,6 +203,11 @@ Tabs<style lang="scss" scoped>
 }
 #hobbies-mobile{
   margin-top: 5px;
+  gap: 25px;
+}
+}
+@media screen and (max-width:347px ) {
+#hobbies-mobile{
   gap: 5px;
 }
 }

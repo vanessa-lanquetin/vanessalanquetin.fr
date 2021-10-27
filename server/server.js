@@ -3,7 +3,7 @@ const pathfs = require('path')
 const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000
-require('dotenv').config()
+require('dotenv').config({})
 app.use('/robots.txt', (req, res) => {
   res.type("text/plain");
   res.send("User-agent: *\nAllow: /");

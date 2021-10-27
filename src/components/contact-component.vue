@@ -74,7 +74,7 @@ $labelWidth: 100px;
   .content {
     justify-content: center;
     .text-box {
-      padding: 80px;
+      padding: 60px;
       max-width: 1200px;
       width: 100%;
       .items-contact {
@@ -115,5 +115,9 @@ input, textarea {
   flex-grow: 1;
   min-width: 200px;
 }
-
+@media screen and (max-width: 1071px){
+  .sec-05 .content .text-box[data-v-6599f3b0]{
+    padding: 25px;
+  }
+}
 </style>
