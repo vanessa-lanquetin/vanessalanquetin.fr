@@ -134,18 +134,19 @@ textarea {
     }
   }
 }
-@media screen and (max-width: 284px) {
+@media screen and (max-width: 400px) {
   .sec-05 .content .text-box[data-v-6599f3b0][data-v-6599f3b0] {
     padding: 10px;
+    margin-bottom: 50px;
   }
   .sec-05 .content[data-v-6599f3b0] {
-    margin: 0 15px;
+    margin: 0 20px;
   }
   input[data-v-6599f3b0],
   textarea[data-v-6599f3b0] {
     min-width: 90px;
   }
-  textarea[data-v-6599f3b0] {
+  .sec-05 .content .text-box[data-v-6599f3b0] textarea[data-v-6599f3b0][data-v-6599f3b0] {
     min-height: 100px;
   }
 }
