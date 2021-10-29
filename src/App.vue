@@ -1,6 +1,7 @@
 <template>
 <div id="app-root">
   <nav-bar/>
+  <arrow/>
   <div id="app-content">
     <router-view/>
   </div>
@@ -8,9 +9,10 @@
 </template>
 
 <script>
+import Arrow from './components/arrow.vue'
 import navBar from './components/nav-bar.vue'
 export default {
-  components: { navBar },
+  components: { navBar, Arrow },
   setup() {
     const vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
