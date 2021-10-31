@@ -23,6 +23,7 @@ export default {
     Arrow,
   },
 };
+/* alert ("Site en cours de développement (Lettre de motivation prochainement, Portfollio non responsive actuellement)"); */
 </script>
 <style lang="scss" scoped>
 </style>

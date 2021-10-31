@@ -41,8 +41,10 @@
       </div>
       <figcaption>
         Réservia est un site de plannification de vacacances. Ce projet a été
-        réalisé lors ma formation "Prep'Apprentissage" d'Openclassrooms. Ma
-        mission consisitait juste à intégrer une maquette sans le rendre
+        réalisé lors ma formation "Prep'Apprentissage" d'Openclassrooms.
+        <br />
+        <br />
+        Ma mission consisitait juste à intégrer une maquette sans le rendre
         fonctionnel. Tout en prenant en compte le cahier des charges et la
         charte graphique. Grâce à ce projet j'ai expérmienté grid.
       </figcaption>
@@ -60,9 +62,11 @@
       </div>
       <figcaption>
         Art Challenges est un site pour les artistes. Pour booster ma créativié
-        pour mes dessins, j'ai eu l'idée de créer Art Challenges. Au menu divers
-        outils : des générateurs, un minuteur et des défis, cela permet
-        d'apporter du challenge mais aussi de l'inspiration.
+        pour mes dessins, j'ai eu l'idée de créer Art Challenges.
+        <br />
+        <br />
+        Au menu divers outils : des générateurs, un minuteur et des défis, cela
+        permet d'apporter du challenge mais aussi de l'inspiration.
       </figcaption>
     </figure>
     <figure class="text-box">
@@ -78,8 +82,11 @@
       </div>
       <figcaption>
         Ce projet Météo avait pour but de me faire travailler avec une API pour
-        la première fois. J'ai travaillé sur ce projet lors de ma formation
-        "Javascript: la formation ultime" de Udemy.
+        la première fois.
+        <br />
+        <br />
+        J'ai travaillé sur ce projet lors de ma formation "Javascript: la
+        formation ultime" de Udemy.
       </figcaption>
     </figure>
     <figure class="text-box">
@@ -98,9 +105,11 @@
       </div>
       <figcaption>
         Stats Preview Card fait parti des challenges de Front End Mentor. J'ai
-        su reproduire le visuel qui m'a été donné , grâce à cela j'ai eu
-        l'occasion d'expérimenté filter sur une image et de travailler davantage
-        sur le coté responsive d'un component.
+        su reproduire le visuel qui m'a été donné .
+        <br />
+        <br />
+        Grâce à cela j'ai eu l'occasion d'expérimenté filter sur une image et de
+        travailler davantage sur le coté responsive d'un component.
       </figcaption>
     </figure>
     <figure class="text-box">
@@ -120,8 +129,11 @@
       <figcaption>
         3 Column Preview Card fait également parti des challnges de Front End
         Mentor. J'ai réalisé ce premier challenge à mes début dans le HTML et
-        CSS. C'était la première fois que je produisais un visuel, cela permis
-        de m'améliorer dans l'utilisation de Flex
+        CSS.
+        <br />
+        <br />
+        C'était la première fois que je produisais un visuel, cela permis de
+        m'améliorer dans l'utilisation de Flex
       </figcaption>
     </figure>
   </section>
@@ -163,10 +175,10 @@ figcaption {
 }
 #container-items-portfolio {
   display: grid;
-  grid-template-columns: repeat(2, 700px);
+  grid-template-columns: repeat(2, 35%);
   grid-template-rows: max-content;
   flex-grow: 1;
-  gap: 80px;
+  gap: 30px;
   .text-box {
     max-width: 700px;
     text-align: left;
@@ -185,6 +197,30 @@ figcaption {
   }
   span {
     font-weight: bold;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #container-items-portfolio {
+    grid-template-columns: repeat(1, 55%);
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 592px) {
+  #container-items-portfolio {
+    grid-template-columns: repeat(1, 89%);
+    .text-box {
+      padding: 10px;
+    }
+  }
+  figcaption {
+    text-align: center;
+  }
+  .responsive{
+    flex-shrink: 0;
+  }
+  .state{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>
