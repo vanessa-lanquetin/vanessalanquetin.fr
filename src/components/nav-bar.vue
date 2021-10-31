@@ -4,10 +4,10 @@
       <i class="fas fa-graduation-cap"></i>
       <div class="nav-title-item">CV</div>
     </router-link>
-    <a class="container-item" href="">
+    <router-link class="container-item" :to="{name: 'letter'}">
       <i class="far fa-heart"></i>
       <div class="nav-title-item">Lettre de motivation</div>
-    </a>
+    </router-link>
     <router-link class="container-item" :to="{name: 'portfolio'}">
       <i class="fas fa-desktop"></i>
       <div class="nav-title-item">Portfolio</div>

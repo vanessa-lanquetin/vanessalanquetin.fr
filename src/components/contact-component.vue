@@ -134,6 +134,11 @@ textarea {
     }
   }
 }
+@media screen and (max-width: 592px) {
+  .sec-05 .text-box {
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .sec-05 .content .text-box[data-v-6599f3b0][data-v-6599f3b0] {
     padding: 10px;
@@ -146,7 +151,10 @@ textarea {
   textarea[data-v-6599f3b0] {
     min-width: 90px;
   }
-  .sec-05 .content .text-box[data-v-6599f3b0] textarea[data-v-6599f3b0][data-v-6599f3b0] {
+  .sec-05
+    .content
+    .text-box[data-v-6599f3b0]
+    textarea[data-v-6599f3b0][data-v-6599f3b0] {
     min-height: 100px;
   }
 }
