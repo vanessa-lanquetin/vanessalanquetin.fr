@@ -5,12 +5,16 @@
   <section id="sec-letter">
     <div class="container">
       <div class="content">
-        <div id="container-letter" class="text-box" v-scroll-reveal="{ preset: 'right', delay: 100 }">
+        <div
+          id="container-letter"
+          class="text-box"
+          v-scroll-reveal="{ preset: 'right', delay: 100 }"
+        >
           <div id="header-letter">
             <div id="coordonnees">
               <div>Vanessa LANQUETIN</div>
               <div>54230 NEUVES MAISONS</div>
-              <div>  Tél : 06.71.89.91.25 </div>
+              <div>Tél : 06.71.89.91.25</div>
               <div>Mail : lanquetin.vanessa@gmail.com</div>
             </div>
             <div id="object">
@@ -21,7 +25,7 @@
           <div id="body-letter">
             Madame,Monsieur,
             <br />
-                        <br />
+            <br />
             Je recherche activement une alternance pour une durée d’ un an, sur
             un rythme de 4 jours par semaine en entreprise. J’ai actuellement
             intégré le cursus Prep'Apprentissage d'Openclassrooms pour démarrer
@@ -76,7 +80,13 @@ export default {};
 #letter {
   margin-top: 50px;
 }
-#sec-letter .text-box{
+#sec-letter .text-box {
   max-width: 60%;
+  text-align: justify;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 </style>
