@@ -174,6 +174,7 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(2, 35%);
   grid-template-rows: max-content;
+  justify-content: center;
   flex-grow: 1;
   gap: 30px;
   .text-box {

@@ -32,6 +32,9 @@ nav {
   backdrop-filter: blur(20px);
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  height: var(--navbar-size);
+  z-index: 1;
 }
 #nav-list-mobile {
   display: none;
@@ -70,9 +73,6 @@ nav {
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    z-index: 20;
-    position: fixed;
-    bottom: 0;
   }
   .container-item i {
     font-size: 1.4em;

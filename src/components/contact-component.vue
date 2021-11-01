@@ -78,30 +78,36 @@ export default {
 <style lang="scss" scoped>
 $labelWidth: 100px;
 .sec-05 {
-  h2 {
-    margin-top: 50px;
-  }
-  .content {
-    justify-content: center;
-    .text-box {
-      padding: 60px;
-      max-width: 1200px;
-      width: 100%;
-      .items-contact {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        label {
-          text-align: left;
-          width: $labelWidth;
-          flex-shrink: 0;
-          display: inline-block;
+  display: flex;
+  flex-direction: column;
+  .container {
+    margin: 0;
+    width: 90%;
+    h2 {
+      margin-top: 50px;
+    }
+    .content {
+      justify-content: center;
+      .text-box {
+        padding: 60px;
+        max-width: 1200px;
+        width: 100%;
+        .items-contact {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          label {
+            text-align: left;
+            width: $labelWidth;
+            flex-shrink: 0;
+            display: inline-block;
+          }
         }
-      }
-      .button {
-        padding-top: 10px;
-        display: flex;
-        justify-content: right;
+        .button {
+          padding-top: 10px;
+          display: flex;
+          justify-content: right;
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-<a href="#nav">
+<a href="#top">
   <i id="arrow" class="fas fa-chevron-circle-up"></i>
 </a>
   
@@ -20,10 +20,13 @@ export default {
   right: 30px;
   z-index: 20;
   transition: 300ms;
+  border: 1px solid grey;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px -10px white;
 }
-  #arrow:hover,#arrow:focus{
-    color: #10e2d7;
-  }
+#arrow:hover,#arrow:focus{
+  color: #10e2d7;
+}
 @media screen and (max-width: 777px){
   #arrow{
     display: none;

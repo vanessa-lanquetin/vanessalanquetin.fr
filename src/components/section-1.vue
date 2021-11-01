@@ -89,7 +89,6 @@
 
 <style lang="scss" scoped>
 .sec-01 {
-  margin: 45px 0 170px 0;
   display: flex;
   flex-direction: column;
 }
@@ -97,6 +96,7 @@
   height: auto;
   flex-grow: 1;
   margin: 0 20px;
+  opacity: 1;
 }
 .sec-01 #img1 {
   height: 100%;
@@ -109,6 +109,7 @@
 .main-title {
   font-size: 4em;
   margin-bottom: 50px;
+  margin-top: 50px;
   width: 100%;
   color: white;
 }
@@ -185,6 +186,7 @@
   .main-title {
     font-size: 2.6em;
     padding: 0 20px;
+    box-sizing: border-box;
   }
   #main-img{
     margin: 0;

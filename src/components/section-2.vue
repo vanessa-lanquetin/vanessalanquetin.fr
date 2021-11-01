@@ -88,7 +88,6 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 220px;
 }
 .sec-02 .container {
   margin: 0 150px;

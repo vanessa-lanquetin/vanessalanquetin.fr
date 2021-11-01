@@ -13,7 +13,7 @@ const presets = {
   top: { delay: 200, origin: "top" },
   right: { delay: 200, origin: "right" },
 };
-(defaultScrollOption);
+
 const MyDirective = {
   created() {}, // new
   beforeMount() {},
@@ -21,7 +21,7 @@ const MyDirective = {
     if(binding?.value?.preset && presets[binding.value.preset]) {
       Object.assign(binding.value, presets[binding.value.preset]);
     }
-    Object.assign(binding.value, {container: document.querySelector("#app-content")})
+    Object.assign(binding.value, {container: document.querySelector("html")})
     ScrollReveal().reveal(el, binding.value || defaultScrollOption)
   },
   beforeUpdate() {}, // new

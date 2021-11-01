@@ -80,9 +80,15 @@ export default {};
 #letter {
   margin-top: 50px;
 }
-#sec-letter .text-box {
-  max-width: 60%;
-  text-align: justify;
+#sec-letter {
+  height: auto;
+  .container {
+    margin: 0;
+  }
+  .text-box {
+    max-width: 60%;
+    text-align: justify;
+  }
 }
 .content {
   justify-content: center;
