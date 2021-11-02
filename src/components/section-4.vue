@@ -197,18 +197,21 @@ Tabs<style lang="scss" scoped>
     padding: 0 0;
   }
 }
-@media screen and (max-width:409px ) {
+@media screen and (max-width:414px ) {
 .container-hobbies-mobile{
   text-align: left;
 }
 #hobbies-mobile{
   margin-top: 5px;
-  gap: 25px;
+  gap: 10px;
 }
 }
-@media screen and (max-width:347px ) {
+@media screen and (max-width:394px ) {
 #hobbies-mobile{
   gap: 5px;
 }
+}
+.sec-04 .text-box {
+  min-height: 350px ;
 }
 </style>

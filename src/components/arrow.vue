@@ -23,6 +23,7 @@ export default {
   border: 1px solid grey;
   border-radius: 50%;
   box-shadow: 0px 0px 30px -10px white;
+  margin-bottom: 50px;
 }
 #arrow:hover,#arrow:focus{
   color: #10e2d7;

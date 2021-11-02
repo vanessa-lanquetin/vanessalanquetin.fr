@@ -197,6 +197,7 @@ figcaption {
     font-weight: bold;
   }
 }
+
 @media screen and (max-width: 1400px) {
   #container-items-portfolio {
     grid-template-columns: repeat(1, 55%);
