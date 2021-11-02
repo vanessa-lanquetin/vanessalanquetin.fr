@@ -23,6 +23,8 @@
             </div>
           </div>
           <div id="body-letter">
+            <br />
+            <br />
             Madame,Monsieur,
             <br />
             <br />
@@ -128,7 +130,7 @@ export default {};
     flex-wrap: wrap;
   }
 }
-.space{
+.space {
   display: none;
 }
 @media screen and (max-width: 1360px) {
@@ -144,9 +146,9 @@ export default {};
   }
   #body-letter {
     margin-top: 20px;
-  text-align: justify;
+    text-align: justify;
   }
-  .space{
+  .space {
     display: block;
   }
 }
