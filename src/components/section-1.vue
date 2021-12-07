@@ -80,6 +80,7 @@
           </div>
         </div>
       </div>
+      <button>Télécharger mon cv</button>
     </div>
   </section>
 </template>
