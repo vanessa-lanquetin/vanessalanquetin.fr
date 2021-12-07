@@ -24,7 +24,7 @@
 
 <style lang="scss" scoped>
 nav {
-  background: rgba(255, 255, 255, 0.1);
+  background: #283238;
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -49,7 +49,7 @@ nav {
   padding: 10px;
 }
   .container-item:hover,.container-item:focus{
-    color: #10e2d7;
+    color: #f4b183;
   }
 .item-nav {
   font-size: 1.2em;

@@ -131,6 +131,9 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
   flex-grow: 1;
   min-width: 200px;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 10px;
 }
 @media screen and (max-width: 1071px) {
   .sec-05 .content .text-box[data-v-6599f3b0] {

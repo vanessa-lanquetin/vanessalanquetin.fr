@@ -9,8 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  background: #111222;
-  color: white;
+  background: #ffffff;
+  color: rgb(98, 98, 98);
 }
 a {
   text-decoration: none;
@@ -45,7 +45,7 @@ section {
   border-radius: 10px;
 }
 .text-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: #374752;
   backdrop-filter: blur(20px);
   padding: 38px;
   max-width: 400px;
@@ -55,7 +55,7 @@ section {
   box-sizing: border-box;
 }
 .text-blue {
-  color: #10e2d7;
+  color: #7bd0cc;
   font-style: italic;
 }
 #mouse {
@@ -70,7 +70,7 @@ section {
   margin-bottom: 80px;
 }
 .link {
-  border-bottom: solid 2px #fa3bd9;
+  border-bottom: solid 2px #f4b183;
 }
 .link:hover {
   font-weight: bold;
@@ -80,7 +80,7 @@ button {
   font-size: 0.8em;
   padding: 10px 20px;
   border-radius: 1em;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(202, 194, 194, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   cursor: pointer;

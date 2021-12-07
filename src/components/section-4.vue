@@ -10,7 +10,7 @@
       </h2>
       <div class="content">
         <div class="image">
-          <img id="img3" src="../assets/Img/img3.webp" alt="" />
+          <img id="img3" src="../assets/Img/ffg.jpeg" alt="" />
         </div>
         <div class="text-box" v-scroll-reveal="{ preset: 'right', delay: 700 }">
           <tabs id="tab" :tabs="tabs" :showLabels="false">
@@ -93,12 +93,15 @@ Tabs<style lang="scss" scoped>
 }
 .sec-04 .content {
   justify-content: center;
+  flex-direction: row-reverse;
   gap: 80px;
 }
 .sec-04 #img3 {
   width: 600px;
   height: 400px;
-  filter: contrast(120%);
+    // filter: grayscale(100%);
+  opacity: 65%;
+  filter: saturate(230%);
 }
 .tabs p {
   margin-top: 20px;
@@ -212,6 +215,7 @@ Tabs<style lang="scss" scoped>
 }
 }
 .sec-04 .text-box {
-  min-height: 350px ;
+  min-height: none ;
+  height: auto;
 }
 </style>

@@ -183,7 +183,7 @@ figcaption {
     height: 100%;
   }
   h3 {
-    color: #fa3bd9;
+    color: #f4b183;
     font-size: 1.5em;
     margin: 10px 0;
   }

@@ -14,7 +14,7 @@ export default {
 <style>
 #arrow{
   font-size: 70px;
-  color: #fff;
+  color: #f4b183;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -24,9 +24,10 @@ export default {
   border-radius: 50%;
   box-shadow: 0px 0px 30px -10px white;
   margin-bottom: 50px;
+  transition: 300ms;
 }
 #arrow:hover,#arrow:focus{
-  color: #10e2d7;
+  color: #374752;
 }
 @media screen and (max-width: 777px){
   #arrow{

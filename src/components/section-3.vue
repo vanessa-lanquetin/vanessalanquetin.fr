@@ -10,12 +10,12 @@
       </h2>
       <div id="content-formations" class="content">
         <div class="image" v-scroll-reveal="{ preset: 'top', delay: 100 }">
-          <img id="img2" src="../assets/Img/img2.webp" alt="" />
+          <img id="img2" src="../assets/Img/zye.jpg" alt="" />
         </div>
         <div class="info" v-scroll-reveal="{ preset: 'bottom' }">
           <div>
-            <ul id="formations-list">
-              <li class="item-formations">
+            <ul id="formations-list" class="text-box">
+              <li class="item-formations ">
                 <strong>Formation</strong>
                 <em class="text-blue"> Prep’Apprentissage</em> –
                 <strong>Openclassrooms</strong> ,2021
@@ -56,16 +56,24 @@ export default {};
 .sec-03 #img2 {
   width: 600px;
   height: 400px;
-  filter: contrast(180%);
+  opacity: 65%;
+  filter: saturate(230%);
 }
 .sec-03 .content {
   justify-content: center;
-  color: white;
+  color: #374752;
 }
 .sec-03 .info {
   text-align: left;
   margin-left: 20px;
   font-size: 1.2em;
+}
+.sec-03 .text-box{
+  max-width: none;
+  padding: 10px 20px;
+}
+.sec-03 .text-blue {
+  color: #f4b183;
 }
 .item-formations {
   margin: 40px 0;

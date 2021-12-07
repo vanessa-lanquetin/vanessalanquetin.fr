@@ -37,7 +37,7 @@
           alternance et y développer mes compétences.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img id="img1" src="../assets/Img/img1.webp" alt="" />
+          <img id="img1" src="../assets/Img/f.jpg" alt="" />
         </div>
         <div
           id="info"
@@ -56,7 +56,7 @@
               <li class="logo">
                 <a
                   target="blank"
-                  href="https://www.linkedin.com/in/vanessa-lanquetin-15742b153/"
+                  href="https://www.linkedin.com/in/vanessa-lanquetin"
                 >
                   <img
                     class="img-logo"
@@ -100,7 +100,9 @@
 }
 .sec-01 #img1 {
   height: 100%;
-  filter: contrast(140%);
+  // filter: grayscale(100%);
+  opacity: 65%;
+  filter: saturate(230%);
 }
 
 .sec-01 .content {
@@ -108,10 +110,9 @@
 }
 .main-title {
   font-size: 4em;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 60px 0;
   width: 100%;
-  color: white;
+  color: #f4b183;
 }
 /* INFOS */
 #info {
@@ -139,6 +140,15 @@
 }
 .text-logo {
   margin: auto 5px;
+}
+#download{
+  margin-top: 50px;
+  background-color: #374752;
+  color: #fff;
+  padding: 18px;
+  border: 3px solid #f4b183;
+  font-size: 1.1em;
+  border-radius: 60px;
 }
 @media screen and (min-width: 1870px) {
   #main-img {
@@ -188,7 +198,7 @@
     padding: 0 20px;
     box-sizing: border-box;
   }
-  #main-img{
+  #main-img {
     margin: 0;
   }
   .sec-01 .content {
