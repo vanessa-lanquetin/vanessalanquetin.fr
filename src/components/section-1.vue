@@ -3,6 +3,7 @@
     <h1 class="main-title" v-scroll-reveal="{ preset: 'left' }">
       Vanessa Lanquetin
     </h1>
+    <!-- <img id="round-img" src="../assets/Img/2.jpg" alt="" /> -->
     <div class="container">
       <div class="content">
         <div
@@ -11,7 +12,7 @@
           v-scroll-reveal="{ preset: 'right', delay: 100 }"
         >
           <h2>Présentation</h2>
-          Ayant pour ambition d'être développeuse web, j'ai intégré le cursus
+          J'ai récemment suivi le cursus
           <a
             class="link"
             target="blank"
@@ -19,10 +20,8 @@
           >
             Prep'Apprentissage</a
           >
-          d'Openclassrooms qui prend fin le 02 Décembre 2021.
-          <br />
-          <br />
-          J'ai pour projet par la suite de suivre la formation de
+          d'Openclassrooms, il s'agit d'une préformation de 4 mois pour la
+          formation
           <a
             class="link"
             target="blank"
@@ -30,14 +29,21 @@
           >
             Développeur Web</a
           >
-          d'Openclassrooms en alternance qui durera 1 an.
+          qui se déroulera en alternance pendant an, sous un rythme de 3 à 4
+          jours par semaine en entreprise.
           <br />
           <br />
           Je recherche ainsi une entreprise d'accueil pour y faire mon
-          alternance et y développer mes compétences.
+          alternance et y développer mes compétences dans le secteur de Nancy ou
+          en full remote.
+          <br />
+          <br />
+          J'ai déjà pu acquérir quelques compétences en réalisant des projets
+          lors de la formation Prep'apprentissage mais aussi lors de mon temps
+          libre.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img id="img1" src="../assets/Img/f.jpg" alt="" />
+          <img id="img1" src="@/assets/Img/f.jpg" alt="" />
         </div>
         <div
           id="info"
@@ -80,7 +86,6 @@
           </div>
         </div>
       </div>
-      <button>Télécharger mon cv</button>
     </div>
   </section>
 </template>
@@ -89,6 +94,12 @@
 </script>
 
 <style lang="scss" scoped>
+#round-img {
+  position: absolute;
+  z-index: 99;
+  width: 200px;
+  top: 180px;
+}
 .sec-01 {
   display: flex;
   flex-direction: column;
@@ -125,7 +136,7 @@
 }
 
 .social-networks {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .logo {
   margin-bottom: 15px;
@@ -142,7 +153,7 @@
 .text-logo {
   margin: auto 5px;
 }
-#download{
+#download {
   margin-top: 50px;
   background-color: #374752;
   color: #fff;

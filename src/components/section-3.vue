@@ -10,7 +10,7 @@
       </h2>
       <div id="content-formations" class="content">
         <div class="image" v-scroll-reveal="{ preset: 'top', delay: 100 }">
-          <img id="img2" src="../assets/Img/zye.jpg" alt="" />
+          <img id="img2" src="@/assets/Img/zye.jpg" alt="" />
         </div>
         <div class="info" v-scroll-reveal="{ preset: 'bottom' }">
           <div>
@@ -71,9 +71,6 @@ export default {};
 .sec-03 .text-box{
   max-width: none;
   padding: 10px 20px;
-}
-.sec-03 .text-blue {
-  color: #f4b183;
 }
 .item-formations {
   margin: 40px 0;
