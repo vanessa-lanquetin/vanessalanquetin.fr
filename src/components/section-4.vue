@@ -10,7 +10,7 @@
       </h2>
       <div class="content">
         <div class="image">
-          <img id="img3" src="@/assets/Img/ffg.jpeg" alt="" />
+          <img id="img3" src="@/assets/img/botanic3.webp" alt="jardin botanique" />
         </div>
         <div class="text-box" v-scroll-reveal="{ preset: 'right', delay: 700 }">
           <tabs id="tab" :tabs="tabs" :showLabels="false">

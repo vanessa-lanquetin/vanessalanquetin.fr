@@ -43,7 +43,7 @@
           libre.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img id="img1" src="@/assets/Img/f.jpg" alt="" />
+          <img id="img1" src="@/assets/img/botanic1.webp" alt="jardin botanique" />
         </div>
         <div
           id="info"
@@ -66,7 +66,7 @@
                 >
                   <img
                     class="img-logo"
-                    src="../assets/Img/logo-linkedin.webp"
+                    src="../assets/img/logo-linkedin.webp"
                     alt="linkedin"
                   />
                   <div class="text-logo link">Linkedin</div>
@@ -76,7 +76,7 @@
                 <a target="blank" href="https://github.com/vanessa-lanquetin">
                   <img
                     class="img-logo"
-                    src="../assets/Img/logo-github.webp"
+                    src="../assets/img/logo-github.webp"
                     alt="github"
                   />
                   <div class="text-logo link">Github</div>
