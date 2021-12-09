@@ -1,12 +1,14 @@
 <template>
   <section class="sec-01">
-    <div class="main-title" v-scroll-reveal="{ preset: 'left' }">
-    <h1  >
-      Vanessa Lanquetin
-    </h1>
+    <div id="main-title" v-scroll-reveal="{ preset: 'left' }">
+      <div id="container-title">
+        <h1>Vanessa Lanquetin <br /></h1>
+      </div>
+      <div class="pulse-anim">
+        <img id="round-img" src="../assets/img/2.jpg" alt="" />
+      </div>
     </div>
 
-    <!-- <img id="round-img" src="../assets/Img/2.jpg" alt="" /> -->
     <div class="container">
       <div class="content">
         <div
@@ -101,11 +103,32 @@
 </script>
 
 <style lang="scss" scoped>
+.pulse-anim {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 0 0 #f4b183;
+  animation: pulse 1.7s infinite;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.01);
+  }
+}
+
 #round-img {
-  position: absolute;
-  z-index: 99;
-  width: 200px;
-  top: 180px;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  filter: saturate(150%);
+}
+#container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
 }
 .sec-01 {
   display: flex;
@@ -118,18 +141,23 @@
   max-width: 750px;
 }
 .sec-01 #img1 {
-height: 100%;
-filter: saturate(230%);
+  height: 100%;
+  filter: saturate(230%);
 }
 
 .sec-01 .content {
   margin: 0 150px;
 }
-.main-title {
+#main-title {
   font-size: 2.5em;
-  margin: 40px 0;
-  width: 100%;
+  margin: 20px 0;
+  width: 80%;
   color: #f4b183;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 50px;
 }
 /* INFOS */
 #info {
@@ -210,7 +238,7 @@ filter: saturate(230%);
     margin: 0;
     padding: 30px;
   }
-  .main-title {
+  #main-title {
     font-size: 2.6em;
     padding: 0 20px;
     box-sizing: border-box;
