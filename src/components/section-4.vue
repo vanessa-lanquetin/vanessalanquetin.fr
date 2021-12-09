@@ -88,9 +88,6 @@ export default {
 
 
 Tabs<style lang="scss" scoped>
-.sec-04 {
-  margin-bottom: 100px;
-}
 .sec-04 .content {
   justify-content: center;
   flex-direction: row-reverse;

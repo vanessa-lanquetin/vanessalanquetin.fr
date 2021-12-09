@@ -129,6 +129,10 @@
   flex-direction: column;
   justify-content: right;
   text-align: right;
+  
+}
+#container-title h1{
+  font-size: 3em;
 }
 .sec-01 {
   display: flex;
@@ -149,7 +153,6 @@
   margin: 0 150px;
 }
 #main-title {
-  font-size: 2.5em;
   margin: 20px 0;
   width: 80%;
   color: #f4b183;
@@ -204,6 +207,18 @@
     max-width: 500px;
   }
 }
+@media screen and (max-width: 1501px){
+
+  #container-title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    #main-title {
+
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1400px) {
   #main-img {
     display: none;
@@ -232,24 +247,38 @@
   .sec-01 #info a {
     justify-content: center;
   }
+    #container-title h1 {
+    font-size: 2.5em;
+  }
 }
 @media screen and (max-width: 810px) {
   .sec-01 .text-box {
     margin: 0;
     padding: 30px;
   }
-  #main-title {
-    font-size: 2.6em;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+
   #main-img {
     margin: 0;
   }
   .sec-01 .content {
     margin: 15px;
   }
-}
 
+}
+@media screen and (max-width: 500px) {
+  #container-title {
+    justify-content: center;
+  }
+
+  #container-title h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 383px) {
+  .pulse-anim{
+    display: none;
+  }
+
+}
 /* Responsive OK jusuq'à l'indicateur tablet */
 </style>
