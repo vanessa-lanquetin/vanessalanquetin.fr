@@ -177,6 +177,7 @@ figcaption {
   justify-content: center;
   flex-grow: 1;
   gap: 30px;
+  margin-bottom: 80px;
   .text-box {
     max-width: 700px;
     text-align: left;

@@ -56,8 +56,7 @@ export default {};
 .sec-03 #img2 {
   width: 600px;
   height: 400px;
-  // opacity: 65%;
-  // filter: saturate(230%);
+  filter: saturate(230%);
 }
 .sec-03 .content {
   justify-content: center;
