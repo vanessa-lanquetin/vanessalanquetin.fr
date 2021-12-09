@@ -43,7 +43,11 @@
           libre.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img id="img1" src="../assets/img/botanic1.webp" alt="jardin botanique" />
+          <img
+            id="img1"
+            src="../assets/img/botanic1.webp"
+            alt="jardin botanique"
+          />
         </div>
         <div
           id="info"
@@ -110,11 +114,11 @@
   margin: 0 20px;
   //opacity: 1;
 }
-// .sec-01 #img1 {
+.sec-01 #img1 {
 //   height: 100%;
-//   opacity: 65%;
+  opacity: 65%;
 //   filter: saturate(230%);
-// }
+}
 
 .sec-01 .content {
   margin: 0 150px;

@@ -99,9 +99,8 @@ Tabs<style lang="scss" scoped>
 .sec-04 #img3 {
   width: 600px;
   height: 400px;
-    // filter: grayscale(100%);
-  opacity: 65%;
-  filter: saturate(230%);
+  // opacity: 65%;
+  // filter: saturate(230%);
 }
 .tabs p {
   margin-top: 20px;
