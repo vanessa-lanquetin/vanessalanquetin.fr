@@ -112,12 +112,11 @@
   height: auto;
   flex-grow: 1;
   margin: 0 20px;
-  //opacity: 1;
+  opacity: 65%;
 }
 .sec-01 #img1 {
-//   height: 100%;
-  opacity: 65%;
-//   filter: saturate(230%);
+  height: 100%;
+filter: saturate(230%);
 }
 
 .sec-01 .content {
