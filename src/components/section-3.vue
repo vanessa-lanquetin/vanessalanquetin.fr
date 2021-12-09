@@ -10,7 +10,7 @@
       </h2>
       <div id="content-formations" class="content">
         <div class="image" v-scroll-reveal="{ preset: 'top', delay: 100 }">
-          <img src="../assets/img/portfolio/b2.webp" alt="" />
+          <img src="../assets/img/b2.webp" alt="" />
         </div>
         <div class="info" v-scroll-reveal="{ preset: 'bottom' }">
           <div>

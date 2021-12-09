@@ -43,7 +43,7 @@
           libre.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img src="../assets/img/portfolio/b1.webp" alt="" />
+          <img src="../assets/img/b1.webp" alt="" />
         </div>
         <div
           id="info"
