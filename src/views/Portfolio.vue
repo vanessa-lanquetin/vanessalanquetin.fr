@@ -5,7 +5,7 @@
   <section id="container-items-portfolio">
     <figure class="text-box">
       <a href="https://vanessa-lanquetin.github.io/webflix/" target="blank">
-        <img src="../assets/img/webflix.webp" alt="" />
+        <img src="../assets/img/portfolio/webflix.webp" alt="" />
         <h3>Webflix</h3>
       </a>
       <div class="description">
@@ -27,7 +27,7 @@
       >
         <img
           id="reservia"
-          src="../assets/img/reservia2.webp"
+          src="../assets/img/portfolio/reservia2.webp"
           alt=""
         />
         <h3>Réservia</h3>
@@ -50,7 +50,7 @@
     </figure>
     <figure class="text-box">
       <a href="https://artchallenges.vanessalanquetin.fr/" target="blank">
-        <img src="../assets/img/art-project.webp" alt="" />
+        <img src="../assets/img/portfolio/art-project.webp" alt="" />
         <h3>Art Challenges</h3>
       </a>
       <div class="description">
@@ -70,7 +70,7 @@
     </figure>
     <figure class="text-box">
       <a href="https://vanessa-lanquetin.github.io/meteo/" target="blank">
-        <img src="../assets/img/meteo.webp" alt="" />
+        <img src="../assets/img/portfolio/meteo.webp" alt="" />
         <h3>Météo</h3>
       </a>
       <div class="description">
@@ -93,7 +93,7 @@
         href="https://vanessa-lanquetin.github.io/fm-stats-preview-card-component/"
         target="blank"
       >
-        <img src="../assets/img/stats-preview-card.webp" alt="" />
+        <img src="../assets/img/portfolio/stats-preview-card.webp" alt="" />
         <h3>Challenge Front-End - Stats Preview Card</h3>
       </a>
       <div class="description">
@@ -116,7 +116,7 @@
         href="https://vanessa-lanquetin.github.io/3-column-preview-card-component/"
         target="blank"
       >
-        <img src="../assets/img/3column-preview-card.webp" alt="" />
+        <img src="../assets/img/portfolio/3column-preview-card.webp" alt="" />
         <h3>Challenge Front-End - 3 Column Preview Card</h3>
       </a>
       <div class="description">

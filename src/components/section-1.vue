@@ -1,8 +1,11 @@
 <template>
   <section class="sec-01">
-    <h1 class="main-title" v-scroll-reveal="{ preset: 'left' }">
+    <div class="main-title" v-scroll-reveal="{ preset: 'left' }">
+    <h1  >
       Vanessa Lanquetin
     </h1>
+    </div>
+
     <!-- <img id="round-img" src="../assets/Img/2.jpg" alt="" /> -->
     <div class="container">
       <div class="content">
@@ -112,6 +115,7 @@
   height: auto;
   flex-grow: 1;
   margin: 0 20px;
+  max-width: 750px;
 }
 .sec-01 #img1 {
 height: 100%;
@@ -122,8 +126,8 @@ filter: saturate(230%);
   margin: 0 150px;
 }
 .main-title {
-  font-size: 4em;
-  margin: 60px 0;
+  font-size: 2.5em;
+  margin: 40px 0;
   width: 100%;
   color: #f4b183;
 }
@@ -164,9 +168,9 @@ filter: saturate(230%);
   border-radius: 60px;
 }
 @media screen and (min-width: 1870px) {
-  #main-img {
-    height: 520px;
-  }
+  // #main-img {
+  //   height: 520px;
+  // }
   .sec-01 .text-box {
     font-size: 1.1em;
     max-width: 500px;
