@@ -5,7 +5,7 @@
   <section id="container-items-portfolio">
     <figure class="text-box">
       <a href="https://vanessa-lanquetin.github.io/webflix/" target="blank">
-        <img id="img3" src="../assets/img/botanic3.webp" alt="jardin botanique" />
+        <img src="../assets/img/webflix.webp" alt="" />
         <h3>Webflix</h3>
       </a>
       <div class="description">
