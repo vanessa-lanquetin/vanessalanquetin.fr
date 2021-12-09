@@ -43,7 +43,7 @@
           libre.
         </div>
         <div id="main-img" class="image" v-scroll-reveal="{ preset: 'bottom' }">
-          <img src="../assets/img/b1.webp" alt="" />
+          <img id="img1" src="../assets/img/botanic1.webp" alt="jardin botanique" />
         </div>
         <div
           id="info"
@@ -108,14 +108,13 @@
   height: auto;
   flex-grow: 1;
   margin: 0 20px;
-  opacity: 1;
+  //opacity: 1;
 }
-.sec-01 #img1 {
-  height: 100%;
-  // filter: grayscale(100%);
-  opacity: 65%;
-  filter: saturate(230%);
-}
+// .sec-01 #img1 {
+//   height: 100%;
+//   opacity: 65%;
+//   filter: saturate(230%);
+// }
 
 .sec-01 .content {
   margin: 0 150px;
