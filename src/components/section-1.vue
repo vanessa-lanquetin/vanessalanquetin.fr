@@ -103,55 +103,20 @@
 </script>
 
 <style lang="scss" scoped>
-.pulse-anim {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #000;
-  box-shadow: 0 0 0 0 #f4b183;
-  animation: pulse 1.7s infinite;
-}
-
-@keyframes pulse {
-  to {
-    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.01);
-  }
-}
-
-#round-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 60%;
-  filter: saturate(150%);
-}
-#container-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  text-align: right;
-  
-}
-#container-title h1{
-  font-size: 3em;
-}
+// En tête  & title
 .sec-01 {
   display: flex;
   flex-direction: column;
-}
-#main-img {
-  height: auto;
-  flex-grow: 1;
-  margin: 0 20px;
-  max-width: 750px;
-}
-.sec-01 #img1 {
-  height: 100%;
-  filter: saturate(230%);
+
+  & #img1 {
+    height: 100%;
+    filter: saturate(230%);
+  }
+  & .content {
+    margin: 0 150px;
+  }
 }
 
-.sec-01 .content {
-  margin: 0 150px;
-}
 #main-title {
   margin: 20px 0;
   width: 80%;
@@ -161,7 +126,45 @@
   justify-content: right;
   align-items: center;
   gap: 50px;
+
+  #container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;  
+  }
+
+  #container-title h1{
+  font-size: 3em;
+  } 
 }
+.pulse-anim {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 0 0 #f4b183;
+  animation: pulse 1.7s infinite;
+
+  #round-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  filter: saturate(150%);
+}
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.01);
+  }
+}
+#main-img {
+  height: auto;
+  flex-grow: 1;
+  margin: 0 20px;
+  max-width: 750px;
+}
+
 /* INFOS */
 #info {
   text-align: left;
@@ -189,15 +192,7 @@
 .text-logo {
   margin: auto 5px;
 }
-#download {
-  margin-top: 50px;
-  background-color: #374752;
-  color: #fff;
-  padding: 18px;
-  border: 3px solid #f4b183;
-  font-size: 1.1em;
-  border-radius: 60px;
-}
+
 @media screen and (min-width: 1870px) {
   // #main-img {
   //   height: 520px;
@@ -233,7 +228,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-
     justify-content: center;
   }
   .sec-01 .text-box {
@@ -274,7 +268,7 @@
     font-size: 2em;
   }
 }
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 428px) {
   .pulse-anim{
     display: none;
   }

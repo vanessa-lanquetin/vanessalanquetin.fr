@@ -14,21 +14,44 @@
           class="text-box"
           v-scroll-reveal="{ preset: 'right', delay: 100 }"
         >
-          <h2>Hard Skills</h2>
-          <div id="competences-hardskills" class="competences">
-            <div class="competence langage container-item-competence">
-              <div class="titles-competences">Langage :</div>
-              <div class="text-blue item-competences container-langage">
-                <div class="lang">HTML</div>
-                <div class="lang">CSS</div>
-                <div>Javascript</div>
-                <div>SASS/SCSS</div>
+          <h2><i class="fas fa-caret-square-down"></i>Hard Skills</h2>
+          <article id="leves">
+            <article class="container-hard-skill">
+              <div class="name-skill"><i class="fab fa-html5"></i> Html</div>
+              <div class="container-level">
+                <div class="level-skill" id="level-html"></div>
               </div>
-            </div>
-            <div class="container-item-competence">
-              <div class="titles-competences">Framework :</div>
-              <div class="text-blue item-competences">Vue.js</div>
-            </div>
+            </article>
+
+            <article class="container-hard-skill">
+              <div class="name-skill"><i class="fab fa-css3-alt"></i> Css</div>
+              <div class="container-level">
+                <div class="level-skill" id="level-css"></div>
+              </div>
+            </article>
+
+            <article class="container-hard-skill">
+              <div class="name-skill"><i class="fab fa-js"></i> Javascript</div>
+              <div class="container-level">
+                <div class="level-skill" id="level-js"></div>
+              </div>
+            </article>
+
+            <article class="container-hard-skill">
+              <div class="name-skill"><i class="fab fa-sass"></i> Sass</div>
+              <div class="container-level">
+                <div class="level-skill" id="level-sass"></div>
+              </div>
+            </article>
+
+            <article class="container-hard-skill">
+              <div class="name-skill"><i class="fab fa-vuejs"></i> Vuejs</div>
+              <div class="container-level">
+                <div class="level-skill" id="level-vuejs"></div>
+              </div>
+            </article>
+          </article>
+          <article id="info-competences">
             <div class="container-item-competence">
               <div class="titles-competences">Gestion de projet :</div>
               <div class="text-blue item-competences">GIT & Github</div>
@@ -47,33 +70,28 @@
               <div class="titles-competences">Graphisme :</div>
               <div class="text-blue item-competences">Figma</div>
             </div>
-          </div>
+          </article>
         </div>
-        <div
+        <article
           id="soft-skills"
           class="text-box"
           v-scroll-reveal="{ preset: 'right', delay: 700 }"
         >
-          <h2>Soft Skills</h2>
+          <h2><i class="fas fa-caret-square-down"></i>Soft Skills</h2>
           <div id="competences-softskills" class="competences">
-            <div class="container-items-soft">
-              <div class="item-soft text-blue">Créativité</div>
-              <div class="item-soft">Curiosité</div>
-            </div>
-            <div class="container-items-soft">
-              <div class="item-soft">Communication</div>
-              <div class="item-soft text-blue">Détermination</div>
-            </div>
-            <div class="container-items-soft">
-              <div class="item-soft text-blue">Fléxibilité</div>
-              <div class="item-soft">Adaptabilité</div>
-            </div>
-            <div class="container-items-soft">
-              <div class="item-soft">Esprit d'équipe</div>
-              <div class="item-soft text-blue">Confiance</div>
-            </div>
+            <div class="item-soft text-blue">Créativité</div>
+            <div class="item-soft text-blue">Curiosité</div>
+
+            <div class="item-soft text-blue">Communication</div>
+            <div class="item-soft text-blue">Détermination</div>
+
+            <div class="item-soft text-blue">Fléxibilité</div>
+            <div class="item-soft text-blue">Adaptabilité</div>
+
+            <div class="item-soft text-blue">Esprit d'équipe</div>
+            <div class="item-soft text-blue">Confiance</div>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -94,58 +112,84 @@ export default {};
 }
 .sec-02 .content {
   justify-content: center;
-  gap: 80px;
+  gap: 10px;
   margin: 0 150px;
 }
 .sec-02 .text-box {
   max-width: none;
   font-size: 1.3em;
 }
-.container-item-competence {
-  margin-bottom: 10px;
+.fa-caret-square-down {
+  font-size: 20px;
+  margin-right: 10px;
+}
+// HARD SKILLS
+#hard-skills {
+  text-align: left;
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-level {
+  background-color: white;
+  width: 100%;
+  height: 10px;
+}
+.level-skill {
+  background-color: #f4b183;
+  height: 10px;
+}
+// LEVELS
+#level-html {
+  width: 60%;
+}
+#level-css {
+  width: 70%;
+}
+#level-js {
+  width: 10%;
+}
+#level-sass {
+  width: 30%;
+}
+#level-vuejs{
+  width: 20%;
 }
 
-.langage {
-  display: flex;
-  margin-bottom: 10px;
-}
-#competences-softskills {
-  text-align: center;
-  display: flex;
-}
-#items-competences {
-  font-size: 1.3em;
-}
 .container-item-competence {
   margin-bottom: 10px;
   display: flex;
 }
-.langage {
+
+#info-competences {
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: column;
+  font-size: 0.8em;
 }
-.container-langage {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+
+.titles-competences {
+  margin-right: 10px;
 }
+
+// SOFT SKILLS
 .item-competences {
   display: flex;
 }
 #competences-softskills {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  display: flex;
+  text-align: left;
+  padding-top: 20px;
 }
 .container-items-soft {
   display: flex;
   justify-content: space-between;
-  gap: 120px;
+  gap: 0px;
 }
 .item-soft {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 15px 0px;
 }
 @media screen and (max-width: 1591px) {
   .sec-02 .content {
