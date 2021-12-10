@@ -34,7 +34,7 @@
           >
             Développeur Web</a
           >
-          qui se déroulera en alternance pendant an, sous un rythme de 3 à 4
+          qui se déroulera en alternance pendant 1 an, sous un rythme de 3 à 4
           jours par semaine en entreprise.
           <br />
           <br />
