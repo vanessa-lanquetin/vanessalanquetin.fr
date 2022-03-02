@@ -267,8 +267,11 @@
   #container-title h1 {
     font-size: 2em;
   }
+  #main-title{
+    gap:30px;
+  }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 400px) {
   .pulse-anim{
     display: none;
   }
