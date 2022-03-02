@@ -260,18 +260,18 @@
 
 }
 @media screen and (max-width: 500px) {
-  #container-title {
-    justify-content: center;
-  }
+  // #container-title {
+  //   justify-content: center;
+  // }
 
   #container-title h1 {
     font-size: 2em;
   }
   #main-title{
-    gap:30px;
+    gap:20px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   .pulse-anim{
     display: none;
   }
