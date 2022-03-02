@@ -34,7 +34,7 @@
               <br />
               <br />
             </div>
-            J’ai actuellement intégré le cursus Prep'Apprentissage
+            J’ai récemment suivi intégré le cursus Prep'Apprentissage
             d'Openclassrooms pour démarrer cette alternance dans les meilleures
             conditions possibles.
             <div class="space">

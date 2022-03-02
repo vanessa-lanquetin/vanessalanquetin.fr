@@ -144,16 +144,16 @@ export default {};
   width: 60%;
 }
 #level-css {
-  width: 70%;
+  width: 55%;
 }
 #level-js {
-  width: 10%;
+  width: 5%;
 }
 #level-sass {
-  width: 30%;
+  width: 7%;
 }
 #level-vuejs{
-  width: 20%;
+  width: 10%;
 }
 
 .container-item-competence {
