@@ -29,12 +29,12 @@
             <br />
             <br />
             Je recherche activement une alternance pour une durée d’ un an, sur
-            un rythme de 4 jours par semaine en entreprise.
+            un rythme de 3 à 4 jours par semaine en entreprise.
             <div class="space">
               <br />
               <br />
             </div>
-            J’ai récemment suivi intégré le cursus Prep'Apprentissage
+            J’ai récemment suivi le cursus Prep'Apprentissage
             d'Openclassrooms pour démarrer cette alternance dans les meilleures
             conditions possibles.
             <div class="space">
