@@ -48,7 +48,7 @@
         charte graphique. Grâce à ce projet j'ai expérmienté grid.
       </figcaption>
     </figure>
-    <figure class="text-box">
+    <!-- <figure class="text-box">
       <a href="https://artchallenges.vanessalanquetin.fr/" target="blank">
         <img src="../assets/img/portfolio/art-project.webp" alt="" />
         <h3>Art Challenges</h3>
@@ -67,7 +67,7 @@
         Au menu divers outils : des générateurs, un minuteur et des défis, cela
         permet d'apporter du challenge mais aussi de l'inspiration.
       </figcaption>
-    </figure>
+    </figure> -->
     <figure class="text-box">
       <a href="https://vanessa-lanquetin.github.io/meteo/" target="blank">
         <img src="../assets/img/portfolio/meteo.webp" alt="" />
