@@ -54,7 +54,7 @@
               <br />
               <br />
             </div>
-            J'ai également expérimenté le SJS, SASS et utilisé le Framework
+            J'ai également expérimenté le JS, SASS et utilisé le Framework
             Vue.js pour mes projets personnels. J’ai su me former de manière
             autodidacte et en autonomie, m’organiser, gérer mon temps, me
             challenger en découvrant un domaine inconnu.
