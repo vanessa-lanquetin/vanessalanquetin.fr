@@ -11,12 +11,6 @@
           v-scroll-reveal="{ preset: 'right', delay: 100 }"
         >
           <div id="header-letter">
-            <div id="coordonnees">
-              <div>Vanessa LANQUETIN</div>
-              <div>54230 NEUVES MAISONS</div>
-              <div>Tél : 06.71.89.91.25</div>
-              <div>Mail : lanquetin.vanessa@gmail.com</div>
-            </div>
             <div id="object">
               <div>Objet : Alternance Développeur Web</div>
               <div>P.J : CV</div>
@@ -28,7 +22,7 @@
             Madame,Monsieur,
             <br />
             <br />
-            Je recherche activement une alternance pour une durée d’ un an, sur
+            Je recherche activement une alternance pour une durée d’un an, sur
             un rythme de 3 à 4 jours par semaine en entreprise.
             <div class="space">
               <br />
