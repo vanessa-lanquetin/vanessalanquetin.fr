@@ -1,6 +1,6 @@
 {
   "name": "vanessa-lanquetin",
-  "version": "1.4.27",
+  "version": "1.4.28",
   "private": true,
   "scripts": {
     "serve": "stack-monitor ./stack.js",
