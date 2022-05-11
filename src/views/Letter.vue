@@ -56,7 +56,7 @@
             <br />
             <br />
             Lors de mon cursus Prep'Apprentissage j'ai réalisé différents
-            projets >notamment l’intégration d’une maquette, j’ai conçu ce site
+            projets notamment l’intégration d’une maquette, j’ai conçu ce site
             avec du
             <span>HTML</span> et <span>CSS</span> tout en prenant en compte le
             cahier des charges et en respectant la charte graphique.
@@ -166,6 +166,10 @@ span {
 @media screen and (max-width: 514px){
   #body-letter{
     text-align: center;
+  }
+
+  #signature{
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {
