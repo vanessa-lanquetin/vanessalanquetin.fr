@@ -16,6 +16,7 @@
     "core-js": "^3.6.5",
     "joi": "^17.6.0",
     "latest-version": "^6.0.0",
+    "micromatch": "^4.0.5",
     "sass": "^1.51.0",
     "scrollreveal": "^4.0.9",
     "uuid": "^8.3.2",
