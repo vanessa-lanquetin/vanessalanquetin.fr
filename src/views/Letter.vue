@@ -16,8 +16,8 @@
               <div>54230 NEUVES MAISONS</div>
             </div>
             <div id="object">
-              <div>Objet : Alternance Développeur Web</div>
-              <div>P.J : CV</div>
+              <div><span>Objet : </span>Alternance Développeur Web</div>
+              <div><span>P.J :</span> CV</div>
             </div>
           </div>
           <div id="body-letter">
@@ -26,53 +26,71 @@
             Madame,Monsieur,
             <br />
             <br />
-            Je recherche activement une alternance pour une durée d’un an, sur
-            un rythme de 3 à 4 jours par semaine en entreprise.
+            Je recherche activement
+            <span
+              >une alternance pour une durée d’un an, sur un rythme de 3 à 4
+              jours</span
+            >
+            par semaine en entreprise.
             <div class="space">
               <br />
               <br />
             </div>
-            J’ai récemment suivi le cursus Prep'Apprentissage
-            d'Openclassrooms pour démarrer cette alternance dans les meilleures
-            conditions possibles.
+            J’ai récemment suivi le cursus
+            <a
+              class="link"
+              target="blank"
+              href="https://info.openclassrooms.com/fr/lp/prepapprentissage"
+              >Prep'Apprentissage d'Openclassrooms</a
+            >
+            pour démarrer cette alternance dans les meilleures conditions
+            possibles.
             <div class="space">
               <br />
               <br />
             </div>
             Je souhaite poursuivre cette formation afin d’acquérir les
             connaissances et les compétences nécessaires au métier de
-            développeur web au sein de votre structure.
+            <span>développeur web</span>
+            au sein de votre structure.
             <br />
             <br />
-            Lors de mon cursus Prep'Apprentissage j'ai réalisé différents
-            projets notamment l’intégration d’une maquette, j’ai conçu ce site
-            avec du HTML et CSS tout en prenant en compte le cahier des charges
-            et en respectant la charte graphique.
+            Lors de mon cursus Prep'Apprentissage j'ai réalisé
+            <router-link class="link" target="_blank" :to="{ name: 'portfolio' }"
+              >différents projets </router-link
+            >notamment l’intégration d’une maquette, j’ai conçu ce site avec du
+            <span>HTML</span> et <span>CSS</span> tout en prenant en compte le
+            cahier des charges et en respectant la charte graphique.
             <div class="space">
               <br />
               <br />
             </div>
-            J'ai également expérimenté le JS, SASS et utilisé le Framework
-            Vue.js pour mes projets personnels. J’ai su me former de manière
-            autodidacte et en autonomie, m’organiser, gérer mon temps, me
-            challenger en découvrant un domaine inconnu.
+            J'ai également expérimenté
+            <span
+              >JS, SASS et utilisé le Framework Vue.js pour mes projets
+              personnels</span
+            >
+            . J’ai su me former de manière autodidacte et en autonomie,
+            m’organiser, gérer mon temps, me challenger en découvrant un domaine
+            inconnu.
             <div class="space">
               <br />
               <br />
             </div>
-            Ma capacité d’adaptation et ma flexibilité face au changement
-            comptent parmi mes compétences principales.
+            <span>Ma capacité d’adaptation et ma flexibilité </span>
+            face au changement comptent parmi mes compétences principales.
             <br />
             <br />
             De plus m’avoir dans votre équipe, vous permettrait d’avoir un
-            regard neuf sur votre entreprise, et y apporter du dynamisme.
+            <span>regard neuf</span> sur votre entreprise, et y apporter du
+            <span>dynamisme</span>.
             <div class="space">
               <br />
               <br />
             </div>
-            Répondre aux attentes de vos clients et ainsi contribuer au
-            développement de votre entreprise en vous aidant à atteindre vos
-            objectifs serait une expérience très enrichissante pour moi.
+            Répondre aux attentes de vos clients et ainsi <span> contribuer au
+            développement de votre entreprise</span> en vous aidant à atteindre vos
+            objectifs serait <span>une expérience très enrichissante pour moi.</span> 
             <div class="space">
               <br />
               <br />
@@ -90,7 +108,7 @@
             Veuillez agréer Madame, Monsieur, mes salutations distinguées.
             <br />
             <br />
-            Vanessa LANQUETIN
+            <div id="signature">Vanessa LANQUETIN</div>
           </div>
         </div>
       </div>
@@ -128,8 +146,15 @@ export default {};
     flex-wrap: wrap;
   }
 }
+#signature {
+  text-align: right;
+}
 .space {
   display: none;
+}
+
+span {
+  color: #f4b183;
 }
 @media screen and (max-width: 1360px) {
   #sec-letter .text-box {
