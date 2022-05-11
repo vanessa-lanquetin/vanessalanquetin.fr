@@ -14,8 +14,6 @@
             <div id="coordonnees">
               <div>Vanessa LANQUETIN</div>
               <div>54230 NEUVES MAISONS</div>
-              <div>Tél : 06.71.89.91.25</div>
-              <div>Mail : lanquetin.vanessa@gmail.com</div>
             </div>
             <div id="object">
               <div>Objet : Alternance Développeur Web</div>
