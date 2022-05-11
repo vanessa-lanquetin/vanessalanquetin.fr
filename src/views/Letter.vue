@@ -36,15 +36,15 @@
               <br />
               <br />
             </div>
-            J’ai récemment suivi le cursus
+            J’ai récemment suivi le cursus 
             <a
               class="link"
               target="blank"
               href="https://info.openclassrooms.com/fr/lp/prepapprentissage"
-              >Prep'Apprentissage d'Openclassrooms</a
+              >Prep'Apprentissage</a
             >
-            pour démarrer cette alternance dans les meilleures conditions
-            possibles.
+            d'Openclassrooms pour démarrer cette alternance dans les meilleures
+            conditions possibles.
             <div class="space">
               <br />
               <br />
@@ -55,10 +55,9 @@
             au sein de votre structure.
             <br />
             <br />
-            Lors de mon cursus Prep'Apprentissage j'ai réalisé
-            <router-link class="link" target="_blank" :to="{ name: 'portfolio' }"
-              >différents projets </router-link
-            >notamment l’intégration d’une maquette, j’ai conçu ce site avec du
+            Lors de mon cursus Prep'Apprentissage j'ai réalisé différents
+            projets >notamment l’intégration d’une maquette, j’ai conçu ce site
+            avec du
             <span>HTML</span> et <span>CSS</span> tout en prenant en compte le
             cahier des charges et en respectant la charte graphique.
             <div class="space">
@@ -88,9 +87,10 @@
               <br />
               <br />
             </div>
-            Répondre aux attentes de vos clients et ainsi <span> contribuer au
-            développement de votre entreprise</span> en vous aidant à atteindre vos
-            objectifs serait <span>une expérience très enrichissante pour moi.</span> 
+            Répondre aux attentes de vos clients et ainsi
+            <span> contribuer au développement de votre entreprise</span> en
+            vous aidant à atteindre vos objectifs serait
+            <span>une expérience très enrichissante pour moi.</span>
             <div class="space">
               <br />
               <br />
@@ -162,6 +162,12 @@ span {
     margin-bottom: 80px;
   }
 }
+
+@media screen and (max-width: 514px){
+  #body-letter{
+    text-align: center;
+  }
+}
 @media screen and (max-width: 360px) {
   #sec-letter .text-box {
     padding: 20px;
@@ -169,7 +175,6 @@ span {
   }
   #body-letter {
     margin-top: 20px;
-    text-align: justify;
   }
   .space {
     display: block;
