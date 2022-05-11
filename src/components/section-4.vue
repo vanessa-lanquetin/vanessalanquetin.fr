@@ -10,7 +10,11 @@
       </h2>
       <div class="content">
         <div class="image">
-          <img id="img3" src="../assets/img/botanic3.webp" alt="jardin botanique" />
+          <img
+            id="img3"
+            src="../assets/img/botanic3.webp"
+            alt="jardin botanique"
+          />
         </div>
         <div class="text-box" v-scroll-reveal="{ preset: 'right', delay: 700 }">
           <tabs id="tab" :tabs="tabs" :showLabels="false">
@@ -53,7 +57,9 @@
             </div>
             <div class="container-hobbies-mobile">
               <h3>Dessin:</h3>
-              <p class="text-blue">Mon instagram : "ikaya54" <i class="fas fa-palette"></i></p>
+              <p class="text-blue">
+                Mon instagram : "ikaya54" <i class="fas fa-palette"></i>
+              </p>
             </div>
             <div class="container-hobbies-mobile">
               <h3>Lecture:</h3>
@@ -129,6 +135,7 @@ Tabs<style lang="scss" scoped>
   left: 0px;
   color: white;
 }
+
 #hobbies-mobile {
   display: none;
   @media (max-width: 492px) {
@@ -142,9 +149,10 @@ Tabs<style lang="scss" scoped>
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
   h3 {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
   }
 }
 @media screen and (max-width: 1556px) {
@@ -164,16 +172,15 @@ Tabs<style lang="scss" scoped>
     flex-wrap: wrap;
   }
   .sec-04 #img3 {
-  height: auto;
+    height: auto;
+  }
 }
-}
-@media screen and (max-width:610px ) {
+@media screen and (max-width: 610px) {
   .sec-04 .text-box {
     margin: 0;
     max-width: 100%;
     width: 100%;
     padding: 10px;
-    
   }
   .sec-04 .content {
     margin: 15px;
@@ -195,22 +202,22 @@ Tabs<style lang="scss" scoped>
     padding: 0 0;
   }
 }
-@media screen and (max-width:414px ) {
-.container-hobbies-mobile{
-  text-align: left;
+@media screen and (max-width: 414px) {
+  .container-hobbies-mobile {
+    text-align: left;
+  }
+  #hobbies-mobile {
+    margin-top: 5px;
+    gap: 10px;
+  }
 }
-#hobbies-mobile{
-  margin-top: 5px;
-  gap: 10px;
-}
-}
-@media screen and (max-width:394px ) {
-#hobbies-mobile{
-  gap: 5px;
-}
+@media screen and (max-width: 394px) {
+  #hobbies-mobile {
+    gap: 5px;
+  }
 }
 .sec-04 .text-box {
-  min-height: none ;
+  min-height: none;
   height: auto;
 }
 </style>
