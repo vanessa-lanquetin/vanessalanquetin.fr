@@ -105,6 +105,7 @@ $labelWidth: 100px;
       justify-content: center;
       .container-contact {
         padding: 60px;
+        box-sizing: border-box;
         max-width: 1200px;
         width: 100%;
         background: linear-gradient(to bottom, #b6b6fa, #fcc0e7, #f0d595);
@@ -158,7 +159,7 @@ textarea {
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   flex-grow: 1;
-  min-width: 200px;
+  min-width: 100px;
   color: #000;
   font-size: 1.4em;
   padding: 10px;
@@ -172,6 +173,9 @@ textarea {
   }
 }
 @media screen and (max-width: 592px) {
+  .sec-05 .container .content .container-contact {
+    padding: 20px;
+  }
   .sec-05 .text-box {
     padding: 10px;
   }
