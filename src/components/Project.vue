@@ -33,7 +33,14 @@
                 actuellement.
               </p>
             </article>
-            <article class="container-links">
+          </div>
+          <div class="right part-project">
+            <div class="statut-project">
+              <div v-if="project.statut">
+                <h2>Statut : {{ project.statut }}</h2>
+              </div>
+            </div>
+            <article class="container-links" v-if="project.github || project.link && project.link.url ">
               <h2>Lien(s)</h2>
               <div v-if="project.github">
                 <p>
@@ -43,26 +50,13 @@
                   >
                 </p>
               </div>
-              <div v-else>
-                <p>Acutellemnt, il n'y a pas de lien GitHub pour ce projet.</p>
-              </div>
-              <div v-if="project.link && project.link.url && project.link">
+              <div v-if="project.link && project.link.url">
                 <p>
                   Lien(s):
                   <a :href="project.link.url">{{ project.link.label }}</a>
                 </p>
               </div>
             </article>
-          </div>
-          <div class="right part-project">
-            <div class="statut-project">
-              <div v-if="project.statut">
-                <h2>Statut : {{ project.statut }}</h2>
-              </div>
-            </div>
-            <div class="container-img" v-if="project.imgSite">
-              <img class="imgSite" :src="project.imgSite" alt="" />
-            </div>
           </div>
         </section>
       </div>
@@ -107,30 +101,13 @@ const project = computed(() =>
   .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      margin: 0;
-    }
-  .container-img{
-    height: 100%;
-    max-height: 600px;
-    width: fit-content;
-  }
-    
-    .imgSite {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+    justify-content: left;
+    align-items: left;
   }
   .statut-project {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     align-self: stretch;
     gap: 10px;
   }
@@ -140,13 +117,13 @@ const project = computed(() =>
   .container-competences,
   .container-links {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
 }
 
 @media (max-width: 980px) {
-  .container-img{
-    display: none;
-  }
   .content-project{
     flex-direction: column;
     .part-project{

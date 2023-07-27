@@ -87,23 +87,23 @@ const fullscreen = (i) => {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/scss/global";
 .root-carousel {
   position: relative;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #555;
   width: 100%;
-  margin: auto;
+  margin: auto auto 20px auto;
   button.action {
     position: absolute;
     z-index: 1;
-    background-color: red;
+    background-color: $thier-color;
     width: 50px;
     height: 50px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.33);
     &.previous {
       left: 0;
     }
@@ -117,13 +117,14 @@ const fullscreen = (i) => {
     margin: auto;
     overflow: auto;
     display: flex;
-    gap: 20px;
+    gap: 22px;
     height: 300px;
     scroll-behavior: smooth;
+    padding-bottom: 10px;
     .image {
       transition: 300ms;
       &.active {
-        border: 8px solid red;
+        border: 5px solid $pastelPurple;
       }
     }
   }
@@ -145,7 +146,7 @@ const fullscreen = (i) => {
     padding: 20px;
     margin: auto;
     width: calc(100vw - 40px);
-    height: calc(100vh - 340px);
+    height: calc(100vh - 420px);
     object-fit: contain;
   }
 }
