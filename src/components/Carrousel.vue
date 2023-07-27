@@ -118,7 +118,7 @@ const fullscreen = (i) => {
     overflow: auto;
     display: flex;
     gap: 22px;
-    height: 300px;
+    height: 254px;
     scroll-behavior: smooth;
     padding-bottom: 10px;
     .image {
