@@ -1,0 +1,12 @@
+.theme-blue:root {
+    --primary-color: rgb(41, 166, 175);
+    --secondary-color: white;
+    h2 {
+            background: -webkit-linear-gradient(#61dff5, #3657ec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #logo {
+            background-image: url("./assets/img/fond3.svg");
+        }
+}

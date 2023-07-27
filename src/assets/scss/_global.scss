@@ -3,10 +3,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 /* GLOBAL */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+$primary-color: #9c9cf8;
+$second-color: #ff96da;
+$thier-color: #ffd471;
+$text-color:#626262;
+$back-color:#e5e5fc;
+
+
+$pastelPurple: #dadafb;
+$pastelPink: #fcbee5;
+$pastelYellow: #fff5cf;
 
 body {
   background: #ffffff;
@@ -14,7 +26,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
 }
 li {
   list-style: none;
@@ -22,14 +33,30 @@ li {
 html {
   scroll-behavior: smooth;
 }
-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  min-height: calc(100vh - var(--navbar-size));
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6;
+}
+
+
 .container {
   width: 100%;
   margin: 0 150px;
@@ -45,7 +72,7 @@ section {
   border-radius: 10px;
 }
 .text-box {
-  background: #374752;
+  background-image: linear-gradient(68.3deg, #f5b161 0.4%, #ec366e 100.2%);
   backdrop-filter: blur(20px);
   padding: 38px;
   max-width: 400px;

@@ -10,10 +10,9 @@
 </template>
 
 <script>
-import Arrow from './components/arrow.vue'
 import navBar from './components/nav-bar.vue'
 export default {
-  components: { navBar, Arrow },
+  components: { navBar},
   setup() {
     const vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
@@ -23,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 @import './assets/scss/index';
 </style>
 
@@ -36,6 +35,7 @@ export default {
 }
 #app-content {
   flex-grow: 1;
-  margin-top: var(--navbar-size);
+  overflow: auto;
 }
+
 </style>

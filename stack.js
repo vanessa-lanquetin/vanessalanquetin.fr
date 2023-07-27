@@ -3,8 +3,7 @@ const stack = [
     label: "vanessalanquetin.fr-server",
     git: {
       home: "https://github.com/vanessouille/vanessalanquetin.fr",
-      remote:
-        "https://github.com/vanessouille/vanessalanquetin.fr.git",
+      remote: "https://github.com/vanessouille/vanessalanquetin.fr.git",
     },
     url: "http://localhost:4215",
     spawnCmd: "npm",
@@ -25,11 +24,10 @@ const stack = [
     label: "vanessalanquetin.fr-front",
     git: {
       home: "https://github.com/vanessouille/vanessalanquetin.fr",
-      remote:
-        "https://github.com/vanessouille/vanessalanquetin.fr.git",
+      remote: "https://github.com/vanessouille/vanessalanquetin.fr.git",
     },
     spawnCmd: "npm",
-    url: "http://localhost:8080",
+    url: "http://localhost:54710",
     spawnArgs: ["run", "client"],
     spawnOptions: {
       cwd: __dirname,

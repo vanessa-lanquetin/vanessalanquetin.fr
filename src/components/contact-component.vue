@@ -1,15 +1,9 @@
 <template>
-  <section class="sec-05" v-scroll-reveal="{ preset: 'bottom', interval: 200 }">
+  <div :class="'theme-' + theme.currentThemeName.value">
+  <section class="sec-05">
     <div class="container">
-      <h2
-        id="contact"
-        class="section-title"
-        v-scroll-reveal="{ preset: 'left' }"
-      >
-        Contact
-      </h2>
       <div class="content">
-        <div class="text-box" v-scroll-reveal="{ preset: 'right', delay: 700 }">
+        <div class="container-contact">
           <form action="#" method="POST" enctype="text/plain" @submit="submit">
             <div class="items-contact">
               <label for="name">Nom :</label>
@@ -50,9 +44,13 @@
       </div>
     </div>
   </section>
+  </div>
 </template>
 
 <script>
+import SectionHero from '../components/Section-Hero.vue'
+import HeroImg from '../assets/img/gum/home.gif'
+import theme from "../services/theme";
 import { ref } from "@vue/reactivity";
 import API from "../services/API";
 export default {
@@ -63,7 +61,7 @@ export default {
       msg: "",
     });
     return {
-      data,
+      data,theme,
       async submit(ev) {
         ev.preventDefault();
         ev.stopPropagation();
@@ -76,22 +74,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/global";
+
+@media screen and (max-width: 450px) {
+
+  .accueil {
+    height: 75vh;
+  }
+}
+
+.deco {
+  width: 100%;
+}
+
+strong {
+  font-weight: 600;
+}
+
 $labelWidth: 100px;
 .sec-05 {
   display: flex;
   flex-direction: column;
   .container {
-    margin: 0;
+    margin: 50px auto;
     width: 90%;
     h2 {
       margin-top: 50px;
     }
     .content {
       justify-content: center;
-      .text-box {
+      .container-contact {
         padding: 60px;
         max-width: 1200px;
         width: 100%;
+        background: linear-gradient(to bottom, #b6b6fa, #fcc0e7, #f0d595);
         .items-contact {
           display: flex;
           flex-wrap: wrap;
@@ -101,12 +117,24 @@ $labelWidth: 100px;
             width: $labelWidth;
             flex-shrink: 0;
             display: inline-block;
+            color: #fff;
+            font-size: 20px;
           }
         }
         .button {
           padding-top: 10px;
           display: flex;
           justify-content: right;
+          font-size: 24px;
+          font-weight: 900;
+          
+          button{
+            border: #fff 1px solid;
+            &:hover{
+              transform: scale(1.09);
+              transition: 300ms transform;
+            }
+          }
         }
       }
     }
@@ -126,12 +154,12 @@ textarea {
 input,
 textarea {
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   flex-grow: 1;
   min-width: 200px;
-  color: #fff;
+  color: #000;
   font-size: 1.4em;
   padding: 10px;
 }
@@ -166,5 +194,9 @@ textarea {
     textarea[data-v-6599f3b0][data-v-6599f3b0] {
     min-height: 100px;
   }
+}
+
+h1{
+  margin: 80px;
 }
 </style>

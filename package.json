@@ -3,55 +3,48 @@
   "version": "1.4.37",
   "private": true,
   "scripts": {
-    "serve": "stack-monitor ./stack.js",
+    "serve": "cross-env HTTP_PORT=33973 stack-monitor ./stack.js",
     "server": "cd server && npm run serve",
-    "client": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "client": "vite dev",
+    "build": "vite build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "postinstall": "cd server && npm i"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "axios": "^0.24.0",
-    "core-js": "^3.6.5",
-    "joi": "^17.6.0",
+    "joi": "^17.9.2",
     "latest-version": "^6.0.0",
     "micromatch": "^4.0.5",
-    "sass": "^1.51.0",
+    "sass": "^1.63.3",
     "scrollreveal": "^4.0.9",
+    "tippy.js": "^6.3.7",
     "uuid": "^8.3.2",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "@iryu54/stack-monitor": "^1.7.4",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@iryu54/stack-monitor": "^1.11.18",
+    "@vitejs/plugin-vue": "^4.2.3",
     "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "sass-loader": "^8.0.2"
+    "cross-env": "^7.0.3",
+    "eslint": "^8.42.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "nodemon": "^2.0.22",
+    "octokit": "^2.0.19",
+    "vite": "^4.3.9"
   },
   "eslintConfig": {
     "root": true,
-    "env": {
-      "node": true
-    },
     "extends": [
       "plugin:vue/vue3-essential",
       "eslint:recommended"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "rules": {
+      "vue/multi-word-component-names": "off"
     },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    }
+  }
 }

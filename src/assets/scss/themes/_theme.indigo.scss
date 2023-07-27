@@ -1,0 +1,9 @@
+.theme-indigo:root {
+    --primary-color: rgb(140, 59, 199);
+    --secondary-color: white;
+    h2 {
+            background: -webkit-linear-gradient(#d761f5, #5d056e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+}
