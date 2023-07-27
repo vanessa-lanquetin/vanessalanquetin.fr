@@ -1,6 +1,6 @@
 {
   "name": "vanessa-lanquetin",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": true,
   "scripts": {
     "serve": "cross-env HTTP_PORT=33973 stack-monitor ./stack.js",
