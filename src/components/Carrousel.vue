@@ -143,6 +143,10 @@ const fullscreen = (i) => {
   .image-fullscreen {
     flex-grow: 1;
     padding: 20px;
+    margin: auto;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 340px);
+    object-fit: contain;
   }
 }
 </style>
