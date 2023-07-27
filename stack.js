@@ -10,14 +10,12 @@ const stack = [
     spawnArgs: ["run", "server"],
     spawnOptions: {
       cwd: __dirname,
-      env: Object.assign(
-        {
-          PORT: "4215",
-          EMAIL: "",
-          PASSWORD: "",
-        },
-        process.env
-      ),
+      env:  {
+        PORT: "4215",
+        EMAIL: "",
+        PASSWORD: "",
+        SIB_APIKEY: "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"
+      },
     },
   },
   {
@@ -31,13 +29,10 @@ const stack = [
     spawnArgs: ["run", "client"],
     spawnOptions: {
       cwd: __dirname,
-      env: Object.assign(
-        {
-          VUE_APP_SERVER_URL: "http://localhost",
-          VUE_APP_SERVER_PORT: 4215,
-        },
-        process.env
-      ),
+      env: {
+        VITE_APP_SERVER_URL: "http://localhost",
+        VITE_APP_SERVER_PORT: 4215,
+      },
     },
   },
 ];
