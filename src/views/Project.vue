@@ -1,7 +1,7 @@
 <template>
   <div>
     <Project />
-    <Carrousel :images='images' class="carousel"/>
+    <Carrousel v-if="images?.length" :images='images' class="carousel"/>
   </div>
 </template>
 
