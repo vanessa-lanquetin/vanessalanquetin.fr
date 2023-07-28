@@ -152,4 +152,11 @@ const fullscreen = (i) => {
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 768px){
+  .root-carousel .carousel-content{
+    height: 200px;
+  }
+  
+}
 </style>

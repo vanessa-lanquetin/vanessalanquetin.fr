@@ -1,16 +1,17 @@
 <template>
-      <SectionHero
-      header="Mes projets"
-      :call-to-action="{
-        label: 'Voir mon github',
-        href: 'https://github.com/vanessa-lanquetin',
-      }"
-      :img="HeroImg"
-    >
-      <template #description>
-        Voici l'ensemble de mes projets que j'ai réalisé, qui m'ont permis de progresser et de découvrir de nouvelles techs. 
-      </template>
-    </SectionHero>
+  <SectionHero
+    header="Mes projets"
+    :call-to-action="{
+      label: 'Voir mon github',
+      href: 'https://github.com/vanessa-lanquetin',
+    }"
+    :img="HeroImg"
+  >
+    <template #description>
+      Voici l'ensemble de mes projets que j'ai réalisé, qui m'ont permis de
+      progresser et de découvrir de nouvelles techs.
+    </template>
+  </SectionHero>
   <div class="gallery">
     <div v-for="project of projectsToDisplay" :key="project.id" class="card">
       <RouterLink :to="{ name: 'project', params: { projectId: project.id } }">
@@ -27,10 +28,10 @@
 
 <script setup>
 import { computed } from "vue";
-import HeroImg from '../assets/img/gum/web.gif'
+import HeroImg from "../assets/img/gum/web.gif";
 import projects from "../assets/datas/data";
 import { useRoute, RouterLink } from "vue-router";
-import SectionHero from '../components/Section-Hero.vue'
+import SectionHero from "../components/Section-Hero.vue";
 
 const route = useRoute();
 
@@ -83,9 +84,19 @@ const projectsToDisplay = computed(() =>
   .img-project {
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 370px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    .card{
+      min-height: auto;}
+    .img-project {
+      height: 230px;
+    }
   }
 }
 </style>

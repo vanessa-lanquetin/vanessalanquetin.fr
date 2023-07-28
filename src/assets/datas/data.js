@@ -7,26 +7,27 @@ import kasaM1 from "../../assets/img/Openclassroom/kasa/kasaM1.png";
 import kasaM2 from "../../assets/img/Openclassroom/kasa/kasaM2.png";
 import kasaM from "../../assets/img/Openclassroom/kasa/kasaM.png";
 import kasaBannerImg from "../../assets/img/mountains.png";
-import reservia from "../../assets/img/Openclassroom/Réservia/DESKTOP/r.png";
-import reservia2 from "../../assets/img/Openclassroom/Réservia/DESKTOP/r2.png";
+import piquante from "../../assets/img/Openclassroom/piquante/piquante.png"
+import piquante1 from "../../assets/img/Openclassroom/piquante/piquante1.png";
+import piquante2 from "../../assets/img/Openclassroom/piquante/piquante2.png";
+import piquante3 from "../../assets/img/Openclassroom/piquante/piquante3.png";
+import piquante4 from "../../assets/img/Openclassroom/piquante/piquante4.png";
 
 export default [
   {
     id: "project-kasa",
     titre: "Kasa",
     imgMain: kasa,
-    legende:
-      "Pour ce projet, je devais créer une apllication web d'une agence immobilière avec React. " +
-      "Pour la réalisation de ce site, je me suis appuyé sur la maquette Figma du designer. ",
+    legende: "Créez une application web de location immobilière avec React",
     description:
       "Le projet de l' agence immobilière, consistait à créer l'application web avec React. " +
       "Pour cela j'ai utlilisé Create React App et configurer les différentes routes et composants de l'application. ",
     statut: "Terminé",
     imgBanniere: kasaBannerImg,
     imgSite: kasaM,
-    gallery: [kasa, kasa1,kasa3,kasa4,kasaM1,kasaM2,kasaM],
+    gallery: [kasa, kasa1, kasa3, kasa4, kasaM1, kasaM2, kasaM],
     category: "openclassrooms",
-    tech: "react",
+    tech: "React, , Javascript, Sass, Figma",
     competences: [
       "Configurer la navigation entre les pages de l'application avec React Router",
       "Développer des éléments de l'interface d'un site web grâce à des composants React",
@@ -36,8 +37,40 @@ export default [
     link: {
       label: "Maquette Figma",
       url: "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&node-id=3-0&mode=design&t=foFzAiAzNBDTWsmn-0",
-    }
-  }
+    },
+  },
+  {
+    id: "project-piquante",
+    titre: "Piquante",
+    imgMain: piquante2,
+    legende:
+      "Construction d'une API REST pour une galerie de sauces piquantes. ",
+    description:
+      "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API "
+      ,
+    statut: "Terminé",
+    imgBanniere: piquante1,
+    imgSite: piquante2,
+    gallery: [piquante, piquante1, piquante2, piquante3, piquante4],
+    category: "openclassrooms",
+    tech: "Angular JS, NodeJS, Express, MongoDB",
+    competences: [
+      "Mettre en œuvre des opérations CRUD de manière sécurisée",
+      "Implémenter un modèle logique de données conformément à la réglementation",
+      "Stocker des données de manière sécurisée",
+    ],
+    github: "https://github.com/vanessa-lanquetin/piquante",
+    link: [
+      {
+        label: "Spécifications du projet",
+        url: "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Requirements_DW_P6.pdf",
+      },
+      {
+        label: "Repo fronted",
+        url: "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6",
+      },
+    ],
+  },
   // {
   //   id: "project1",
   //   titre: "Projet 1",
