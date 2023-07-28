@@ -46,14 +46,14 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $second-color;
+  background: #aaa9a9;
   border-radius: 10px;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $pastelPurple;
+  background: #838383;
 }
 
 

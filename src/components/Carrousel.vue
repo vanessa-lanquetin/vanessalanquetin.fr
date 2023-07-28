@@ -113,6 +113,7 @@ const fullscreen = (i) => {
   }
   .carousel-content {
     max-width: calc(100% - 5px);
+    cursor: pointer;
     width: max-content;
     margin: auto;
     overflow: auto;
@@ -123,8 +124,9 @@ const fullscreen = (i) => {
     padding-bottom: 10px;
     .image {
       transition: 300ms;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       &.active {
-        border: 5px solid $pastelPurple;
+        border: 8px solid $second-color;
       }
     }
   }
