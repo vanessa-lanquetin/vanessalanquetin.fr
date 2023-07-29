@@ -35,27 +35,39 @@
             </article>
           </div>
           <div class="right part-project">
-            <article class="container-tech" v-if="project.tech">
-              <h2>Technos</h2>
-              <p v-if="project.tech">{{ project.tech }}</p>
-            </article>
-<section class="container-links" v-if="project.github || (project.link && project.link.length)">
-  <h2>Lien(s)</h2>
-  <div v-if="project.github">
-    <p>
-      Github :
-      <a :href="project.github" target="_blank">{{ `Lien du projet "${project.titre}"` }}</a>
-    </p>
-  </div>
-  <article v-if="project.link && project.link.length"> Contexte :
-    <p v-for="linkItem in project.link" :key="linkItem.label">      
-      <a :href="linkItem.url" target="_blank">{{ linkItem.label }}</a>
-    </p>
-  </article>
-</section>
-            <div v-if="project.statut" class="statut-project">
-              <h2>Statut : {{ project.statut }}</h2>
+            <div class="statut-project">
+              <div v-if="project.statut">
+                <h2>Statut : {{ project.statut }}</h2>
+              </div>
             </div>
+            <article
+              class="container-links"
+              v-if="project.github || (project.link && project.link.url)"
+            >
+              <h2>Lien(s)</h2>
+              <div v-if="project.github">
+                <p>
+                  Github:
+                  <a :href="project.github" target="_blank"
+                    >Lien du projet "{{ project.titre }}""</a
+                  >
+                </p>
+              </div>
+              <div v-if="project.link && project.link.url">
+                <p>
+                  Lien(s):
+                  <a :href="project.link.url">{{ project.link.label }}</a>
+                </p>
+              </div>
+              <div v-else>
+                Contexte :
+                <p v-for="linkItem in project.link" :key="linkItem.label">
+                  <a :href="linkItem.url" target="_blank">{{
+                    linkItem.label
+                  }}</a>
+                </p>
+              </div>
+            </article>
           </div>
         </section>
       </div>
@@ -79,13 +91,6 @@ const project = computed(() =>
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/global";
-a {
-  color: $primary-color;
-  &:hover {
-    color: $second-color;
-  }
-}
 .content-project {
   padding-top: 80px;
   margin: auto auto 50px auto;
@@ -105,11 +110,10 @@ a {
     flex-direction: column;
   }
   .right {
-    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 34px;
+    align-items: left;
   }
   .statut-project {
     display: flex;
@@ -118,12 +122,11 @@ a {
     align-self: stretch;
     gap: 10px;
   }
-  .competence,
-  .tech {
+  .competence {
     margin-bottom: 10px;
   }
   .container-competences,
-  .container-tech .container-links {
+  .container-links {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -134,12 +137,8 @@ a {
 @media (max-width: 980px) {
   .content-project {
     flex-direction: column;
-    gap: 20px;
     .part-project {
       width: 100%;
-    }
-    .right{
-      gap: 30px;
     }
   }
 }

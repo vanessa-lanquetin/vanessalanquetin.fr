@@ -46,8 +46,7 @@ export default [
     legende:
       "Construction d'une API REST pour une galerie de sauces piquantes. ",
     description:
-      "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API "
-      ,
+      "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API ",
     statut: "Terminé",
     imgBanniere: piquante1,
     imgSite: piquante2,
@@ -71,6 +70,34 @@ export default [
       },
     ],
   },
+  // {
+  //   id: "project-Kanap",
+  //   titre: "Kanap",
+  //   imgMain: piquante2,
+  //   legende:
+  //     "Construction d'une API REST pour une galerie de sauces piquantes. ",
+  //   description:
+  //     "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API ",
+  //   statut: "Terminé",
+  //   imgBanniere: piquante1,
+  //   imgSite: piquante2,
+  //   gallery: [piquante, piquante1, piquante2, piquante3, piquante4],
+  //   category: "openclassrooms",
+  //   tech: "Angular JS, NodeJS, Express, MongoDB",
+  //   competences: [
+  //     "Mettre en œuvre des opérations CRUD de manière sécurisée",
+  //     "Implémenter un modèle logique de données conformément à la réglementation",
+  //     "Stocker des données de manière sécurisée",
+  //   ],
+  //   github: "https://github.com/vanessa-lanquetin/Kanap",
+  //   link: {
+  //     label: "Maquette Figma",
+  //     url: "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&node-id=3-0&mode=design&t=foFzAiAzNBDTWsmn-0",
+  //   },
+  // },
+
+  
+
   // {
   //   id: "project1",
   //   titre: "Projet 1",
