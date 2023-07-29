@@ -60,12 +60,14 @@
                 </p>
               </div>
               <div v-else>
-                Contexte :
-                <p v-for="linkItem in project.link" :key="linkItem.label">
-                  <a :href="linkItem.url" target="_blank">{{
-                    linkItem.label
-                  }}</a>
-                </p>
+                <div v-if="project.link && project.link.url">
+                  Contexte :
+                  <p v-for="linkItem in project.link" :key="linkItem.label">
+                    <a :href="linkItem.url" target="_blank">{{
+                      linkItem.label
+                    }}</a>
+                  </p>
+                </div>
               </div>
             </article>
           </div>
