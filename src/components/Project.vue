@@ -5,6 +5,20 @@
         <Banner />
         <section class="content-project">
           <div class="left part-project">
+            <div class="project">
+              <h2 v-if="project.category === 'openclassrooms'">
+                Projet Openclassrooms 
+                <a v-if="project.linkproject" :href="project.linkproject" target="_blank">
+                - Voir le site</a
+                >
+              </h2>
+              <h2 v-else>
+                Projet personel
+                <a v-if="project.linkproject" :href="project.linkproject" target="_blank"
+                  >- Voir le site</a
+                >
+              </h2>
+            </div>
             <article class="container-description">
               <h2>Description</h2>
               <p v-if="project.description">{{ project.description }}</p>
@@ -49,7 +63,7 @@
                 <p>
                   Github:
                   <a :href="project.github" target="_blank"
-                    >Lien du projet "{{ project.titre }}""</a
+                    >Code du projet "{{ project.titre }}""</a
                   >
                 </p>
               </div>
@@ -60,14 +74,11 @@
                 </p>
               </div>
               <div v-else>
-                <div v-if="project.link && project.link.url">
-                  Contexte :
-                  <p v-for="linkItem in project.link" :key="linkItem.label">
-                    <a :href="linkItem.url" target="_blank">{{
-                      linkItem.label
-                    }}</a>
-                  </p>
-                </div>
+                <p v-for="linkItem in project.link" :key="linkItem.label">
+                  <a :href="linkItem.url" target="_blank">{{
+                    linkItem.label
+                  }}</a>
+                </p>
               </div>
             </article>
           </div>

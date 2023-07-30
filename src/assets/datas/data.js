@@ -47,6 +47,16 @@ import reservia4 from "../../assets/img/Openclassroom/reservia/reservia4.png";
 import reservia5 from "../../assets/img/Openclassroom/reservia/reservia5.png";
 import reservia6 from "../../assets/img/Openclassroom/reservia/reservia6.png";
 
+import column from "../../assets/img/Openclassroom/column/column.png";
+import column1 from "../../assets/img/Openclassroom/column/column1.png";
+import column2 from "../../assets/img/Openclassroom/column/column2.png";
+import column3 from "../../assets/img/Openclassroom/column/column3.png";
+
+import stats from "../../assets/img/Openclassroom/stats/stats.png";
+import stats1 from "../../assets/img/Openclassroom/stats/stats1.png";
+import stats2 from "../../assets/img/Openclassroom/stats/stats2.png";
+import stats3 from "../../assets/img/Openclassroom/stats/stats3.png";
+
 export default [
   {
     id: "project-kasa",
@@ -58,7 +68,6 @@ export default [
       "Pour cela j'ai utlilisé Create React App et configurer les différentes routes et composants de l'application. ",
     statut: "Terminé",
     imgBanniere: kasaBannerImg,
-    imgSite: kasaM,
     gallery: [kasa, kasa1, kasa3, kasa4, kasaM1, kasaM2, kasaM],
     category: "openclassrooms",
     tech: "React, , Javascript, Sass, Figma",
@@ -67,6 +76,7 @@ export default [
       "Développer des éléments de l'interface d'un site web grâce à des composants React",
       "Initialiser une application avec Create React App",
     ],
+    linkproject: "https://vanessa-lanquetin.github.io/kasa/",
     github: "https://github.com/vanessa-lanquetin/kasa",
     link: [
       {
@@ -85,7 +95,6 @@ export default [
       "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API ",
     statut: "Terminé",
     imgBanniere: piquanteBannerImg,
-    imgSite: piquante2,
     gallery: [piquante, piquante1, piquante2, piquante3, piquante4, piquante],
     category: "openclassrooms",
     tech: "Angular JS, NodeJS, Express, MongoDB",
@@ -115,7 +124,6 @@ export default [
       "Kanap est une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaiterait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet. ",
     statut: "Terminé",
     imgBanniere: kanap,
-    imgSite: kanap2,
     gallery: [kanap, kanap1, kanap2, kanap3, kanap4],
     category: "openclassrooms",
     tech: "Javascript,Bootstrap, Vanilla js",
@@ -146,7 +154,6 @@ export default [
       "La Panthère est une grande agence de web design basée à Lyon. L’activité de l’entreprise a bien démarré mais aujourd’hui, elle est en perte de vitesse. Mission : 1 - Analyse de l’état actuel de SEO du site fourni 2 - Amélioration du SEO du site 3 - Comparaison des résultats ",
     statut: "Terminé",
     imgBanniere: panthere3,
-    imgSite: panthere2,
     gallery: [panthere, panthere1, panthere2, panthere3, panthere4, panthere5],
     category: "openclassrooms",
     tech: "Javascript,Bootstrap, html,css",
@@ -157,6 +164,7 @@ export default [
       "Optimiser la taille et la vitesse d’un site web",
       "Écrire un code HTML et CSS maintenable",
     ],
+    linkproject: "https://vanessa-lanquetin.github.io/La-panthere/",
     github: "https://github.com/vanessa-lanquetin/La-panthere",
     link: [
       {
@@ -174,7 +182,6 @@ export default [
       "Ohmyfood! est une entreprise de commande de repas en ligne.Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.Plus de perte de temps à consulter la carte !",
     statut: "Terminé",
     imgBanniere: food7,
-    imgSite: food8,
     gallery: [
       food,
       food1,
@@ -196,6 +203,7 @@ export default [
       "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
       "Mettre en place son environnement Front-End",
     ],
+    linkproject: "https://vanessa-lanquetin.github.io/P3-Ohmyfood/",
     github: "https://github.com/vanessa-lanquetin/P3-Ohmyfood",
     link: [
       {
@@ -213,7 +221,6 @@ export default [
       "Réservia, une petite entreprise proposant un outil de planification de vacances ! Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance. Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less) ne doit être utilisé.",
     statut: "Terminé",
     imgBanniere: reservia6,
-    imgSite: reservia2,
     gallery: [
       reservia,
       reservia1,
@@ -229,49 +236,55 @@ export default [
       "Intégrer du contenu conformément à une maquette",
       "Implémenter une interface responsive",
     ],
+    linkproject:
+      "https://vanessa-lanquetin.github.io/VanessaLanquetin_2_08092021/",
     github: "https://github.com/vanessa-lanquetin/VanessaLanquetin_2_08092021",
   },
-  // {
-  //   id: "project1",
-  //   titre: "Projet 1",
-  //   imgMain: kasa,
-  //   legende: "Légende du projet 1",
-  //   description: "",
-  //   statut: "Terminé",
-  //   imgBanniere: kasa1,
-  //   category: "openclassrooms",
-  //   gallery: [kasa, reservia2],
-  // },
-  // {
-  //   id: "project2",
-  //   titre: "Projet 2",
-  //   imgMain: kasa,
-  //   legende: "Légende du projet 1",
-  //   description: "",
-  //   statut: "Terminé",
-  //   imgBanniere: kasa1,
-  //   category: "openclassrooms",
-  // },
-  // {
-  //   id: "project",
-  //   titre: "Projet 3",
-  //   imgMain: kasa,
-  //   legende: "Légende du projet 1",
-  //   description: "",
-  //   statut: "Terminé",
-  //   imgBanniere: kasa1,
-  //   imgSite: kasa,
-  //   category: "openclassrooms",
-  // },
-  // {
-  //   id: "project-social-network",
-  //   titre: "Projet 4",
-  //   imgMain: kasa,
-  //   legende: "Légende du projet 2",
-  //   description: "",
-  //   statut: "Terminé",
-  //   imgBanniere: kasa,
-  //   imgSite: kasa,
-  //   category: "personal",
-  // },
+
+  {
+    id: "project-3column",
+    titre: "Challenge Front End Mentor - 3 column preview card component",
+    imgMain: column2,
+    legende: "Réalisation du component 3 column preview card",
+    description:
+      "Lors de mes premiers pas dans le domaine du développment web. J'ai voulu me challenger en mettant en pratique les bases en html et css que j'avais appris en autodidacte. J'ai donc réalisé ce challenge, qui consistait à créer ce composant en html et css, de manière responsive.",
+    statut: "Terminé",
+    imgBanniere: column3,
+    gallery: [column, column1, column2, column3],
+    category: "personal",
+    tech: "Html,Css",
+    linkproject:
+      "https://vanessa-lanquetin.github.io/3-column-preview-card-component/",
+    github:
+      "https://github.com/vanessa-lanquetin/3-column-preview-card-component",
+    link: [
+      {
+        label: "Spécifications du challenge",
+        url: "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+      },
+    ],
+  },
+  {
+    id: "project-stats",
+    titre: "Challenge Front End Mentor - Stats preview card component",
+    imgMain: stats,
+    legende: "Réalisation du component Stats preview card",
+    description:
+      "Lors de mes premiers pas dans le domaine du développment web. J'ai voulu me challenger en mettant en pratique les bases en html et css que j'avais appris en autodidacte. J'ai donc réalisé ce challenge, qui consistait à créer ce composant en html et css, de manière responsive.",
+    statut: "Terminé",
+    imgBanniere: stats3,
+    gallery: [stats, stats1, stats2, stats3],
+    category: "personal",
+    tech: "Html,Css",
+    linkproject:
+      "https://vanessa-lanquetin.github.io/fm-stats-preview-card-component/",
+    github:
+      "https://github.com/vanessa-lanquetin/fm-stats-preview-card-component",
+    link: [
+      {
+        label: "Spécifications du challenge",
+        url: "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+      },
+    ],
+  },
 ];
