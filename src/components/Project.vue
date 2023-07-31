@@ -104,6 +104,15 @@ const project = computed(() =>
 </script>
 
 <style scoped lang="scss">
+@import "../assets/scss/global";
+
+a{
+  color:$primary-color;
+  &:hover{
+    color:#ff96da ;
+  }
+}
+
 .content-project {
   padding-top: 80px;
   margin: auto auto 50px auto;
