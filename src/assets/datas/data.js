@@ -47,15 +47,22 @@ import reservia4 from "../../assets/img/Openclassroom/reservia/reservia4.png";
 import reservia5 from "../../assets/img/Openclassroom/reservia/reservia5.png";
 import reservia6 from "../../assets/img/Openclassroom/reservia/reservia6.png";
 
-import column from "../../assets/img/Openclassroom/column/column.png";
-import column1 from "../../assets/img/Openclassroom/column/column1.png";
-import column2 from "../../assets/img/Openclassroom/column/column2.png";
-import column3 from "../../assets/img/Openclassroom/column/column3.png";
+import column from "../../assets/img/Personnel/column/column.png";
+import column1 from "../../assets/img/Personnel/column/column1.png";
+import column2 from "../../assets/img/Personnel/column/column2.png";
+import column3 from "../../assets/img/Personnel/column/column3.png";
 
-import stats from "../../assets/img/Openclassroom/stats/stats.png";
-import stats1 from "../../assets/img/Openclassroom/stats/stats1.png";
-import stats2 from "../../assets/img/Openclassroom/stats/stats2.png";
-import stats3 from "../../assets/img/Openclassroom/stats/stats3.png";
+import stats from "../../assets/img/Personnel/stats/stats.png";
+import stats1 from "../../assets/img/Personnel/stats/stats1.png";
+import stats2 from "../../assets/img/Personnel/stats/stats2.png";
+import stats3 from "../../assets/img/Personnel/stats/stats3.png";
+
+import todo from "../../assets/img/Personnel/todo/todo.png";
+import todo1 from "../../assets/img/Personnel/todo/todo1.png";
+import todo2 from "../../assets/img/Personnel/todo/todo2.png";
+import todo3 from "../../assets/img/Personnel/todo/todo3.png";
+import todo4 from "../../assets/img/Personnel/todo/todo4.png";
+import todo5 from "../../assets/img/Personnel/todo/todo5.png";
 
 export default [
   {
@@ -286,5 +293,19 @@ export default [
         url: "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
       },
     ],
+  },
+  {
+    id: "project-todo",
+    titre: "To Do List",
+    imgMain: todo1,
+    legende: "Réalisation d'une To Do List",
+    description: "Création d'une To Do List basique",
+    statut: "Terminé",
+    imgBanniere: todo3,
+    gallery: [ todo1, todo2, todo3, todo4, todo5,todo],
+    category: "personal",
+    tech: "Html,Css,Js",
+    linkproject: "https://vanessa-lanquetin.github.io/ToDoList/",
+    github: "https://github.com/vanessa-lanquetin/ToDoList",
   },
 ];
