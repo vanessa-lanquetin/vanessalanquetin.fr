@@ -20,6 +20,7 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/global";
 .subsection-root {
   display: flex;
   text-align: left;
@@ -33,12 +34,11 @@ defineProps({
     flex-direction: column-reverse;
   }
   h3 {
-    color: #ff96da;
+    color: $second-color;
     font-size: 1.8em;
     margin-bottom: 40px;
   }
   img {
-    background-color: #e5e5fc;
     height: 400px;
     object-fit: contain;
   }

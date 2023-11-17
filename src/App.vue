@@ -2,7 +2,6 @@
 <div id="app-root">
   <div id="top"></div>
   <nav-bar/>
-  <arrow/>
   <div id="app-content">
     <router-view/>
   </div>

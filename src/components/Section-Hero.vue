@@ -8,7 +8,7 @@
         </div>
         <a :href="callToAction.href" :target="isExternalUrl ? '_blank' : ''">
           <button :style="{
-            backgroundColor: callToAction.backgroundColor || '#ff96da',
+            backgroundColor: callToAction.backgroundColor || '#FF756A',
             color: callToAction.color || 'white'
           }">
             {{ callToAction.label }}
@@ -49,7 +49,7 @@ const isExternalUrl = computed(() => props.callToAction.href?.startsWith('https'
   background-color: $back-color;
   text-align: left;
   .section-hero-container {
-    padding: 100px 0 100px 100px;
+    padding: 105px 0 105px 100px;
     max-width: 1200px;
     width: 90%;
     margin: auto;
@@ -71,7 +71,7 @@ const isExternalUrl = computed(() => props.callToAction.href?.startsWith('https'
       align-items: center;
     }
     h1 {
-      color: $primary-color;
+      color: $thier-color;
     }
     img {
       width: 400px;

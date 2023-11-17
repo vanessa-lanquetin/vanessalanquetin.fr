@@ -49,7 +49,7 @@
 
 <script>
 import SectionHero from '../components/Section-Hero.vue'
-import HeroImg from '../assets/img/gum/home.gif'
+import HeroImg from '../assets/img/laptop.png'
 import theme from "../services/theme";
 import { ref } from "@vue/reactivity";
 import API from "../services/API";
@@ -108,7 +108,7 @@ $labelWidth: 100px;
         box-sizing: border-box;
         max-width: 1200px;
         width: 100%;
-        background: linear-gradient(to bottom, #b6b6fa, #fcc0e7, #f0d595);
+        background-color: $primary-color;
         .items-contact {
           display: flex;
           flex-wrap: wrap;
@@ -119,7 +119,7 @@ $labelWidth: 100px;
             flex-shrink: 0;
             display: inline-block;
             color: #fff;
-            font-size: 20px;
+            font-size: 16px;
           }
         }
         .button {

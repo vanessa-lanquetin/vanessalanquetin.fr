@@ -24,6 +24,7 @@ defineProps({
   .tag {
     padding: 5px 10px;
     transition: 300ms;
+    color:#fff;
     will-change: padding-left, padding-right;
     cursor: pointer;
     &:hover {

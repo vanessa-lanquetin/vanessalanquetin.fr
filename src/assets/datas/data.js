@@ -47,6 +47,25 @@ import reservia4 from "../../assets/img/Openclassroom/reservia/reservia4.png";
 import reservia5 from "../../assets/img/Openclassroom/reservia/reservia5.png";
 import reservia6 from "../../assets/img/Openclassroom/reservia/reservia6.png";
 
+import yummy from "../../assets/img/Personnel/yummy/yummy.png";
+import yummy1 from "../../assets/img/Personnel/yummy/yummy1.png";
+import yummy2 from "../../assets/img/Personnel/yummy/yummy2.png";
+import yummy3 from "../../assets/img/Personnel/yummy/yummy3.png";
+import yummy4 from "../../assets/img/Personnel/yummy/yummy4.png";
+import yummy5 from "../../assets/img/Personnel/yummy/yummy5.png";
+import yummy6 from "../../assets/img/Personnel/yummy/yummy6.png";
+import yummy7 from "../../assets/img/Personnel/yummy/yummy7.png";
+import yummy8 from "../../assets/img/Personnel/yummy/yummy8.png";
+import yummy9 from "../../assets/img/Personnel/yummy/yummy9.png";
+
+import smile from "../../assets/img/Personnel/smile/smile.png";
+import smile1 from "../../assets/img/Personnel/smile/smilegif.gif";
+
+
+import snakee from "../../assets/img/Personnel/snakee/snakee.png";
+import snakee1 from "../../assets/img/Personnel/snakee/snakee1.png";
+import snakee2 from "../../assets/img/Personnel/snakee/snakee2.png";
+
 import column from "../../assets/img/Personnel/column/column.png";
 import column1 from "../../assets/img/Personnel/column/column1.png";
 import column2 from "../../assets/img/Personnel/column/column2.png";
@@ -249,6 +268,70 @@ export default [
   },
 
   {
+    id: "project-smile",
+    titre: "Smile, component",
+    imgMain: smile1,
+    legende: "Smile, ratingBar",
+    description: "Je me suis amusé a crée ce composant",
+    statut: "Terminé",
+    imgBanniere: smile1,
+    gallery: [smile, smile1],
+    category: "personal",
+    tech: "Html,Css",
+    linkproject: "https://vanessa-lanquetin.github.io/Smiley-rating-bar/",
+    github: "https://github.com/vanessa-lanquetin/Smiley-rating-bar",
+    link: [{}],
+  },
+
+  {
+    id: "project-yummy",
+    titre: "Yummy Nouilles - Intégration d'une maquette",
+    imgMain: yummy3,
+    legende: "Intégration d'une maquette figma punr chaine de restaurant",
+    description:
+      "J'ai souhaité intégré la maquette que j'avais réalisé lors de mon cours sur Figma ",
+    imgBanniere: yummy1,
+    gallery: [
+      yummy,
+      yummy1,
+      yummy2,
+      yummy3,
+      yummy4,
+      yummy5,
+      yummy6,
+      yummy7,
+      yummy8,
+      yummy9,
+    ],
+    category: "personal",
+    tech: "Html,Css",
+    linkproject: "https://vanessa-lanquetin.github.io/Yummy-Nouilles/",
+    github: "https://github.com/vanessa-lanquetin/Yummy-Nouilles",
+    link: [
+      {
+        label: "Maquette Figma ",
+        url: "https://www.figma.com/file/85egFPoaQRB1iINOzzOHYV/Maquette-Yummy-Nouilles-(Copy)?type=design&node-id=0%3A1&mode=design&t=WRun0BaTkEe3Xz4m-1",
+      },
+    ],
+  },
+
+  {
+    id: "project-snakee",
+    titre: "Snakee, jeu du serpent",
+    imgMain: snakee,
+    legende: "Le jeu du serpent",
+    description: "J'ai réalisé le jeu du serpent avec javascript",
+    statut: "Terminé",
+    imgBanniere: snakee,
+    gallery: [snakee, snakee1, snakee2],
+    category: "personal",
+    tech: "Html,Css",
+    linkproject: "https://vanessa-lanquetin.github.io/Snakee/",
+    github: "https://github.com/vanessa-lanquetin/Snakee",
+    link: [{}],
+  },
+
+  {
     id: "project-3column",
     titre: "Challenge Front End Mentor - 3 column preview card component",
     imgMain: column2,
@@ -302,7 +385,7 @@ export default [
     description: "Création d'une To Do List basique",
     statut: "Terminé",
     imgBanniere: todo3,
-    gallery: [ todo1, todo2, todo3, todo4, todo5,todo],
+    gallery: [todo1, todo2, todo3, todo4, todo5, todo],
     category: "personal",
     tech: "Html,Css,Js",
     linkproject: "https://vanessa-lanquetin.github.io/ToDoList/",

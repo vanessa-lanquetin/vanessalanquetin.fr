@@ -20,7 +20,7 @@ defineProps({
   h2 {
     font-size: 2em;
     font-weight: normal;
-    color: #9c9cf8;
+    color: #007172;
     text-transform: uppercase;
   }
 }

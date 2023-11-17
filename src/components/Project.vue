@@ -109,10 +109,12 @@ const project = computed(() =>
 a{
   color:$primary-color;
   &:hover{
-    color:#ff96da ;
+    color:$thier-color ;
   }
 }
-
+h2{
+  color: $second-color;
+}
 .content-project {
   padding-top: 80px;
   margin: auto auto 50px auto;

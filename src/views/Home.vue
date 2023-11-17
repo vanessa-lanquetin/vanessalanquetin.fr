@@ -34,7 +34,7 @@
       </SubSection>
     </MainSection>
     <MainSection header="COMPÉTENCES & HOBBIES">
-      <SubSection header="COMPÉTENCES" :img="ChartImg">
+      <SubSection header="COMPÉTENCES" :img="MoveImg">
         <p>Depuis le début de mon apprentisage, je n'ai cessé de développer mes compétences, en commençant par maitriser les bases. Puis à m'initier et expérimenter d'autres technos à travers différents projets.</p>
         <div>
           <Tags :tags="[
@@ -73,9 +73,9 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import SectionHero from '../components/Section-Hero.vue'
-import HeroImg from '../assets/img/gum/home.gif'
-import LaptopImg from '../assets/img/gum/laptop.png'
-import ChartImg from '../assets/img/gum/chart.gif'
+import HeroImg from '../assets/img/laptop.png'
+import LaptopImg from '../assets/img/laptop1.png'
+import MoveImg from '../assets/img/laptop2.png'
 import MainSection from '../components/MainSection.vue';
 import SubSection from '../components/SubSection.vue';
 import Tags from '../components/Tags.vue';

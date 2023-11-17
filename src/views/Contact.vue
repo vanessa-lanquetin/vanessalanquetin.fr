@@ -18,7 +18,7 @@
 <script setup>
 import ContactComponent from '../components/contact-component.vue';
 import SectionHero from '../components/Section-Hero.vue'
-import HeroImg from '../assets/img/gum/home.gif'
+import HeroImg from '../assets/img/laptop.png'
 </script>
 
 <style lang="scss" scoped>

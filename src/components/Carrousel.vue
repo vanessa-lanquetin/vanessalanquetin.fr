@@ -126,7 +126,7 @@ const fullscreen = (i) => {
       transition: 300ms;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       &.active {
-        border: 8px solid $second-color;
+        border: 8px solid $thier-color;
       }
     }
   }

@@ -78,7 +78,8 @@ const open = () => opened.value = true
 <style lang="scss" scoped>
 $gap: 40px;
 .navbar-root {
-  color: #9c9cf8;
+  color: #fff;
+  background-color: #007172;
   font-family: Arial;
   font-weight: 600;
   height: 70px;
@@ -102,12 +103,12 @@ $gap: 40px;
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #007172;
     position: relative;
     z-index: 1000;
     a {
       position: relative;
-      color: #9c9cf8;
+      color: #fff;
       display: inline-block;
       text-decoration: none;
     }
@@ -117,7 +118,7 @@ $gap: 40px;
       a:after {
         content: "";
         height: 2px;
-        background-color: #ff96da;
+        background-color: #F49B3D;
         width: 0;
         position: absolute;
         bottom: -5px;
@@ -142,11 +143,8 @@ $gap: 40px;
       flex-direction: column;
       gap: 10px;
       z-index: 1;
-      background-color: white;
-      box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 10px;
+      background-color: #007172;
+      padding: 25px;
       position: absolute;
       text-align: left;
     }
@@ -165,6 +163,9 @@ $gap: 40px;
       align-items: center;
       background-color: white;
       gap: $gap;
+      a{
+        color: #007172;
+      }
     }
     .overlay {
       width: 100vw;
@@ -193,6 +194,7 @@ $gap: 40px;
       border: none;
       padding-left: 40px;
       padding-bottom: 0;
+      background-color: #fff;
     }
     .close, .trigger {
       position: fixed;
@@ -200,7 +202,7 @@ $gap: 40px;
       top: 10px;
       display: inline-block;
       z-index: 10000;
-      background-color: white;
+      background-color: #007172;
       width: 30px;
       height: 30px;
       border-radius: 50%;

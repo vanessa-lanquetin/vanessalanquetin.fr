@@ -28,7 +28,7 @@
 
 <script setup>
 import { computed } from "vue";
-import HeroImg from "../assets/img/gum/web.gif";
+import HeroImg from '../assets/img/move.png';
 import projects from "../assets/datas/data";
 import { useRoute, RouterLink } from "vue-router";
 import SectionHero from "../components/Section-Hero.vue";
