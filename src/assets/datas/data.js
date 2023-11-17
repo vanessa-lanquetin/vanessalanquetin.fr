@@ -57,6 +57,7 @@ import yummy6 from "../../assets/img/Personnel/yummy/yummy6.png";
 import yummy7 from "../../assets/img/Personnel/yummy/yummy7.png";
 import yummy8 from "../../assets/img/Personnel/yummy/yummy8.png";
 import yummy9 from "../../assets/img/Personnel/yummy/yummy9.png";
+import yummy10 from "../../assets/img/Personnel/yummy/gif.gif";
 
 import smile from "../../assets/img/Personnel/smile/smile.png";
 import smile1 from "../../assets/img/Personnel/smile/smilegif.gif";
@@ -65,6 +66,7 @@ import smile1 from "../../assets/img/Personnel/smile/smilegif.gif";
 import snakee from "../../assets/img/Personnel/snakee/snakee.png";
 import snakee1 from "../../assets/img/Personnel/snakee/snakee1.png";
 import snakee2 from "../../assets/img/Personnel/snakee/snakee2.png";
+import snakee3 from "../../assets/img/Personnel/snakee/gif.gif";
 
 import column from "../../assets/img/Personnel/column/column.png";
 import column1 from "../../assets/img/Personnel/column/column1.png";
@@ -286,11 +288,11 @@ export default [
   {
     id: "project-yummy",
     titre: "Yummy Nouilles - Intégration d'une maquette",
-    imgMain: yummy3,
+    imgMain: yummy10,
     legende: "Intégration d'une maquette figma punr chaine de restaurant",
     description:
       "J'ai souhaité intégré la maquette que j'avais réalisé lors de mon cours sur Figma ",
-    imgBanniere: yummy1,
+    imgBanniere: yummy10,
     gallery: [
       yummy,
       yummy1,
@@ -302,6 +304,7 @@ export default [
       yummy7,
       yummy8,
       yummy9,
+      yummy10,
     ],
     category: "personal",
     tech: "Html,Css",
@@ -318,12 +321,12 @@ export default [
   {
     id: "project-snakee",
     titre: "Snakee, jeu du serpent",
-    imgMain: snakee,
+    imgMain: snakee3,
     legende: "Le jeu du serpent",
     description: "J'ai réalisé le jeu du serpent avec javascript",
     statut: "Terminé",
-    imgBanniere: snakee,
-    gallery: [snakee, snakee1, snakee2],
+    imgBanniere: snakee3,
+    gallery: [snakee, snakee1, snakee2, snakee3],
     category: "personal",
     tech: "Html,Css",
     linkproject: "https://vanessa-lanquetin.github.io/Snakee/",
