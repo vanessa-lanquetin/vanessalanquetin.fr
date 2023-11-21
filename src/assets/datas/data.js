@@ -1,11 +1,13 @@
 import { reactive } from "vue";
 import kasa from "../../assets/img/Openclassroom/kasa/kasa.png";
 import kasa1 from "../../assets/img/Openclassroom/kasa/kasa1.png";
-import kasa3 from "../../assets/img/Openclassroom/kasa/kasa3.png";
+import kasa2 from "../../assets/img/Openclassroom/kasa/kasa3.png";
 import kasa4 from "../../assets/img/Openclassroom/kasa/kasa4.png";
+import kasa5 from "../../assets/img/Openclassroom/kasa/gif.gif";
 import kasaM1 from "../../assets/img/Openclassroom/kasa/kasaM1.png";
 import kasaM2 from "../../assets/img/Openclassroom/kasa/kasaM2.png";
 import kasaM from "../../assets/img/Openclassroom/kasa/kasaM.png";
+
 import kasaBannerImg from "../../assets/img/mountains.png";
 
 import piquante from "../../assets/img/Openclassroom/piquante/piquante.png";
@@ -13,13 +15,14 @@ import piquante1 from "../../assets/img/Openclassroom/piquante/piquante1.png";
 import piquante2 from "../../assets/img/Openclassroom/piquante/piquante2.png";
 import piquante3 from "../../assets/img/Openclassroom/piquante/piquante3.png";
 import piquante4 from "../../assets/img/Openclassroom/piquante/piquante4.png";
-import piquanteBannerImg from "../../assets/img/Openclassroom/piquante/piquanteBanniere.jpg";
+import piquante5 from "../../assets/img/Openclassroom/piquante/gif.gif";
 
 import kanap from "../../assets/img/Openclassroom/kanap/kanap.png";
 import kanap1 from "../../assets/img/Openclassroom/kanap/kanap1.png";
 import kanap2 from "../../assets/img/Openclassroom/kanap/kanap2.png";
 import kanap3 from "../../assets/img/Openclassroom/kanap/kanap3.png";
 import kanap4 from "../../assets/img/Openclassroom/kanap/kanap4.png";
+import kanap5 from "../../assets/img/Openclassroom/kanap/gif.gif";
 
 import panthere from "../../assets/img/Openclassroom/panthere/panthere.png";
 import panthere1 from "../../assets/img/Openclassroom/panthere/panthere1.png";
@@ -38,6 +41,7 @@ import food6 from "../../assets/img/Openclassroom/food/food6.png";
 import food7 from "../../assets/img/Openclassroom/food/food7.png";
 import food8 from "../../assets/img/Openclassroom/food/food8.png";
 import food9 from "../../assets/img/Openclassroom/food/food9.png";
+import food10 from "../../assets/img/Openclassroom/food/gif.gif";
 
 import reservia from "../../assets/img/Openclassroom/reservia/reservia.png";
 import reservia1 from "../../assets/img/Openclassroom/reservia/reservia1.png";
@@ -46,6 +50,7 @@ import reservia3 from "../../assets/img/Openclassroom/reservia/reservia3.png";
 import reservia4 from "../../assets/img/Openclassroom/reservia/reservia4.png";
 import reservia5 from "../../assets/img/Openclassroom/reservia/reservia5.png";
 import reservia6 from "../../assets/img/Openclassroom/reservia/reservia6.png";
+import reservia7 from "../../assets/img/Openclassroom/reservia/gif.gif";
 
 import yummy from "../../assets/img/Personnel/yummy/yummy.png";
 import yummy1 from "../../assets/img/Personnel/yummy/yummy1.png";
@@ -61,7 +66,6 @@ import yummy10 from "../../assets/img/Personnel/yummy/gif.gif";
 
 import smile from "../../assets/img/Personnel/smile/smile.png";
 import smile1 from "../../assets/img/Personnel/smile/smilegif.gif";
-
 
 import snakee from "../../assets/img/Personnel/snakee/snakee.png";
 import snakee1 from "../../assets/img/Personnel/snakee/snakee1.png";
@@ -80,23 +84,31 @@ import stats3 from "../../assets/img/Personnel/stats/stats3.png";
 
 import todo from "../../assets/img/Personnel/todo/todo.png";
 import todo1 from "../../assets/img/Personnel/todo/todo1.png";
-import todo2 from "../../assets/img/Personnel/todo/todo2.png";
-import todo3 from "../../assets/img/Personnel/todo/todo3.png";
-import todo4 from "../../assets/img/Personnel/todo/todo4.png";
-import todo5 from "../../assets/img/Personnel/todo/todo5.png";
+import todo2 from "../../assets/img/Personnel/todo/gif.gif";
+
+import dashboard from "../../assets/img/Personnel/dashboard/dashboard.png";
+import dashboard1 from "../../assets/img/Personnel/dashboard/dashboard1.png";
+import dashboard3 from "../../assets/img/Personnel/dashboard/dashboard3.png";
+import dashboard2 from "../../assets/img/Personnel/dashboard/dashboard2.png";
+import dashboard4 from "../../assets/img/Personnel/dashboard/dashboard4.png";
+import dashboard5 from "../../assets/img/Personnel/dashboard/gif.gif";
+
+import uber from "../../assets/img/Personnel/uber/uber.png";
+import uber1 from "../../assets/img/Personnel/uber/uber2.png";
+import uber2 from "../../assets/img/Personnel/uber/gif.gif";
 
 export default [
   {
     id: "project-kasa",
     titre: "Kasa",
-    imgMain: kasa,
+    imgMain: kasa5,
     legende: "Créez une application web de location immobilière avec React.",
     description:
       "Le projet de l' agence immobilière, consistait à créer l'application web avec React. " +
       "Pour cela j'ai utlilisé Create React App et configurer les différentes routes et composants de l'application. ",
     statut: "Terminé",
     imgBanniere: kasaBannerImg,
-    gallery: [kasa, kasa1, kasa3, kasa4, kasaM1, kasaM2, kasaM],
+    gallery: [kasa, kasa1, kasa2, kasa4, kasaM1, kasaM2, kasaM, kasa5],
     category: "openclassrooms",
     tech: "React, , Javascript, Sass, Figma",
     competences: [
@@ -113,46 +125,17 @@ export default [
       },
     ],
   },
-  {
-    id: "project-piquante",
-    titre: "Piquante",
-    imgMain: piquante2,
-    legende:
-      "Construction d'une API REST pour une galerie de sauces piquantes. ",
-    description:
-      "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API ",
-    statut: "Terminé",
-    imgBanniere: piquanteBannerImg,
-    gallery: [piquante, piquante1, piquante2, piquante3, piquante4, piquante],
-    category: "openclassrooms",
-    tech: "Angular JS, NodeJS, Express, MongoDB",
-    competences: [
-      "Mettre en œuvre des opérations CRUD de manière sécurisée",
-      "Implémenter un modèle logique de données conformément à la réglementation",
-      "Stocker des données de manière sécurisée",
-    ],
-    github: "https://github.com/vanessa-lanquetin/piquante",
-    link: [
-      {
-        label: "Spécifications du projet",
-        url: "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Requirements_DW_P6.pdf",
-      },
-      {
-        label: "Repo fronted",
-        url: "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6",
-      },
-    ],
-  },
+
   {
     id: "project-Kanap",
     titre: "Kanap",
-    imgMain: kanap,
+    imgMain: kanap5,
     legende: "Construction d' un site e-commerce en JavaScript.",
     description:
       "Kanap est une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaiterait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet. ",
     statut: "Terminé",
-    imgBanniere: kanap,
-    gallery: [kanap, kanap1, kanap2, kanap3, kanap4],
+    imgBanniere: kanap5,
+    gallery: [kanap, kanap1, kanap2, kanap3, kanap4, kanap5],
     category: "openclassrooms",
     tech: "Javascript,Bootstrap, Vanilla js",
     competences: [
@@ -173,6 +156,115 @@ export default [
       },
     ],
   },
+
+  {
+    id: "project-ohmyfood",
+    titre: "OhMyFood",
+    imgMain: food10,
+    legende: "Dynamisez une page web avec des animations CSS",
+    description:
+      "Ohmyfood! est une entreprise de commande de repas en ligne.Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.Plus de perte de temps à consulter la carte !",
+    statut: "Terminé",
+    imgBanniere: food10,
+    gallery: [
+      food,
+      food1,
+      food2,
+      food3,
+      food4,
+      food5,
+      food6,
+      food7,
+      food8,
+      food9,
+      food10,
+    ],
+    category: "openclassrooms",
+    tech: "sass,html5,css3,flexbox",
+    competences: [
+      "Mettre en œuvre des effets CSS graphiques avancés",
+      "Mettre en place une structure de navigation pour un site web",
+      "Assurer la cohérence graphique d'un site web",
+      "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+      "Mettre en place son environnement Front-End",
+    ],
+    linkproject: "https://vanessa-lanquetin.github.io/P3-Ohmyfood/",
+    github: "https://github.com/vanessa-lanquetin/P3-Ohmyfood",
+    link: [
+      {
+        label: "Spécifications du projet",
+        url: "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf",
+      },
+    ],
+  },
+  {
+    id: "project-reservia",
+    titre: "Réservia",
+    imgMain: reservia7,
+    legende: "Transformez une maquette en site web avec HTML & CSS",
+    description:
+      "Réservia, une petite entreprise proposant un outil de planification de vacances ! Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance. Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less) ne doit être utilisé.",
+    statut: "Terminé",
+    imgBanniere: reservia7,
+    gallery: [
+      reservia,
+      reservia1,
+      reservia2,
+      reservia3,
+      reservia4,
+      reservia5,
+      reservia6,
+      reservia7,
+    ],
+    category: "openclassrooms",
+    tech: "Javascript,Bootstrap, html,css",
+    competences: [
+      "Intégrer du contenu conformément à une maquette",
+      "Implémenter une interface responsive",
+    ],
+    linkproject:
+      "https://vanessa-lanquetin.github.io/VanessaLanquetin_2_08092021/",
+    github: "https://github.com/vanessa-lanquetin/VanessaLanquetin_2_08092021",
+  },
+  {
+    id: "project-piquante",
+    titre: "Piquante",
+    imgMain: piquante5,
+    legende:
+      "Construction d'une API REST pour une galerie de sauces piquantes. ",
+    description:
+      "Construction d'une API en backend pour le site HOT TAKES qui est une galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé au préalable et a été précompilé après des tests internes, le but étant donc de mettre en place une API ",
+    statut: "Terminé",
+    imgBanniere: piquante5,
+    gallery: [
+      piquante,
+      piquante1,
+      piquante2,
+      piquante3,
+      piquante4,
+      piquante,
+      piquante5,
+    ],
+    category: "openclassrooms",
+    tech: "Angular JS, NodeJS, Express, MongoDB",
+    competences: [
+      "Mettre en œuvre des opérations CRUD de manière sécurisée",
+      "Implémenter un modèle logique de données conformément à la réglementation",
+      "Stocker des données de manière sécurisée",
+    ],
+    github: "https://github.com/vanessa-lanquetin/piquante",
+    link: [
+      {
+        label: "Spécifications du projet",
+        url: "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Requirements_DW_P6.pdf",
+      },
+      {
+        label: "Repo fronted",
+        url: "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6",
+      },
+    ],
+  },
+
   {
     id: "project-panthere",
     titre: "La Panthère",
@@ -202,74 +294,6 @@ export default [
     ],
   },
   {
-    id: "project-ohmyfood",
-    titre: "OhMyFood",
-    imgMain: food8,
-    legende: "Dynamisez une page web avec des animations CSS",
-    description:
-      "Ohmyfood! est une entreprise de commande de repas en ligne.Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.Plus de perte de temps à consulter la carte !",
-    statut: "Terminé",
-    imgBanniere: food7,
-    gallery: [
-      food,
-      food1,
-      food2,
-      food3,
-      food4,
-      food5,
-      food6,
-      food7,
-      food8,
-      food9,
-    ],
-    category: "openclassrooms",
-    tech: "sass,html5,css3,flexbox",
-    competences: [
-      "Mettre en œuvre des effets CSS graphiques avancés",
-      "Mettre en place une structure de navigation pour un site web",
-      "Assurer la cohérence graphique d'un site web",
-      "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
-      "Mettre en place son environnement Front-End",
-    ],
-    linkproject: "https://vanessa-lanquetin.github.io/P3-Ohmyfood/",
-    github: "https://github.com/vanessa-lanquetin/P3-Ohmyfood",
-    link: [
-      {
-        label: "Spécifications du projet",
-        url: "https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf",
-      },
-    ],
-  },
-  {
-    id: "project-reservia",
-    titre: "Réservia",
-    imgMain: reservia5,
-    legende: "Transformez une maquette en site web avec HTML & CSS",
-    description:
-      "Réservia, une petite entreprise proposant un outil de planification de vacances ! Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance. Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less) ne doit être utilisé.",
-    statut: "Terminé",
-    imgBanniere: reservia6,
-    gallery: [
-      reservia,
-      reservia1,
-      reservia2,
-      reservia3,
-      reservia4,
-      reservia5,
-      reservia6,
-    ],
-    category: "openclassrooms",
-    tech: "Javascript,Bootstrap, html,css",
-    competences: [
-      "Intégrer du contenu conformément à une maquette",
-      "Implémenter une interface responsive",
-    ],
-    linkproject:
-      "https://vanessa-lanquetin.github.io/VanessaLanquetin_2_08092021/",
-    github: "https://github.com/vanessa-lanquetin/VanessaLanquetin_2_08092021",
-  },
-
-  {
     id: "project-smile",
     titre: "Smile, component",
     imgMain: smile1,
@@ -284,7 +308,19 @@ export default [
     github: "https://github.com/vanessa-lanquetin/Smiley-rating-bar",
     link: [{}],
   },
-
+  {
+    id: "project-uber",
+    titre: "Uber Eats",
+    imgMain: uber2,
+    legende: "Réalisation d'un site s'inspirant du site Uber Eats",
+    description: "Site de livraison de repas avec Vue.js",
+    statut: "Terminé",
+    imgBanniere: uber2,
+    gallery: [uber, uber1, uber2],
+    category: "personal",
+    tech: "Html,Css,Js,Vuejs",
+    github: "https://github.com/vanessa-lanquetin/uberEats",
+  },
   {
     id: "project-yummy",
     titre: "Yummy Nouilles - Intégration d'une maquette",
@@ -333,7 +369,41 @@ export default [
     github: "https://github.com/vanessa-lanquetin/Snakee",
     link: [{}],
   },
-
+  {
+    id: "project-dashboard",
+    titre: "Dashboard",
+    imgMain: dashboard5,
+    legende: "Réalisation d'un dashboard",
+    description: "Création d'un tableau de bord pour suivi de candidature",
+    statut: "Terminé",
+    imgBanniere: dashboard5,
+    gallery: [
+      dashboard,
+      dashboard1,
+      dashboard2,
+      dashboard3,
+      dashboard4,
+      dashboard5,
+    ],
+    category: "personal",
+    tech: "Html,Css,Js",
+    linkproject: "https://dashboard.vanessalanquetin.fr/",
+    github: "https://github.com/vanessa-lanquetin/dashboard",
+  },
+  {
+    id: "project-todo",
+    titre: "To Do List",
+    imgMain: todo2,
+    legende: "Réalisation d'une To Do List",
+    description: "Création d'une To Do List basique",
+    statut: "Terminé",
+    imgBanniere: todo2,
+    gallery: [todo, todo1, todo2],
+    category: "personal",
+    tech: "Html,Css,Js",
+    linkproject: "https://vanessa-lanquetin.github.io/ToDoList/",
+    github: "https://github.com/vanessa-lanquetin/ToDoList",
+  },
   {
     id: "project-3column",
     titre: "Challenge Front End Mentor - 3 column preview card component",
@@ -379,19 +449,5 @@ export default [
         url: "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
       },
     ],
-  },
-  {
-    id: "project-todo",
-    titre: "To Do List",
-    imgMain: todo1,
-    legende: "Réalisation d'une To Do List",
-    description: "Création d'une To Do List basique",
-    statut: "Terminé",
-    imgBanniere: todo3,
-    gallery: [todo1, todo2, todo3, todo4, todo5, todo],
-    category: "personal",
-    tech: "Html,Css,Js",
-    linkproject: "https://vanessa-lanquetin.github.io/ToDoList/",
-    github: "https://github.com/vanessa-lanquetin/ToDoList",
   },
 ];

@@ -64,7 +64,7 @@ const projectsToDisplay = computed(() =>
     font-size: 1.5em;
     margin-top: 16px;
     margin-bottom: 12px;
-    border-top: $pastelPurple 1px solid;
+    border-top: $second-color 1px solid;
     padding-top: 20px;
   }
   .description-project {
@@ -82,9 +82,9 @@ const projectsToDisplay = computed(() =>
   }
 
   .img-project {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    height: 370px;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
