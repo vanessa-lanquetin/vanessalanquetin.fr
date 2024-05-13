@@ -97,6 +97,16 @@ import uber from "../../assets/img/Personnel/uber/uber.png";
 import uber1 from "../../assets/img/Personnel/uber/uber2.png";
 import uber2 from "../../assets/img/Personnel/uber/gif.gif";
 
+import sophie from "../../assets/img/Personnel/sophie/sophie.png";
+import sophie1 from "../../assets/img/Personnel/sophie/sophie1.png";
+import sophie3 from "../../assets/img/Personnel/sophie/sophie3.png";
+import sophie2 from "../../assets/img/Personnel/sophie/sophie2.png";
+import sophie4 from "../../assets/img/Personnel/sophie/sophie4.png";
+import sophie5 from "../../assets/img/Personnel/sophie/bureau.gif";
+import sophie6 from "../../assets/img/Personnel/sophie/tablette.gif";
+import sophie7 from "../../assets/img/Personnel/sophie/mobile.gif";
+
+
 export default [
   {
     id: "project-kasa",
@@ -403,6 +413,30 @@ export default [
     tech: "Html,Css,Js",
     linkproject: "https://vanessa-lanquetin.github.io/ToDoList/",
     github: "https://github.com/vanessa-lanquetin/ToDoList",
+  },
+  {
+    id: "project-sophie",
+    titre: "DA de Sophie Mairy Bien être sur Figma",
+    imgMain: sophie5,
+    legende: "Recherche et réalisation de la DA d'une sophrologue sur Figma",
+    description:
+      "J'ai assisté une sophrologue dans sa recherche de direction artistique pour son cabinet. J'ai donc élaboré un cahier des charges pour ensuite concevoir un logo, une brochure et une carte de visite sur Figma.",
+    statut: "Terminé",
+    imgBanniere: sophie5,
+    gallery: [
+      sophie,
+      sophie1,
+      sophie2,
+      sophie3,
+      sophie4,
+      sophie5,
+      sophie6,
+      sophie7,
+    ],
+    category: "personal",
+    tech: "Figma",
+    linkproject:
+      "https://www.figma.com/design/qaR55frspgazoT3tnmRiLe/sophie?t=iIxZ3mOKWBopwRBf-1"
   },
   {
     id: "project-3column",
