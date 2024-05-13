@@ -105,6 +105,8 @@ import sophie4 from "../../assets/img/Personnel/sophie/sophie4.png";
 import sophie5 from "../../assets/img/Personnel/sophie/bureau.gif";
 import sophie6 from "../../assets/img/Personnel/sophie/tablette.gif";
 import sophie7 from "../../assets/img/Personnel/sophie/mobile.gif";
+import sophie8 from "../../assets/img/Personnel/sophie/sophie7.png";
+import sophie9 from "../../assets/img/Personnel/sophie/sophie9.png";
 
 
 export default [
@@ -424,6 +426,8 @@ export default [
     statut: "Terminé",
     imgBanniere: sophie5,
     gallery: [
+      sophie9,
+      sophie8,
       sophie,
       sophie1,
       sophie2,
@@ -436,7 +440,7 @@ export default [
     category: "personal",
     tech: "Figma",
     linkproject:
-      "https://www.figma.com/design/qaR55frspgazoT3tnmRiLe/sophie?t=iIxZ3mOKWBopwRBf-1"
+      "https://www.figma.com/design/qaR55frspgazoT3tnmRiLe/sophie?t=iIxZ3mOKWBopwRBf-1",
   },
   {
     id: "project-3column",
