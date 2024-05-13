@@ -418,7 +418,7 @@ export default [
   },
   {
     id: "project-sophie",
-    titre: "DA de Sophie Mairy Bien être sur Figma",
+    titre: "Aide et création dans la DA d'une sophrologue sur Figma",
     imgMain: sophie5,
     legende: "Recherche et réalisation de la DA d'une sophrologue sur Figma",
     description:
